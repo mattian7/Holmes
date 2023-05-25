@@ -1,0 +1,19 @@
+{
+    "demo": [
+        {
+            "question": "Q: Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nHint:",
+            "hint": "To answer the final question 'How old is Kody?', we need to notice these conditions: 1.'Not this year, but four years ago, Kody was only half as old as Mohamed.', 2.'This year Mohamed is currently twice 30 years old, not 30 years old.'; Having these conditions, then we need to know these sub-questions: 1.'How old was Mohamed four years ago?', 2.'How old was Kody four years ago?';\nA:",
+            "answer": "condition 1 is the key information for sub-question 2; condition 2 is the key information for sub question 1;"
+        },
+        {
+            "question": "Q: Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?\nHint:",
+            "hint": "To answer the final question 'How many popsicle sticks can they use for their Art class activity?', we need to notice these conditions: 1.'Sam has thrice as many as Sid.', 2.'Sid has twice as many as Steve.', 3.'Steve has 12 popsicle sticks.'; Having these conditions, then we need to know these sub-questions: 1.'How many popsicle sticks does Sid have?', 2.'How many popsicle sticks does Sam have?';\nA:",
+            "answer": "condition 1 is the key information for sub-question 2; condition 2 is the key information for sub question 1; condition 3 is the key information for sub question 1;"
+        },
+        {
+            "question": "Q: Heather's razors come 4 to a pack and cost $4.00 a pack. They are currently on sale for buy one get one free. She also has a $2.00 coupon. How much will each individual razor cost, in cents, after the discount if she buys 2 packs of razors?\nHint:",
+            "hint": "To answer the question 'How much will each individual razor cost, in cents, after the discount if she buys 2 packs of razors?', we need to notice these conditions: 1.'Heather's razors come 4 to a pack and cost $4.00 a pack.', 2.'They are currently on sale for buy one get one free.', 3.'She also has a $2.00 coupon.', 4.'Heather buys 2 packs of razors.'; Having these conditions, then we need to know these sub-questions: 1.'How many razors will Heather get in total after the discount?', 2.'What is the total cost of the razors after the discount?';\nA:",
+            "answer": "condition 1 is the key information for sub-question 1; condition 1 is the key information for sub-question 2; condition 2 is the key information for sub question 2; condition 3 is the key information for sub question 2; condition 4 is the key information for sub question 1;"
+        }
+    ]
+}
