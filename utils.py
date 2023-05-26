@@ -11,7 +11,7 @@ import multiprocessing
 import time
 
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = "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"
+#openai.api_key = "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"
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -128,7 +128,7 @@ def create_fewshot(args, demo_path):
                 index_list = list(range(len(x)))
                 for i in index_list:
                     demo_text += x[i] + " " + z[i] + " " + y[i] + "\n\n"
-    elif args.method == "ltm_cot":
+    elif (args.method == "ltm_cot") or (args.method == "few_shot_cot"):
         with open(demo_path, encoding="utf-8") as f:
             json_data = json.load(f)
             json_data = json_data["demo"]
@@ -422,7 +422,7 @@ def recorrect_location(key_location):
 
     return new_key_location
 
-def locate_key(key_location,q_num):
+def locate_key(key_location,q_num, c_num):
     location_list = key_location.split(";")
     location_dict = {}
     for i in range(q_num):
@@ -433,7 +433,8 @@ def locate_key(key_location,q_num):
         sigle_key_with_questions = re.findall('\d+',location)
         sigle_key_with_questions = [int(i) for i in sigle_key_with_questions]
         for subq in sigle_key_with_questions[1:]:
-            location_dict[subq].append(sigle_key_with_questions[0])
+            if (subq <= q_num) & (sigle_key_with_questions[0] <= c_num):
+                location_dict[subq].append(sigle_key_with_questions[0])
     return location_dict
 
 
@@ -490,7 +491,7 @@ def generate_kq(condition_list, question_list):
 
 
 def generate_hint(condition_list, question_list, location_dict):
-    hint = "Let's break down this problem:"
+    hint = "Let's think step by step:"
     for i in range(len(question_list)-1):
         hint += " " + str(i+1) + "." + question_list[i]
         if len(location_dict[i+1])==0:

@@ -29,7 +29,7 @@ def parse_arguments():
     parser.add_argument("--max_length_direct", type=int, default=32,
                         help="maximum length of output tokens by model for answer extraction"
                         )
-    parser.add_argument("--limit_dataset_size", type=int, default=1,
+    parser.add_argument("--limit_dataset_size", type=int, default=0,
                         help="whether to limit test dataset size. if 0, we use all the samples in the dataset"
                         )
     parser.add_argument("--api_time_interval", type=float, default=8,
@@ -95,8 +95,7 @@ def main():
     print('*****************************')
 
     fix_seed(args.random_seed)
-
-    openai.api_key = "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"
+    #openai.api_key = "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"
     #print("OPENAI_API_KEY:")
     #print(os.getenv("OPENAI_API_KEY")[0:5] + '**********')
     decoder = Decoder()
@@ -119,6 +118,9 @@ def main():
         fewshot_stage1 = create_fewshot(args, demo_path)
         demo_path = args.demo_path + "2"
         fewshot_stage2 = create_fewshot(args, demo_path)
+    elif args.method == "few_shot_cot":
+        demo_path = args.demo_path
+        fewshot_stage1 = create_fewshot(args, demo_path)
     else:
         pass
 
@@ -159,7 +161,7 @@ def main():
                 q_stage3 = x + "Hint: " + key_and_q + "\nA:"
                 key_location = decoder.key_cot_decode(fewshot_stage3, q_stage3, args, max_length)
                 key_location = recorrect_location(key_location)
-                location_dict = locate_key(key_location, len(qlist) - 1)
+                location_dict = locate_key(key_location, len(qlist) - 1, len(clist))
                 q_stage5 = trans2math(clist, x_[0])
 
                 trans2math_keys = decoder.key_cot_decode(fewshot_stage5, q_stage5, args, max_length)
@@ -195,6 +197,9 @@ def main():
                 answer = decoder.key_cot_decode(fewshot_stage2, q_stage2, args, max_length)
                 print(answer)
                 print("\n")
+            elif args.method == "few_shot_cot":
+                q = x + "A:"
+                answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
 
             pred = answer_cleaning(args, answer)
 
