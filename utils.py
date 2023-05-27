@@ -11,7 +11,7 @@ import multiprocessing
 import time
 
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-#openai.api_key = "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"
+
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -35,6 +35,8 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
         engine = "text-davinci-002"
     elif args.model == 'gpt3_chat':
         engine = "gpt-3.5-turbo"
+    elif args.model == 'gpt4':
+        engine = "gpt-4"
     else:
         raise ValueError("model is not properly defined ...")
 
@@ -57,7 +59,7 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
             answer = self_consistency(answers)
         else:
             answer = response["choices"][0]["text"]
-    # gpt-3.5-turbo
+    # gpt-3.5-turbo and gpt-4
     else:
         response = openai.ChatCompletion.create(
             model=engine,
