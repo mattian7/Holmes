@@ -12,7 +12,7 @@ import multiprocessing
 import time
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = "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"
+openai.api_key = ""
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
