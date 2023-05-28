@@ -1,0 +1,24 @@
+{
+    "demo": [
+        {
+            "question": "Q: Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Not this year, but four years ago, Kody was only half as old as Mohamed.', 2.'This year Mohamed is currently twice 30 years old, not 30 years old.'; Having these conditions, then we need to solve these questions: 1.'How old was Mohamed four years ago?', 2.'How old was Kody four years ago?', 3.'How old is Kody?'\nA:",
+            "answer": "condition 1 is the key information for question 2; condition 2 is the key information for question 1; the answer of question 2 is the key information for question 3;"
+        },
+        {
+            "question": "Q: Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Sam has thrice as many as Sid.', 2.'Sid has twice as many as Steve.', 3.'Steve has 12 popsicle sticks.'; Having these conditions, then we need to solve these questions: 1.'How many popsicle sticks does Sid have?', 2.'How many popsicle sticks does Sam have?', 3.'How many popsicle sticks can they use for their Art class activity?'\nA:",
+            "answer": "condition 1 is the key information for question 2; condition 2 is the key information for question 1; condition 3 is the key information for question 1; the answer of question 1 and 2 is the key information for question 3;"
+        },
+        {
+            "question": "Q: Tom buys a bedroom set for $3000. He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set. He then has to pay 10% a month for the bedroom set. How much does he have to pay per month?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Tom buys a bedroom set for $3000.', 2.'He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set.', 3.'He then has to pay 10% a month for the bedroom set.'; Having these conditions, then we need to solve these questions: 1.'How much did Tom have to pay after using the $1000 from selling his old bedroom?', 2.'How much does he have to pay per month?'\nA:",
+            "answer": "condition 1 is the key information for question 1; condition 1 is the key information for question 2; condition 2 is the key information for question 1; the answer of question 1 is the key information for question 2;"
+        },
+        {
+            "question": "Q: Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long. He does this 3 times a week. How many hours does he spend on TV and reading in 4 weeks?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long.', 2.'He does this 3 times a week.'; Having these conditions, then we need to solve these questions: 1.'How many hours does he spend on TV and reading one upon a time?', 2.'How many hours does he spend on TV and reading in one week', 3.'How many hours does he spend on TV and reading in 4 weeks?'\nA:",
+            "answer": "condition 1 is the key information for question 1; condition 2 is the key information for question 2; the answer of question 1 is the key information for question 2; the answer of question 2 is the key information for question 3;"
+        }
+    ]
+}

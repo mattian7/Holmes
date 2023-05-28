@@ -11,7 +11,7 @@ import multiprocessing
 import time
 
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-
+openai.api_key="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"
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -406,25 +406,52 @@ def answer_cleaning(args, pred, must_choice=False):
     return pred
 
 
-def recorrect_location(key_location):
+def recorrect_location(key_location, qnum):
     location_list = key_location.split(";")
     new_key_location = ""
+    new_answer_location = ""
+    if location_list[-1] == '':
+        location_list = location_list[:-1]
     for l in location_list:
         half_list = l.split("the key information for")
-        if len(re.findall('question', half_list[0]))!=0:
+        if len(half_list)!= 2:
             continue
-        condi_list = re.findall('\d+', half_list[0])
-        if len(condi_list)>1:
+        if ('final question' in half_list[1]) or ('final answer' in half_list[1]):
+            half_list[1] += str(qnum)
+        answer_list = []
+        condi_list = []
+        if "condition" in half_list[0]:
+            if "answer" in half_list[0]:
+                if half_list[0].find('condition') < half_list[0].find('answer'):
+                    key_condition_and_answer = half_list[0].split('answer')
+                    condi_list = re.findall('\d+', key_condition_and_answer[0])
+                    answer_list = re.findall('\d+', key_condition_and_answer[1])
+                else:
+                    key_condition_and_answer = half_list[0].split('condition')
+                    condi_list = re.findall('\d+', key_condition_and_answer[1])
+                    answer_list = re.findall('\d+', key_condition_and_answer[0])
+            else:
+                condi_list = re.findall('\d+', half_list[0])
+        else:
+            if "answer" in half_list[0]:
+                answer_list = re.findall('\d+', half_list[0])
+            else:
+                continue
+
+        if len(condi_list) > 0:
             for c in condi_list:
                 new_sentence = "condition " + c + " is the key information for" + half_list[1] + "; "
                 new_key_location += new_sentence
-        else:
-            new_sentence = l + ";"
-            new_key_location += new_sentence
 
-    return new_key_location
+        if len(answer_list) > 0:
+            for a in answer_list:
+                new_sentence = "the answer of " + a + " is the key information for" + half_list[1] + "; "
+                new_answer_location += new_sentence
 
-def locate_key(key_location,q_num, c_num):
+    return new_key_location, new_answer_location
+
+
+def locate_key(key_location, q_num, c_num):
     location_list = key_location.split(";")
     location_dict = {}
     for i in range(q_num):
@@ -440,30 +467,28 @@ def locate_key(key_location,q_num, c_num):
     return location_dict
 
 
-def extract_key_question(key_question):
-    information = key_question.split("\nHaving")
-    if information[-1] == '':
-        information = information[:-1]
-    if len(information) != 2:
-        return [], [], -1
-    sentence1 = re.findall('"(.*?)"', information[0])
-    sentence2 = re.findall('"(.*?)"', information[1])
-    question_list = []
-    condition_list = []
-    for key in sentence1[1:]:
-        condition_list.append(key)
-    for question in sentence2:
-        question_list.append(question)
-    question_list.append(sentence1[0])
-    return condition_list, question_list, 0
+def locate_answer(answer_location, q_num):
+    location_list = answer_location.split(";")
+    location_dict = {}
+    for i in range(q_num):
+        location_dict[i+1] = []
+    if location_list[-1] == '':
+        location_list = location_list[:-1]
+    for location in location_list:
+        sigle_answer_with_questions = re.findall('\d+',location)
+        sigle_answer_with_questions = [int(i) for i in sigle_answer_with_questions]
+        for subq in sigle_answer_with_questions[1:]:
+            if (subq <= q_num) & (sigle_answer_with_questions[0] <= q_num):
+                location_dict[subq].append(sigle_answer_with_questions[0])
+    return location_dict
 
 
 def extract_questions(questions):
     sentence1 = re.findall('"(.*?)"', questions)
     question_list = []
-    for question in sentence1[1:]:
+    for question in sentence1:
         question_list.append(question)
-    question_list.append(sentence1[0])
+    #question_list.append(sentence1[0])
     return question_list
 
 
@@ -476,15 +501,14 @@ def extract_keys(keys):
 
 
 def generate_kq(condition_list, question_list):
-    key_and_q = "To answer the question "
-    key_and_q += "'" + question_list[-1] + "', we need to notice these conditions:"
+    key_and_q = "To answer this question, we need to notice these conditions:"
     for i in range(len(condition_list)):
         if i==len(condition_list)-1:
-            key_and_q += " " + str(i+1) + ".'" + condition_list[i] + "'; Having these conditions, then we need to know these sub-questions:"
+            key_and_q += " " + str(i+1) + ".'" + condition_list[i] + "'; Having these conditions, then we need to solve these questions:"
         else:
             key_and_q += " " + str(i+1) + ".'" + condition_list[i] + "',"
-    for i in range(len(question_list)-1):
-        if i==len(question_list)-2:
+    for i in range(len(question_list)):
+        if i==len(question_list)-1:
             key_and_q += " " + str(i+1) + ".'" + question_list[i] + "';"
         else:
             key_and_q += " " + str(i+1) + ".'" + question_list[i] + "',"
@@ -492,23 +516,43 @@ def generate_kq(condition_list, question_list):
     return key_and_q
 
 
-def generate_hint(condition_list, question_list, location_dict):
-    hint = "Let's think step by step:"
-    for i in range(len(question_list)-1):
+def generate_hint(condition_list, question_list, location_dict_key, location_dict_answer):
+    hint = "Let's solve one by one:"
+    for i in range(len(question_list)):
         hint += " " + str(i+1) + "." + question_list[i]
-        if len(location_dict[i+1])==0:
+        if (len(location_dict_key[i+1]) == 0) & (len(location_dict_answer[i+1]) == 0):
             pass
-        else:
-            hint += "(Hint: Notice that"
-            for j in range(len(location_dict[i+1])):
-                hint += " \"" + condition_list[location_dict[i+1][j]-1] + "\""
-                if j == len(location_dict[i+1])-1:
+        elif (len(location_dict_key[i+1]) != 0) & (len(location_dict_answer[i+1]) == 0):
+            hint += "(Hint: Notice that "
+            for j in range(len(location_dict_key[i+1])):
+                hint += "'" + condition_list[location_dict_key[i+1][j]-1] + "'"
+                if j == len(location_dict_key[i+1])-1:
                     hint += ")"
                 else:
-                    hint += ","
-        hint += ","
-    i = len(question_list)-1
-    hint += " " + str(i+1) + "." + question_list[i]
+                    hint += ", "
+        elif (len(location_dict_key[i+1]) == 0) & (len(location_dict_answer[i+1]) != 0):
+            hint += "(Hint: Notice the answer of question "
+            for j in range(len(location_dict_answer[i+1])):
+                hint += str(location_dict_answer[i+1][j])
+                if j == len(location_dict_answer[i+1])-1:
+                    hint += ")"
+                else:
+                    hint += ", "
+        else:
+            hint += "(Hint: Notice that "
+            for j in range(len(location_dict_key[i+1])):
+                hint += "'" + condition_list[location_dict_key[i+1][j]-1] + "', "
+            hint += "and the answer of question"
+            for j in range(len(location_dict_answer[i+1])):
+                hint += str(location_dict_answer[i+1][j])
+                if j == len(location_dict_answer[i+1])-1:
+                    hint += ")"
+                else:
+                    hint += ", "
+        if i != len(question_list)-1:
+            hint += ","
+        else:
+            hint += "\nA:"
     return hint
 
 
@@ -532,7 +576,6 @@ def generate_hint(condition_list, question_list, location_dict):
 '''
 
 def extract_question(sub_q):
-    name = 'highlight and align it'
     information = sub_q.split("we need to know:")
     infer1 = information[0]
     infer2 = information[-1]

@@ -1,0 +1,32 @@
+{
+    "demo": [
+        {
+            "question": "Q: Sara is checking out two different stores to buy a computer. The first store offers a device for $950 with a 6% discount. The second sells the same computer for €920 with a 5% discount. What is the difference in price between the two stores?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"What price do the first store offer after discount?\", 2.\"What price does the second store offer after discount?\", 3.\"What is the difference in price between the two stores?\"."
+        },
+        {
+            "question": "Q: Ali is collecting bottle caps. He has 125 bottle caps. He has red ones and green ones. If he has 50 red caps, what percentage of caps are green?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"If he has 50 red caps, how many green caps does Ali have?\", 2.\"What percentage of caps are green?\"."
+        },
+        {
+            "question": "Q: Jessica has one hour to take an exam. She has answered 16 out of 80 questions. She has used 12 minutes of her time. If she keeps up this same pace, how many minutes will be left when she finishes the exam?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many minutes does Jessica need to answer 80 question?\", 2.\"How many minutes will be left when she finishes the exam?\"."
+        },
+        {
+            "question": "Q: Anne's female cat weighs 2 kilograms. Her male cat is two times heavier. If Anne is going to carry both of them, how many kilograms is she carrying?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How heavy is Anne's male cat?\", 2.\"Anne is going to carry both of them, how many kilograms is she carrying?\"."
+        },
+        {
+            "question": "Q: Jack and Jill shared the cost of renting a cottage that costs $5 an hour. If they rented it for eight hours, how much did each friend pay?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"If they rented it for eight hours, how much did each friend pay?\"."
+        },
+        {
+            "question": "Q: Joey studies for his SAT exams 2 hours per night 5 nights a week. On the weekends, he studies 3 hours a day. If his SAT exam is 6 weeks away, how much time will Joey spend studying?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many hours does Joey studies during one week?\", 2.\"If his SAT exam is 6 weeks away, how much time will Joey spend studying?\"."
+        },
+        {
+            "question": "Q: A baker has 10 cheesecakes on the display while 15 more are still in the fridge. If the baker has sold 7 cheesecakes from the display, how many more cheesecakes are left to be sold?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many cheesecakes does baker have before selling?\", 2.\"If the baker has sold 7 cheesecakes from the display, how many more cheesecakes are left to be sold?\"."
+        }
+    ]
+}

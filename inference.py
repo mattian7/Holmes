@@ -33,12 +33,12 @@ def parse_arguments():
     parser.add_argument("--limit_dataset_size", type=int, default=0,
                         help="whether to limit test dataset size. if 0, we use all the samples in the dataset"
                         )
-    parser.add_argument("--api_time_interval", type=float, default=6,
+    parser.add_argument("--api_time_interval", type=float, default=3,
                         help="sleep between runs to avoid excedding the rate limit of openai api"
                         )
     parser.add_argument("--log_dir", type=str, default="./log/", help="log directory")
     parser.add_argument(
-        "--demo_path", type=str, default="demos/keycot3/stage", help="pre-generated demos used for experiment"
+        "--demo_path", type=str, default="demos/keycot4/stage", help="pre-generated demos used for experiment"
     )
     parser.add_argument("--output_dir", type=str, default="experiment/gsm8k", help="output directory")
 
@@ -99,6 +99,7 @@ def main():
 
     #print("OPENAI_API_KEY:")
     #print(os.getenv("OPENAI_API_KEY")[0:5] + '**********')
+    openai.api_key="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"
     decoder = Decoder()
     print("setup data loader ...")
     dataloader = setup_data_loader(args)
@@ -138,6 +139,7 @@ def main():
 
             print('*************************')
             print("{}st data".format(i + 1))
+            wp.write("{}st data".format(i + 1))
 
             x_, y_ = data
             x = "Q: " + x_[0] + "\n"
@@ -156,7 +158,7 @@ def main():
                         break
                     except Exception as e:
                         print("api Error:", e)
-                        time.sleep(10)
+                        time.sleep(5)
                         continue
 
                 output_line["q"] = questions
@@ -166,13 +168,13 @@ def main():
                         break
                     except Exception as e:
                         print("api Error:", e)
-                        time.sleep(10)
+                        time.sleep(5)
                         continue
 
                 output_line["k"] = keys
 
                 clist = extract_keys(keys)
-                print(clist)
+                #print(clist)
                 qlist = extract_questions(questions)
                 key_and_q = generate_kq(clist, qlist)
                 q_stage3 = x + "Hint: " + key_and_q + "\nA:"
@@ -182,11 +184,12 @@ def main():
                         break
                     except Exception as e:
                         print("api Error:", e)
-                        time.sleep(10)
+                        time.sleep(5)
                         continue
-
-                key_location = recorrect_location(key_location)
-                location_dict = locate_key(key_location, len(qlist) - 1, len(clist))
+                print(key_location)
+                key_location, answer_location = recorrect_location(key_location, len(qlist))
+                location_dict_key = locate_key(key_location, len(qlist), len(clist))
+                location_dict_answer = locate_answer(answer_location, len(qlist))
                 q_stage5 = trans2math(clist, x_[0])
 
                 while True:
@@ -195,24 +198,26 @@ def main():
                         break
                     except Exception as e:
                         print("api Error:", e)
-                        time.sleep(10)
+                        time.sleep(5)
                         continue
 
                 clist_new = extract_keys(trans2math_keys)
-                print(clist_new)
+                #print(clist_new)
 
                 if len(clist_new) == len(clist):
                     try:
-                        hint_stage4 = generate_hint(clist_new, qlist, location_dict)
+                        hint_stage4 = generate_hint(clist_new, qlist, location_dict_key, location_dict_answer)
                     except KeyError as e:
+                        print("Key Error:", e)
                         key_error_flag = True
                 else:
                     try:
-                        hint_stage4 = generate_hint(clist, qlist, location_dict)
+                        hint_stage4 = generate_hint(clist, qlist, location_dict_key, location_dict_answer)
                     except KeyError as e:
+                        print("Key Error:", e)
                         key_error_flag = True
 
-                q_stage4 = x + "A:" + hint_stage4 + "\n"
+                q_stage4 = x_[0] + "\nQ: " + hint_stage4
 
                 if key_error_flag:
                     answer = 'Occurred key error'
@@ -223,11 +228,10 @@ def main():
                             break
                         except Exception as e:
                             print("api Error:", e)
-                            time.sleep(15)
+                            time.sleep(10)
                             continue
 
                 print(q_stage4)
-                print("\n")
                 print(answer)
                 print("\n")
             elif args.method == "ltm_cot":
@@ -260,7 +264,6 @@ def main():
             output_line["pred_ans"] = pred
 
             output_json = json.dumps(output_line)
-            wp.write(output_json + '\n')
 
             # Choose the most frequent answer from the list ...
             print("pred : {}".format(pred))
@@ -282,6 +285,9 @@ def main():
             accuracy = (sum(correct_list) * 1.0 / total) * 100
             print("correct number : {}".format(sum(correct_list) * 1.0))
             print("accuracy : {}".format(accuracy))
+            wp.write(": correct? {}".format(correct))
+            wp.write(": correct_number? {}".format(sum(correct_list) * 1.0))
+            wp.write(": accuracy? {}\n".format(accuracy))
 
             if (args.limit_dataset_size != 0) and ((i + 1) >= args.limit_dataset_size):
                 break
