@@ -3,6 +3,7 @@ from torch.utils.data import Dataset
 import openai
 import os
 import json
+import glob
 import torch
 import numpy as np
 import random
@@ -10,8 +11,8 @@ import re
 import multiprocessing
 import time
 
-#openai.api_key = os.getenv("OPENAI_API_KEY")
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "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"
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -35,8 +36,6 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
         engine = "text-davinci-002"
     elif args.model == 'gpt3_chat':
         engine = "gpt-3.5-turbo"
-    elif args.model == 'gpt4':
-        engine = "gpt-4"
     else:
         raise ValueError("model is not properly defined ...")
 
@@ -59,12 +58,17 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
             answer = self_consistency(answers)
         else:
             answer = response["choices"][0]["text"]
-    # gpt-3.5-turbo and gpt-4
+    # gpt-3.5-turbo
     else:
+        if args.dataset.startswith("math"):
+            format_prompt = "According to the given prompts and answer the final question Q. You should append a sentence like \"The answer is [Your Answer].\" at the end of your output.\n"
+        else:
+            format_prompt = ""
+        # print(fewshot + "\nQ:" + question)
         response = openai.ChatCompletion.create(
             model=engine,
             messages=[
-                {"role": "user", "content": fewshot + "\nQ:" + question}
+                {"role": "user", "content": format_prompt + fewshot + "\nQ:" + question}
             ],
             max_tokens=max_length,
             temperature=args.temperature,
@@ -285,6 +289,16 @@ def data_reader(args):
                 a = line["answer"]
                 questions.append(q)
                 answers.append(a)
+    
+    elif "math" in args.dataset:
+        p_list = os.listdir("dataset/MATH/test/prealgebra")
+        for p in p_list:
+            with open(os.path.join("dataset/MATH/test/prealgebra",p)) as f:
+                line = json.load(f)
+                q = line["problem"]
+                a = remove_boxed(last_boxed_only_string(line["solution"]))
+                questions.append(q)
+                answers.append(a)
 
     else:
         raise ValueError("dataset is not properly defined ...")
@@ -352,7 +366,7 @@ def answer_cleaning(args, pred, must_choice=False):
     pred = preds[-1]
 
     if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot"):
-        preds = pred.split("The answer is")
+        preds = re.split(r"[Tt]he answer is ", pred)
         answer_flag = True if len(preds) > 1 else False
         pred = preds[-1]
 
@@ -376,6 +390,15 @@ def answer_cleaning(args, pred, must_choice=False):
     elif args.dataset == "last_letters":
         pred = re.sub("\"|\'|\n|\.|\s", "", pred)
         pred = [pred]
+    elif args.dataset.startswith("math"):
+        print(pred)
+        if answer_flag:
+            if pred[-1] == ".":
+                pred = pred[:-1]
+            pred = [re.sub("[$,]", "", pred)]
+        else:
+            pred = pred.replace(",", "")
+            pred = [s for s in re.findall(r'-?\d+\.?\d*', pred)]
     else:
         raise ValueError("dataset is not properly defined ...")
 
@@ -554,3 +577,194 @@ def trans2math(key_list, question):
 
     return target_question
 
+# utils for MATH dataset
+
+def remove_boxed(s):
+    left = "\\boxed{"
+    try:
+        assert s[:len(left)] == left
+        assert s[-1] == "}"
+        return s[len(left):-1]
+    except:
+        return None
+    
+def last_boxed_only_string(string):
+    idx = string.rfind("\\boxed")
+    if idx < 0:
+        idx = string.rfind("\\fbox")
+        if idx < 0:
+            return None
+
+    i = idx
+    right_brace_idx = None
+    num_left_braces_open = 0
+    while i < len(string):
+        if string[i] == "{":
+            num_left_braces_open += 1
+        if string[i] == "}":
+            num_left_braces_open -= 1
+            if num_left_braces_open == 0:
+                right_brace_idx = i
+                break
+        i += 1
+    
+    if right_brace_idx == None:
+        retval = None
+    else:
+        retval = string[idx:right_brace_idx + 1]
+    
+    return retval
+
+def _fix_fracs(string):
+    substrs = string.split("\\frac")
+    new_str = substrs[0]
+    if len(substrs) > 1:
+        substrs = substrs[1:]
+        for substr in substrs:
+            new_str += "\\frac"
+            if substr[0] == "{":
+                new_str += substr
+            else:
+                try:
+                    assert len(substr) >= 2
+                except:
+                    return string
+                a = substr[0]
+                b = substr[1]
+                if b != "{":
+                    if len(substr) > 2:
+                        post_substr = substr[2:]
+                        new_str += "{" + a + "}{" + b + "}" + post_substr
+                    else:
+                        new_str += "{" + a + "}{" + b + "}"
+                else:
+                    if len(substr) > 2:
+                        post_substr = substr[2:]
+                        new_str += "{" + a + "}" + b + post_substr
+                    else:
+                        new_str += "{" + a + "}" + b
+    string = new_str
+    return string
+
+def _fix_a_slash_b(string):
+    if len(string.split("/")) != 2:
+        return string
+    a = string.split("/")[0]
+    b = string.split("/")[1]
+    try:
+        a = int(a)
+        b = int(b)
+        assert string == "{}/{}".format(a, b)
+        new_string = "\\frac{" + str(a) + "}{" + str(b) + "}"
+        return new_string
+    except:
+        return string
+
+def _remove_right_units(string):
+    # "\\text{ " only ever occurs (at least in the val set) when describing units
+    if "\\text{ " in string:
+        splits = string.split("\\text{ ")
+        assert len(splits) == 2
+        return splits[0]
+    else:
+        return string
+
+def _fix_sqrt(string):
+    if "\\sqrt" not in string:
+        return string
+    splits = string.split("\\sqrt")
+    new_string = splits[0] 
+    for split in splits[1:]:
+        if split[0] != "{":
+            a = split[0]
+            new_substr = "\\sqrt{" + a + "}" + split[1:]
+        else:
+            new_substr = "\\sqrt" + split
+        new_string += new_substr
+    return new_string
+
+def _strip_string(string):
+    # linebreaks  
+    string = string.replace("\n", "")
+    #print(string)
+
+    # remove inverse spaces
+    string = string.replace("\\!", "")
+    #print(string)
+
+    # replace \\ with \
+    string = string.replace("\\\\", "\\")
+    #print(string)
+
+    # replace tfrac and dfrac with frac
+    string = string.replace("tfrac", "frac")
+    string = string.replace("dfrac", "frac")
+    #print(string)
+
+    # remove \left and \right
+    string = string.replace("\\left", "")
+    string = string.replace("\\right", "")
+    #print(string)
+    
+    # Remove circ (degrees)
+    string = string.replace("^{\\circ}", "")
+    string = string.replace("^\\circ", "")
+
+    # remove dollar signs
+    string = string.replace("\\$", "")
+    
+    # remove units (on the right)
+    string = _remove_right_units(string)
+
+    # remove percentage
+    string = string.replace("\\%", "")
+    string = string.replace("\%", "")
+
+    # " 0." equivalent to " ." and "{0." equivalent to "{." Alternatively, add "0" if "." is the start of the string
+    string = string.replace(" .", " 0.")
+    string = string.replace("{.", "{0.")
+    # if empty, return empty string
+    if len(string) == 0:
+        return string
+    if string[0] == ".":
+        string = "0" + string
+
+    # to consider: get rid of e.g. "k = " or "q = " at beginning
+    if len(string.split("=")) == 2:
+        if len(string.split("=")[0]) <= 2:
+            string = string.split("=")[1]
+
+    # fix sqrt3 --> sqrt{3}
+    string = _fix_sqrt(string)
+
+    # remove spaces
+    string = string.replace(" ", "")
+
+    # \frac1b or \frac12 --> \frac{1}{b} and \frac{1}{2}, etc. Even works with \frac1{72} (but not \frac{72}1). Also does a/b --> \\frac{a}{b}
+    string = _fix_fracs(string)
+
+    # manually change 0.5 --> \frac{1}{2}
+    if string == "0.5":
+        string = "\\frac{1}{2}"
+
+    # NOTE: X/Y changed to \frac{X}{Y} in dataset, but in simple cases fix in case the model output is X/Y
+    string = _fix_a_slash_b(string)
+
+    return string
+
+def is_equiv(str1, str2, verbose=False):
+    if str1 is None and str2 is None:
+        print("WARNING: Both None")
+        return True
+    if str1 is None or str2 is None:
+        return False
+
+    try:
+        ss1 = _strip_string(str1)
+        ss2 = _strip_string(str2)
+        if verbose:
+            print(ss1, ss2)
+        return ss1 == ss2
+    except:
+        return str1 == str2
+    
