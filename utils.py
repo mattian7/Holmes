@@ -290,10 +290,10 @@ def data_reader(args):
                 questions.append(q)
                 answers.append(a)
     
-    elif "math" in args.dataset:
-        p_list = os.listdir("dataset/MATH/test/prealgebra")
+    elif args.dataset.startswith("math"):
+        p_list = os.listdir(args.dataset_path)
         for p in p_list:
-            with open(os.path.join("dataset/MATH/test/prealgebra",p)) as f:
+            with open(os.path.join(args.dataset_path,p)) as f:
                 line = json.load(f)
                 q = line["problem"]
                 a = remove_boxed(last_boxed_only_string(line["solution"]))
