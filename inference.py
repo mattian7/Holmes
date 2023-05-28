@@ -1,5 +1,5 @@
+import sys
 import argparse
-import time
 from utils import *
 
 
@@ -7,13 +7,13 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Zero-shot-CoT")
     parser.add_argument("--dataset", type=str, default="gsm8k",
                         choices=["aqua", "gsm8k", "gsmic", "commonsensqa", "addsub", "multiarith",
-                                 "strategyqa", "svamp", "singleeq", "coin_flip", "last_letters"],
+                                 "strategyqa", "svamp", "singleeq", "coin_flip", "last_letters", "math_prealgebra"],
                         help="dataset used for experiment"
                         )
     parser.add_argument("--method", type=str, default="key_cot",
                         choices=["zero_shot_cot", "few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "tree_cot"], help="method"
                         )
-    parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3", "gpt3_chat", "gpt4"])
+    parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3", "gpt3_chat"])
     parser.add_argument("--random_seed", type=int, default=1, help="set random seed")
     parser.add_argument("--resume_id", type=int, default=0,
                         help="resume from which question id (current line number in the output file)"
@@ -33,7 +33,7 @@ def parse_arguments():
     parser.add_argument("--limit_dataset_size", type=int, default=0,
                         help="whether to limit test dataset size. if 0, we use all the samples in the dataset"
                         )
-    parser.add_argument("--api_time_interval", type=float, default=6,
+    parser.add_argument("--api_time_interval", type=float, default=8,
                         help="sleep between runs to avoid excedding the rate limit of openai api"
                         )
     parser.add_argument("--log_dir", type=str, default="./log/", help="log directory")
@@ -83,6 +83,10 @@ def parse_arguments():
     elif args.dataset == "last_letters":
         args.dataset_path = "./dataset/last_letters/last_letters.json"
         args.direct_answer_trigger = "\nTherefore, the answer is"
+    elif args.dataset.startswith("math"):
+        subtask = args.dataset[5:]
+        args.dataset_path = "./dataset/MATH/test/{}".format(subtask)
+        args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
 
@@ -96,7 +100,7 @@ def main():
     print('*****************************')
 
     fix_seed(args.random_seed)
-
+    #openai.api_key = "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"
     #print("OPENAI_API_KEY:")
     #print(os.getenv("OPENAI_API_KEY")[0:5] + '**********')
     decoder = Decoder()
@@ -145,30 +149,14 @@ def main():
 
             output_line["question"] = x
             output_line["gold_ans"] = y
-            key_error_flag = False
 
             if args.method == "key_cot":
 
                 q_stage12 = x + "A:"
-                while True:
-                    try:
-                        questions = decoder.key_cot_decode(fewshot_stage1, q_stage12, args, max_length)
-                        break
-                    except Exception as e:
-                        print("api Error:", e)
-                        time.sleep(10)
-                        continue
-
+                questions = decoder.key_cot_decode(fewshot_stage1, q_stage12, args, max_length)
                 output_line["q"] = questions
-                while True:
-                    try:
-                        keys = decoder.key_cot_decode(fewshot_stage2, q_stage12, args, max_length)
-                        break
-                    except Exception as e:
-                        print("api Error:", e)
-                        time.sleep(10)
-                        continue
 
+                keys = decoder.key_cot_decode(fewshot_stage2, q_stage12, args, max_length)
                 output_line["k"] = keys
 
                 clist = extract_keys(keys)
@@ -176,56 +164,22 @@ def main():
                 qlist = extract_questions(questions)
                 key_and_q = generate_kq(clist, qlist)
                 q_stage3 = x + "Hint: " + key_and_q + "\nA:"
-                while True:
-                    try:
-                        key_location = decoder.key_cot_decode(fewshot_stage3, q_stage3, args, max_length)
-                        break
-                    except Exception as e:
-                        print("api Error:", e)
-                        time.sleep(10)
-                        continue
-
+                key_location = decoder.key_cot_decode(fewshot_stage3, q_stage3, args, max_length)
                 key_location = recorrect_location(key_location)
                 location_dict = locate_key(key_location, len(qlist) - 1, len(clist))
                 q_stage5 = trans2math(clist, x_[0])
 
-                while True:
-                    try:
-                        trans2math_keys = decoder.key_cot_decode(fewshot_stage5, q_stage5, args, max_length)
-                        break
-                    except Exception as e:
-                        print("api Error:", e)
-                        time.sleep(10)
-                        continue
-
+                trans2math_keys = decoder.key_cot_decode(fewshot_stage5, q_stage5, args, max_length)
                 clist_new = extract_keys(trans2math_keys)
                 print(clist_new)
 
                 if len(clist_new) == len(clist):
-                    try:
-                        hint_stage4 = generate_hint(clist_new, qlist, location_dict)
-                    except KeyError as e:
-                        key_error_flag = True
+                    hint_stage4 = generate_hint(clist_new, qlist, location_dict)
                 else:
-                    try:
-                        hint_stage4 = generate_hint(clist, qlist, location_dict)
-                    except KeyError as e:
-                        key_error_flag = True
+                    hint_stage4 = generate_hint(clist, qlist, location_dict)
 
                 q_stage4 = x + "A:" + hint_stage4 + "\n"
-
-                if key_error_flag:
-                    answer = 'Occurred key error'
-                else:
-                    while True:
-                        try:
-                            answer = decoder.key_cot_decode(fewshot_stage4, q_stage4, args, max_length)
-                            break
-                        except Exception as e:
-                            print("api Error:", e)
-                            time.sleep(15)
-                            continue
-
+                answer = decoder.key_cot_decode(fewshot_stage4, q_stage4, args, max_length)
                 print(q_stage4)
                 print("\n")
                 print(answer)
@@ -250,14 +204,23 @@ def main():
                 print("\n")
             elif args.method == "few_shot_cot":
                 q = x + "A:"
-                answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
+                ck, ft = 0, 0
+                while ck == 0 and ft < 10:
+                    try:
+                        if ft > 0:
+                            decoder = Decoder()
+                        answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
+                        ck = 1
+                    except:
+                        print("The connection disconnects unexpectedly. Retrying to establish connection.")
+                        ft += 1
+                if ft == 10:
+                    sys.exit(-2)
 
-            if key_error_flag:
-                pred = 'Wrong answer because of wrong format answer of LLM'
-            else:
-                pred = answer_cleaning(args, answer)
+            pred = answer_cleaning(args, answer)
 
             output_line["pred_ans"] = pred
+            #output_line["wrap_que"] = x
 
             output_json = json.dumps(output_line)
             wp.write(output_json + '\n')
@@ -272,6 +235,8 @@ def main():
             y = y.replace(",", "")
             if pred == '':
                 correct = 0
+            if args.dataset.startswith("math"):
+                correct = int(is_equiv(pred, y))
             elif float(pred)==float(y):
                 correct = 1
             else:
