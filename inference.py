@@ -7,7 +7,9 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Zero-shot-CoT")
     parser.add_argument("--dataset", type=str, default="gsm8k",
                         choices=["aqua", "gsm8k", "gsmic", "commonsensqa", "addsub", "multiarith",
-                                 "strategyqa", "svamp", "singleeq", "coin_flip", "last_letters", "math_prealgebra"],
+                                 "strategyqa", "svamp", "singleeq", "coin_flip", "last_letters", "math_prealgebra",
+                                 "math_algebra", "math_counting_and_probability", "math_geometry", "intermediate_algebra",
+                                 "math_number_theory", "math_precalculus"],
                         help="dataset used for experiment"
                         )
     parser.add_argument("--method", type=str, default="key_cot",
