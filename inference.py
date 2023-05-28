@@ -87,7 +87,7 @@ def parse_arguments():
         args.direct_answer_trigger = "\nTherefore, the answer is"
     elif args.dataset.startswith("math"):
         subtask = args.dataset[5:]
-        args.dataset_path = "./dataset/MATH/test/{}".format(subtask)
+        args.dataset_path = "./dataset/MATH/test/{}/{}.json".format(subtask, subtask)
         args.direct_answer_trigger = "\nTherefore, the answer is"
     else:
         raise ValueError("dataset is not properly defined ...")
