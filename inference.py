@@ -234,7 +234,8 @@ def main():
 
             # Checking answer ...
             # correct = (np.array([pred]) == np.array([y])).sum().item()
-            y = y.replace(",", "")
+            if not args.dataset.startswith("math"):
+                y = y.replace(",", "")
             if pred == '':
                 correct = 0
             if args.dataset.startswith("math"):
