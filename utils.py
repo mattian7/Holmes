@@ -392,7 +392,8 @@ def answer_cleaning(args, pred, must_choice=False):
         pred = [pred]
     elif args.dataset.startswith("math"):
         print(pred)
-        boxed_answer = re.findall(r"\\boxed{.*?}", pred)
+        pat = re.compile(r"\\boxed{.*}")
+        boxed_span = pat.search(pred, 1)
         if answer_flag:
             if pred[-1] == ".":
                 pred = pred[:-1]
@@ -402,8 +403,9 @@ def answer_cleaning(args, pred, must_choice=False):
                 span = span.span()
                 pred = pred[span[0]+7:span[1]-1]
             pred = [pred]
-        elif len(boxed_answer) > 0:
-            pred = [boxed_answer[-1][7:-1]]
+        elif boxed_span:
+            span = boxed_span.span()
+            pred = [pred[span[0]+7:span[1]-1]]
         else:
             pred = pred.replace(",", "")
             pred = [s for s in re.findall(r'-?\d+\.?\d*', pred)]
