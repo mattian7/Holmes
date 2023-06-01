@@ -2,6 +2,7 @@ from statistics import mean
 from torch.utils.data import Dataset
 import openai
 import os
+import sys
 import json
 import glob
 import torch
@@ -11,8 +12,8 @@ import re
 import multiprocessing
 import time
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = ""
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+# openai.api_key = ""
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -61,23 +62,34 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
     # gpt-3.5-turbo
     else:
         if args.dataset.startswith("math"):
-            format_prompt = "According to the given prompts and answer the final question Q. You should append a sentence like \"The answer is [Your Answer].\" at the end of your output.\n"
+            format_prompt = """Answer the final question Q according to the given prompts.
+              You should append a sentence like \"The answer is [Your Answer].\" at the end of your output.\n"""
         else:
             format_prompt = ""
-        # print(fewshot + "\nQ:" + question)
-        response = openai.ChatCompletion.create(
-            model=engine,
-            messages=[
-                {"role": "user", "content": format_prompt + fewshot + "\nQ:" + question}
-            ],
-            max_tokens=max_length,
-            temperature=args.temperature,
-            top_p=1,
-            n=args.num_answers,
-            frequency_penalty=0,
-            presence_penalty=0,
-            stop=None
-        )
+        content = format_prompt + fewshot + "\n" + question
+        ck, ft = 0, 0
+        while ck == 0 and ft < 10:
+            try:
+                response = openai.ChatCompletion.create(
+                    model=engine,
+                    messages=[
+                        {"role": "user", "content": content}
+                    ],
+                    max_tokens=max_length,
+                    temperature=args.temperature,
+                    top_p=1,
+                    n=args.num_answers,
+                    frequency_penalty=0,
+                    presence_penalty=0,
+                    stop=None
+                )
+                ck = 1
+            except:
+                print("The connection disconnects unexpectedly. Retrying to establish connection.")
+                ft += 1
+        if ft == 10:
+            sys.exit(-2)
+        
         if args.num_answers != 1:
             answers = []
             for i in range(args.num_answers):
@@ -145,6 +157,9 @@ def create_fewshot(args, demo_path):
             index_list = list(range(len(x)))
             for i in index_list:
                 demo_text += x[i] + " " + y[i] + "\n\n"
+    elif args.method == "zero_shot_ps+":
+        with open(demo_path, encoding = "utf-8") as f:
+            demo_text = f.read()
     else:
         demo_text = ""
     return demo_text
@@ -291,10 +306,9 @@ def data_reader(args):
                 answers.append(a)
     
     elif args.dataset.startswith("math"):
-        p_list = os.listdir(args.dataset_path)
-        for p in p_list:
-            with open(os.path.join(args.dataset_path,p)) as f:
-                line = json.load(f)
+        with open(args.dataset_path) as f:
+            json_data = json.load(f)
+            for line in json_data:
                 q = line["problem"]
                 a = remove_boxed(last_boxed_only_string(line["solution"]))
                 questions.append(q)
@@ -369,7 +383,7 @@ def answer_cleaning(args, pred, must_choice=False):
         preds = re.split(r"[Tt]he answer is ", pred)
         answer_flag = True if len(preds) > 1 else False
         pred = preds[-1]
-
+    print(pred)
     if args.dataset in ("aqua", "commonsensqa"):
         pred = re.findall(r'A|B|C|D|E', pred)
     elif args.dataset == "bigbench_date":
@@ -423,7 +437,7 @@ def answer_cleaning(args, pred, must_choice=False):
             else:
                 # choose the last element in list ...
                 pred = pred[-1]
-        elif args.method in ("zero_shot", "zero_shot_cot"):
+        elif args.method in ("zero_shot", "zero_shot_cot", "zero_shot_ps+"):
             # choose the first element in list ...
             pred = pred[0]
         else:
