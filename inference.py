@@ -8,12 +8,12 @@ def parse_arguments():
     parser.add_argument("--dataset", type=str, default="gsm8k",
                         choices=["aqua", "gsm8k", "gsmic", "commonsensqa", "addsub", "multiarith",
                                  "strategyqa", "svamp", "singleeq", "coin_flip", "last_letters", "math_prealgebra",
-                                 "math_algebra", "math_counting_and_probability", "math_geometry", "intermediate_algebra",
+                                 "math_algebra", "math_counting_and_probability", "math_geometry", "math_intermediate_algebra",
                                  "math_number_theory", "math_precalculus"],
                         help="dataset used for experiment"
                         )
     parser.add_argument("--method", type=str, default="key_cot",
-                        choices=["zero_shot_cot", "few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "tree_cot"], help="method"
+                        choices=["zero_shot_cot", "few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "tree_cot", "zero_shot_ps+"], help="method"
                         )
     parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3", "gpt3_chat"])
     parser.add_argument("--random_seed", type=int, default=1, help="set random seed")
@@ -29,7 +29,7 @@ def parse_arguments():
     parser.add_argument("--max_length_cot", type=int, default=512,
                         help="maximum length of output tokens by model for reasoning extraction"
                         )
-    parser.add_argument("--max_length_direct", type=int, default=32,
+    parser.add_argument("--max_length_direct", type=int, default=512,
                         help="maximum length of output tokens by model for answer extraction"
                         )
     parser.add_argument("--limit_dataset_size", type=int, default=0,
@@ -102,7 +102,7 @@ def main():
     print('*****************************')
 
     fix_seed(args.random_seed)
-    #openai.api_key = "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"
+    #openai.api_key = ""
     #print("OPENAI_API_KEY:")
     #print(os.getenv("OPENAI_API_KEY")[0:5] + '**********')
     decoder = Decoder()
@@ -125,7 +125,7 @@ def main():
         fewshot_stage1 = create_fewshot(args, demo_path)
         demo_path = args.demo_path + "2"
         fewshot_stage2 = create_fewshot(args, demo_path)
-    elif args.method == "few_shot_cot":
+    elif (args.method == "few_shot_cot") or (args.method == "zero_shot_ps+"):
         demo_path = args.demo_path
         fewshot_stage1 = create_fewshot(args, demo_path)
     else:
@@ -206,19 +206,13 @@ def main():
                 print("\n")
             elif args.method == "few_shot_cot":
                 q = x + "A:"
-                ck, ft = 0, 0
-                while ck == 0 and ft < 10:
-                    try:
-                        if ft > 0:
-                            decoder = Decoder()
-                        answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
-                        ck = 1
-                    except:
-                        print("The connection disconnects unexpectedly. Retrying to establish connection.")
-                        ft += 1
-                if ft == 10:
-                    sys.exit(-2)
-
+                answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
+            elif args.method == "zero_shot_ps+":
+                q = x + "A: " + fewshot_stage1
+                answer = decoder.key_cot_decode("", q, args, max_length)
+                z = "\n".join([q, answer, args.direct_answer_trigger])
+                answer = decoder.key_cot_decode("", z, args, max_length)
+  
             pred = answer_cleaning(args, answer)
 
             output_line["pred_ans"] = pred
@@ -236,10 +230,10 @@ def main():
             # correct = (np.array([pred]) == np.array([y])).sum().item()
             if not args.dataset.startswith("math"):
                 y = y.replace(",", "")
-            if pred == '':
-                correct = 0
             if args.dataset.startswith("math"):
                 correct = int(is_equiv(pred, y))
+            elif pred == '':
+                correct = 0
             elif float(pred)==float(y):
                 correct = 1
             else:
