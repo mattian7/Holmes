@@ -15,7 +15,7 @@ def parse_arguments():
     parser.add_argument("--method", type=str, default="key_cot",
                         choices=["zero_shot_cot", "few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "tree_cot", "zero_shot_ps+"], help="method"
                         )
-    parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3", "gpt3_chat"])
+    parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3-003", "gpt3_chat", "gpt3-002"])
     parser.add_argument("--random_seed", type=int, default=1, help="set random seed")
     parser.add_argument("--resume_id", type=int, default=0,
                         help="resume from which question id (current line number in the output file)"
@@ -50,9 +50,6 @@ def parse_arguments():
         args.direct_answer_trigger = "\nTherefore, among A through E, the answer is"
     elif args.dataset == "gsm8k":
         args.dataset_path = "./dataset/grade-school-math/test.jsonl"
-        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
-    elif args.dataset == "gsmic":
-        args.dataset_path = "./dataset/GSM-irrelevant-context/test.jsonl"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "commonsensqa":
         args.dataset_path = "./dataset/CommonsenseQA/dev_rand_split.jsonl"
@@ -89,6 +86,9 @@ def parse_arguments():
         subtask = args.dataset[5:]
         args.dataset_path = "./dataset/MATH/test/{}/{}.json".format(subtask, subtask)
         args.direct_answer_trigger = "\nTherefore, the answer is"
+    elif args.dataset == "gsmic":
+        args.dataset_path = "./dataset/GSM-IC/test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     else:
         raise ValueError("dataset is not properly defined ...")
 
@@ -205,7 +205,7 @@ def main():
                 print(answer)
                 print("\n")
             elif args.method == "few_shot_cot":
-                q = x + "A:"
+                q = x + "A: "
                 answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
             elif args.method == "zero_shot_ps+":
                 q = x + "A: " + fewshot_stage1
