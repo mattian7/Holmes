@@ -7,13 +7,14 @@ import json
 import glob
 import torch
 import numpy as np
+import pandas as pd
 import random
 import re
 import multiprocessing
 import time
 
-# openai.api_key = os.getenv("OPENAI_API_KEY")
-# openai.api_key = ""
+openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = ""
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -33,25 +34,37 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
 
     # https://beta.openai.com/account/api-keys
 
-    if args.model == 'gpt3':
+    if args.model == 'gpt3-003':
+        engine = "text-davinci-003"
+    elif args.model == 'gpt3-002':
         engine = "text-davinci-002"
     elif args.model == 'gpt3_chat':
         engine = "gpt-3.5-turbo"
     else:
         raise ValueError("model is not properly defined ...")
 
-    if engine == 'text-davinci-002':
-        response = openai.Completion.create(
-            model=engine,
-            prompt=fewshot + "\n" + question,
-            max_tokens=max_length,
-            temperature=args.temperature,
-            top_p=1,
-            n=args.num_answers,
-            frequency_penalty=0,
-            presence_penalty=0,
-            stop=None
-        )
+    if engine == 'text-davinci-003' or engine == 'text-davinci-002':
+        ck, ft = 0, 0
+        while ck == 0 and ft < 10:
+            try:
+                response = openai.Completion.create(
+                model=engine,
+                prompt=fewshot + "\n" + question,
+                max_tokens=max_length,
+                temperature=args.temperature,
+                top_p=1,
+                n=args.num_answers,
+                frequency_penalty=0,
+                presence_penalty=0,
+                stop=None
+            )
+                ck = 1
+            except:
+                print("The connection disconnects unexpectedly. Retrying to establish connection.")
+                ft += 1
+        if ft == 10:
+            sys.exit(-2)
+        
         if args.num_answers != 1:
             answers = []
             for i in range(args.num_answers):
@@ -314,6 +327,15 @@ def data_reader(args):
                 questions.append(q)
                 answers.append(a)
 
+    elif args.dataset == "gsmic":
+        with open(args.dataset_path) as f:
+            json_data = json.load(f)
+            for line in json_data:
+                q = line["new_question"]
+                a = line["answer"]
+                questions.append(q)
+                answers.append(a)
+
     else:
         raise ValueError("dataset is not properly defined ...")
 
@@ -390,7 +412,7 @@ def answer_cleaning(args, pred, must_choice=False):
         pred = re.findall(r'A|B|C|D|E|F', pred)
     elif args.dataset in ("object_tracking"):
         pred = re.findall(r'A|B|C', pred)
-    elif args.dataset in ("gsm8k", "addsub", "multiarith", "svamp", "singleeq"):
+    elif args.dataset in ("gsm8k", "addsub", "multiarith", "svamp", "singleeq", "gsmic"):
         if must_choice:
             pred = re.findall(r'A|B|C|D', pred)
         else:
@@ -791,4 +813,45 @@ def is_equiv(str1, str2, verbose=False):
         return ss1 == ss2
     except:
         return str1 == str2
+    
+
+# Data sampling for GSM-IC dataset
+def sample(df, n_sample = 10):
+    groups = df.groupby(["original_question"])
+    sampled_data = []
+    for _, group in groups:
+        sampled_data.extend(random.choices(group.to_dict("records"), k = n_sample))
+    return sampled_data
+
+def GSMICSampling(rseed = 42):
+    # Reading data from these paths
+    path1 = "./dataset/GSM-IC/GSM-IC_2step.json"
+    path2 = "./dataset/GSM-IC/GSM-IC_mstep.json"
+    data1 = []
+    data2 = []
+    with open(path1, "r+", encoding="utf8") as f:
+        json_data = json.load(f)
+        data1.extend(json_data)
+    with open(path2, "r+", encoding="utf8") as f:
+        json_data = json.load(f)
+        data2.extend(json_data)
+    print(len(data1), len(data2))
+    df1 = pd.DataFrame(data1)
+    df2 = pd.DataFrame(data2)
+    df1.head()
+
+    random.seed(rseed)
+    # save 2-step test data
+    sampled_data_1 = sample(df1)
+    len(sampled_data_1)
+    with open("./dataset/GSM-IC/test_2step.json", "w", encoding="utf8") as f:
+        json.dump(sampled_data_1, f, indent = 4)
+    # save multi-step test data
+    sampled_data_2 = sample(df2)
+    len(sampled_data_2)
+    with open("./dataset/GSM-IC/test_mstep.json", "w", encoding="utf8") as f:
+        json.dump(sampled_data_2, f, indent = 4)
+    # save all test data
+    with open("./dataset/GSM-IC/test.json", "w", encoding="utf8") as f:
+        json.dump(sampled_data_1 + sampled_data_2, f, indent = 4)
     
