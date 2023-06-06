@@ -1,0 +1,36 @@
+{
+    "demo": [
+        {
+            "question": "Mary is baking a cake. The recipe calls for 14 cups of flour and 6 cups of sugar. She already put in 5 cups of flour. How many more cups of flour than cups of sugar does she need to add now?",
+            "answer": "Mary is baking a cake. The recipe calls for 14 cups of flour and 6 cups of sugar. She already put in 5 cups of flour. How many more cups of flour than cups of sugar does she need to add now?"
+        },
+        {
+            "question": "Tiffany was collecting cans for recycling. On monday she had 8 bags of cans. The next day she found 7 more bags worth of cans. How many more bags did she have on monday than she found on the next day?",
+            "answer": "Tiffany was collecting cans for recycling. On monday she had 8 bags of cans. The next day she found 7 more bags worth of cans. How many more bags did she have on monday than she found on the next day?"
+        },
+        {
+            "question": "Baker sold 8 cakes. If he had made 40 cakes initially How many more cakes did baker make than those he sold?",
+            "answer": "Baker sold 8 cakes. He had made 40 cakes initially. How many more cakes did baker make than those he sold?"
+        },
+        {
+            "question": "Baker made 173 cakes. He bought 103 new cakes and sold 86 cakes. How many cakes does baker still have?",
+            "answer": "Baker made 173 cakes. He bought 103 new cakes and sold 86 cakes. How many cakes does baker still have?"
+        },
+        {
+            "question": "Jake has 84 more apples and 10 fewer peaches than Steven. Steven has 13 peaches and 52 apples. How many peaches does Jake have?",
+            "answer": "Jake has 10 fewer peaches than Steven. Steven has 13 peaches. How many peaches does Jake have?"
+        },
+        {
+            "question": "Jake has 7 fewer peaches than Steven and 8 more peaches than Jill. Steven has 17 peaches. How many peaches does Jill have?",
+            "answer": "Jake has 7 fewer peaches than Steven and 8 more peaches than Jill. Steven has 17 peaches. How many peaches does Jill have?"
+        },
+        {
+            "question": "Every day Ryan spends 3 hours on learning english and some more hours on learning chinese. If he spends a total of 4 hours on learning english and chinese everyday How many hours does he spend on learning chinese?",
+            "answer": "Every day Ryan spends 3 hours on learning english and some more hours on learning chinese. He spends a total of 4 hours on learning english and chinese everyday. How many hours does he spend on learning chinese?"
+        },
+        {
+            "question": "Paul had 115 books. He sold 78 books in a garage sale. How many books does he have left with him?",
+            "answer": "Paul had 115 books. He sold 78 books in a garage sale. How many books does he have left with him?"
+        }
+    ]
+}

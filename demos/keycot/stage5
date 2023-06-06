@@ -1,0 +1,24 @@
+{
+    "demo": [
+        {
+            "question": "Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Mohamed is currently twice 30 years old.' 2.'Four years ago, Kody was only half as old as Mohamed.'\nA:",
+            "answer": "1.\"Mohamed is currently 2 * 30 years old.\"\n2.\"Four years ago, Kody's age = 1/2 * Mohamed's age.\""
+        },
+        {
+            "question": "Carla bought 2 bags of mini peanut butter cups on clearance. Each bag was $6.00 but was 75% off. How much did she spend on 2 bags of candy?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Each bag was $6.00 but was 75% off.'\nA:",
+            "answer": "1.\"Each bag cost $6.00 * (1 - 0.75).\""
+        },
+        {
+            "question": "If Pam is currently twice as young as Rena is, and in 10 years Rena will be 5 years older than her, how old is Pam now?\nQ:",
+            "division": "Translate following sentences into equation: 1.'In 10 years Rena will be 5 years older than Pam.' 2.'Pam is currently twice as young as Rena is.'\nA:",
+            "answer": "1.\"10 years later, Rena's age = Pam's age +5.\"\n2.\"Pam's age = 1/2 * Rena's age.\""
+        },
+        {
+            "question": "On a moonless night, three fireflies danced in the evening breeze. They were joined by four less than a dozen more fireflies, before two of the fireflies flew away. How many fireflies remained?\nQ:",
+            "division": "Translate following sentences into equation: 1.'They were joined by four less than a dozen more fireflies.' 2.'before two of the fireflies flew away'\nA:",
+            "answer": "1.\"The total number of fireflies + 4.\"\n2.\"The total number of fireflies - 2.\""
+        }
+    ]
+}

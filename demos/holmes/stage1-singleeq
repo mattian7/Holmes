@@ -1,0 +1,36 @@
+{
+    "demo": [
+        {
+            "question": "A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?",
+            "answer": "A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?"
+        },
+        {
+            "question": "There are 7 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?",
+            "answer": "There are 7 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?"
+        },
+        {
+            "question": "A pet store has 8 bird cages. If each cage has 2 parrots and 7 parakeets in it, how many birds does the pet store have total?",
+            "answer": "A pet store has 8 bird cages. Each cage has 2 parrots and 7 parakeets in it. How many birds does the pet store have total?"
+        },
+        {
+            "question": "Joan 's high school played 864 baseball games this year, 128 of the games were played at night . She attended 395 games . How many baseball games did Joan miss ?",
+            "answer": "Joan 's high school played 864 baseball games this year. She attended 395 games. How many baseball games did Joan miss?"
+        },
+        {
+            "question": "Joan picked 37 oranges, and Sara picked 10 oranges. Alyssa picked 30 pears. How many oranges were picked in total?",
+            "answer": "Joan picked 37 oranges, and Sara picked 10 oranges. How many oranges were picked in total?"
+        },
+        {
+            "question": "Mary found 2 seashells and Keith found 5 seashells on the beach . When they cleaned them , they discovered that 9 were cracked . How many seashells did they find together ?",
+            "answer": "Mary found 2 seashells and Keith found 5 seashells on the beach. How many seashells did they find together?"
+        },
+        {
+            "question": "Each chocolate bar in a box cost $4. If a box had 8 bars total and Emily sold all but 3 bars, how much money would she have made?",
+            "answer": "Each chocolate bar in a box cost $4. A box had 8 bars total and Emily sold all but 3 bars. How much money would she have made?"
+        },
+        {
+            "question": "Fred has 10 red balloons , Sam has 46 red balloons , and Dan has 16 red balloons. The balloons cost 10 dollars. How many red balloons do they have in all?",
+            "answer": "Fred has 10 red balloons, Sam has 46 red balloons, and Dan has 16 red balloons. How many red balloons do they have in all?"
+        }
+    ]
+}

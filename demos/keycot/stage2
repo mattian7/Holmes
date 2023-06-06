@@ -1,19 +1,32 @@
 {
     "demo": [
         {
-            "question": "Q: Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nHint:",
-            "hint": "To answer the final question \"How old is Kody?\", we need to notice these conditions: 1.\"Not this year, but four years ago, Kody was only half as old as Mohamed.\", 2.\"This year Mohamed is currently twice 30 years old, not 30 years old.\"; Having these conditions, then we need to know these sub-questions: 1.\"How old was Mohamed four years ago?\", 2.\"How old was Kody four years ago?\";\nA:",
-            "answer": "condition 1 is the key information for sub-question 2; condition 2 is the key information for sub question 1;"
+            "question": "Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?\nA:",
+            "answer": "We need to notice: 1.\"There are 15 trees in the grove.\", 2.\"After they are done, there will be 21 trees.\"."
         },
         {
-            "question": "Q: Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?\nHint:",
-            "hint": "To answer the final question \"How many popsicle sticks can they use for their Art class activity?\", we need to notice these conditions: 1.\"Sam has thrice as many as Sid.\", 2.\"Sid has twice as many as Steve.\", 3.\"Steve has 12 popsicle sticks.\"; Having these conditions, then we need to know these sub-questions: 1.\"How many popsicle sticks does Sid have?\", 2.\"How many popsicle sticks does Sam have?\";\nA:",
-            "answer": "condition 1 is the key information for sub-question 2; condition 2 is the key information for sub question 1; condition 3 is the key information for sub question 1;"
+            "question": "Q: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?\nA:",
+            "answer": "We need to notice: 1.\"there are 3 cars in the parking lot.\", 2.\"2 more cars arrive.\"."
         },
         {
-            "question": "Q: Heather's razors come 4 to a pack and cost $4.00 a pack. They are currently on sale for buy one get one free. She also has a $2.00 coupon. How much will each individual razor cost, in cents, after the discount if she buys 2 packs of razors?\nHint:",
-            "hint": "To answer the question \"How much will each individual razor cost, in cents, after the discount if she buys 2 packs of razors?\", we need to notice these conditions: 1.\"Heather's razors come 4 to a pack and cost $4.00 a pack.\", 2.\"They are currently on sale for buy one get one free.\", 3.\"She also has a $2.00 coupon.\", 4.\"Heather buys 2 packs of razors.\"; Having these conditions, then we need to know these sub-questions: 1.\"How many razors will Heather get in total after the discount?\", 2.\"What is the total cost of the razors after the discount?\";\nA:",
-            "answer": "condition 1 is the key information for sub-question 1; condition 1 is the key information for sub-question 2; condition 2 is the key information for sub question 2; condition 3 is the key information for sub question 2; condition 4 is the key information for sub question 1;"
+            "question": "Q: Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?\nA:",
+            "answer": "We need to notice: 1.\"Leah had 32 chocolates.\", 2.\"her sister had 42 chocolates.\"."
+        },
+        {
+            "question": "Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?\nA:",
+            "answer": "We need to notice: 1.\"Jason had 20 lollipops.\", 2.\"Now Jason has 12 lollipops.\"."
+        },
+        {
+            "question": "Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?\nA:",
+            "answer": "We need to notice: 1.\"Shawn has five toys.\", 2.\"For Christmas, he got two toys each from his mom and dad.\"."
+        },
+        {
+            "question": "Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?\nA:",
+            "answer": "We need to notice: 1.\"There were nine computers in the server room.\", 2.\"Five more computers were installed each day, from monday to thursday.\"."
+        },
+        {
+            "question": "Q: Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?\nA:",
+            "answer": "We need to notice: 1.\"Michael had 58 golf balls.\", 2.\"On tuesday, he lost 23 golf balls.\", 3.\"On wednesday, he lost 2 more.\"."
         }
     ]
 }

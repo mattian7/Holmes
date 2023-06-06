@@ -1,0 +1,36 @@
+{
+    "demo": [
+        {
+            "question": "Zachary did 46 push-ups and 58 crunches in gym class today . David did 38 more push-ups but 62 less crunches than zachary . How many more crunches than push-ups did Zachary do ?",
+            "answer": "Zachary did 58 crunches in gym class today. David did 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?"
+        },
+        {
+            "question": "Dave had 19 apps and 18 files on his phone . After deleting some apps and files he had 6 apps and 15 files left . How many more files than apps does he have left on the phone ?",
+            "answer": "After deleting some apps and files he had 6 apps and 15 files left. How many more files than apps does he have left on the phone?"
+        },
+        {
+            "question": "There are 141 pots . Each pot has 71 flowers and 91 sticks in it . How many flowers are there in all ?",
+            "answer": "There are 141 pots. Each pot has 71 flowers in it. How many flowers are there in all?"
+        },
+        {
+            "question": "Mary is baking a cake . The recipe calls for 12 cups of flour and 5 cups of sugar . She already put in some cups of flour . If she still needs 2 more cups of flour . How many cups of flour did she put in ?",
+            "answer": "Mary is baking a cake. The recipe calls for 12 cups of flour. She already put in some cups of flour. If she still needs 2 more cups of flour. How many cups of flour did she put in?"
+        },
+        {
+            "question": "Joan 's high school played 864 baseball games this year, 128 of the games were played at night . She attended 395 games . How many baseball games did Joan miss ?",
+            "answer": "Joan 's high school played 864 baseball games this year. She attended 395 games. How many baseball games did Joan miss?"
+        },
+        {
+            "question": "Joan picked 37 oranges, and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ?",
+            "answer": "Joan picked 37 oranges, and Sara picked 10 oranges. How many oranges were picked in total?"
+        },
+        {
+            "question": "Mary found 2 seashells and Keith found 5 seashells on the beach . When they cleaned them , they discovered that 9 were cracked . How many seashells did they find together ?",
+            "answer": "Mary found 2 seashells and Keith found 5 seashells on the beach. How many seashells did they find together?"
+        },
+        {
+            "question": "Fred has 10 red balloons , Sam has 46 red balloons , and Dan has 16 red balloons . The balloons cost 10 dollars. How many red balloons do they have in all ?",
+            "answer": "Fred has 10 red balloons, Sam has 46 red balloons, and Dan has 16 red balloons. How many red balloons do they have in all?"
+        }
+    ]
+}

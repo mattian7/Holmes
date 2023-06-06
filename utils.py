@@ -11,7 +11,7 @@ import multiprocessing
 import time
 
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key="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"
+openai.api_key="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"
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -43,7 +43,7 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
     if engine == 'text-davinci-002':
         response = openai.Completion.create(
             model=engine,
-            prompt=fewshot + "\n" + question,
+            prompt=fewshot + question,
             max_tokens=max_length,
             temperature=args.temperature,
             top_p=1,
@@ -64,7 +64,8 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
         response = openai.ChatCompletion.create(
             model=engine,
             messages=[
-                {"role": "user", "content": fewshot + "\nQ:" + question}
+                {"role": "system", "content": "Follow the given examples and answer the question."},
+                {"role": "user", "content": fewshot + question}
             ],
             max_tokens=max_length,
             temperature=args.temperature,
@@ -141,6 +142,45 @@ def create_fewshot(args, demo_path):
             index_list = list(range(len(x)))
             for i in index_list:
                 demo_text += x[i] + " " + y[i] + "\n\n"
+    elif args.method == "holmes":
+        with open(demo_path, encoding="utf-8") as f:
+            json_data = json.load(f)
+            json_data = json_data["demo"]
+            demo_text = ""
+            for line in json_data:
+                x.append(line["question"])
+                y.append(line["answer"])
+                if ("stage4" in demo_path):
+                    z.append(line["division"])
+                # elif ("stage2" in demo_path):
+                #     z.append(line["hint"])
+            index_list = list(range(len(x)))
+            if ("stage1" in demo_path):
+                for i in index_list:
+                    demo_text += 'Q: Rewrite this problem by removing information which is unnecessary for solving the final question: \"'+x[i]+'\"\nA: ' + y[i] + "\n\n"
+            elif ("stage4" in demo_path):
+                for i in index_list:
+                    demo_text += x[i] + " " + z[i] + " " + y[i] + "\n\n"
+            else:
+                for i in index_list:
+                    demo_text += x[i] + " " + y[i] + "\n\n"
+    elif args.method == "holmes+":
+        with open(demo_path, encoding="utf-8") as f:
+            json_data = json.load(f)
+            json_data = json_data["demo"]
+            demo_text = ""
+            for line in json_data:
+                x.append(line["question"])
+                y.append(line["answer"])
+                if "stage2" in demo_path:
+                    z.append(line["division"])
+            index_list = list(range(len(x)))
+            if "stage2" in demo_path:
+                for i in index_list:
+                    demo_text += x[i] + " " + z[i] + " " + y[i] + "\n\n"
+            else:
+                for i in index_list:
+                    demo_text += x[i] + " " + y[i] + "\n\n"
     else:
         demo_text = ""
     return demo_text
@@ -351,7 +391,7 @@ def answer_cleaning(args, pred, must_choice=False):
     preds = pred.split("\n")
     pred = preds[-1]
 
-    if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot"):
+    if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot", "holmes", "holmes+"):
         preds = pred.split("The answer is")
         answer_flag = True if len(preds) > 1 else False
         pred = preds[-1]
@@ -383,7 +423,7 @@ def answer_cleaning(args, pred, must_choice=False):
     if len(pred) == 0:
         pred = ""
     else:
-        if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot"):
+        if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot", "holmes", "holmes+"):
             if answer_flag:
                 # choose the first element in list ...
                 pred = pred[0]
@@ -517,7 +557,7 @@ def generate_kq(condition_list, question_list):
 
 
 def generate_hint(condition_list, question_list, location_dict_key, location_dict_answer):
-    hint = "Let's solve one by one:"
+    hint = "Only rely on hints to solve problems one by one, ended with 'the answer is ...':"
     for i in range(len(question_list)):
         hint += " " + str(i+1) + "." + question_list[i]
         if (len(location_dict_key[i+1]) == 0) & (len(location_dict_answer[i+1]) == 0):
@@ -584,12 +624,13 @@ def extract_question(sub_q):
     subq_list = []
     for q in questions:
         subq_list.append(q)
-    subq_list.append(final_question[0])
+    if len(final_question)!=0:
+        subq_list.append(final_question[0])
     return subq_list
 
 
 def trans2math(key_list, question):
-    target_question = question + '\nQ: Translate following sentences into equation:'
+    target_question = question + '\nQuestion: Translate following sentences into equation:'
     for i in range(len(key_list)):
         target_question += " " + str(i+1) + ".'" + key_list[i] + "'"
 

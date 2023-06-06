@@ -25,8 +25,8 @@
             "answer": "We need to notice: 1.\"Paul had 108 books.\", 2.\"After selling some books in a garage sale he had 66 books left.\", 3.\"The number of pens is irrelevant to this question.\"."
         },
         {
-            "question": "Q: Julia played tag with 17 kids on monday, 15 kids on tuesday and 2 kids on wednesday. How many kids did she play with altogether?\nA:",
-            "answer": "We need to notice: 1.\"Julia played tag with 17 kids on monday.\", 2.\"Julia played tag with 15 kids on tuesday.\", 3.\"Julia played tag with 2 kids on wednesday.\"."
+            "question": "Q: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
+            "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\", 3.\"The dollars she spent is irrelevant to this question.\"."
         }
     ]
 }

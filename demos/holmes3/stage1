@@ -1,0 +1,92 @@
+{
+    "demo1": [
+        {
+            "question": "Question: If Ann is 9 years old and her brother is twice her age, how old will her brother be in 3 years?\nA:",
+            "answer": "We need to notice: 1.\"Ann is 9 years old and her brother is twice her age.\"."
+        },
+        {
+            "question": "Question: Jack decides to visit a museum 150 miles from home. He drives 75 mph there and back. He spends 6 hours at the museum. How long is he gone from home?\nA:",
+            "answer": "We need to notice: 1.\"Jack decides to visit a museum 150 miles from home.\", 2.\"He drives 75 mph there and back.\", 3.\"He spends 6 hours at the museum.\"."
+        },
+        {
+            "question": "Question: Robert had 3 pounds of candy, Cindy had 5 pounds of candy, and Aaron had 4 pounds of candy after Halloween. If they decide to pool and share their candy equally with each other, how much candy would each of them have?\nA:",
+            "answer": "We need to notice: 1.\"Robert had 3 pounds of candy, Cindy had 5 pounds of candy, and Aaron had 4 pounds of candy.\", 2.\"They decide to pool and share their candy equally.\"."
+        },
+        {
+            "question": "Question: Susan made 100 cookies for Christmas and was going to equally divide them between her 6 nephews. Before Susan could package them, her husband snuck 4 cookies for himself. How many cookies will each of Susan’s nephews get?\nA:",
+            "answer": "We need to notice: 1.\"Susan made 100 cookies.\", 2.\"Susan was going to equally divide cookies between her 6 nephews.\", 3.\"Before Susan could package them, her husband snuck 4 cookies for himself.\"."
+        },
+        {
+            "question": "Question: Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long. He does this 3 times a week. How many hours does he spend on TV and reading in 4 weeks?\nA:",
+            "answer": "We need to notice: 1.\"Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long.\", 2.\"He does this 3 times a week.\"."
+        },
+        {
+            "question": "Question: Tom buys a bedroom set for $3000. He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set. He then has to pay 10% a month for the bedroom set. How much does he have to pay per month?\nA:",
+            "answer": "We need to notice: 1.\"Tom buys a bedroom set for $3000.\", 2.\"He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set.\", 3.\"He then has to pay 10% a month for the bedroom set.\"."
+        },
+        {
+            "question": "Question: If a classroom has 3 times as many girls as they do boys, and 1/10 as many nongendered children as they do boys, and the classroom has 30 boys. How many total children does it have?\nA:",
+            "answer": "We need to notice: 1.\"A classroom has 3 times as many girls as they do boys.\", 2.\"1/10 as many nongendered children as they do boys.\", 3.\"The classroom has 30 boys.\"."
+        }
+    ],
+    "demo": [
+        {
+            "question": "Question: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?\nA:",
+            "answer": "We need to notice: 1.\"Zachary did 46 push-ups.\", 2.\"Zachary did 58 push-ups.\"."
+        },
+        {
+            "question": "Question: There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?\nA:",
+            "answer": "We need to notice: 1.\"You have read 13 of the books.\", 2.\"You are yet to read 8 books.\", 3.\"The sum of read and unread books is equal to how many books are here.\"."
+        },
+        {
+            "question": "Question: Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. If he learns for 5 days, how many hours does he spend on learning english and chinese in all?\nA:",
+            "answer": "We need to notice: 1.\"Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese.\", 2.\"He learns for 5 days.\"."
+        },
+        {
+            "question": "Question: Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends. How many cakes did each person eat?\nA:",
+            "answer": "We need to notice: 1.\"Matthew had 30 cakes.\", 2.\"Matthew gave equal numbers of crackers and cakes to his 2 friends.\"."
+        },
+        {
+            "question": "Question: Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. How many letters did jack receive in the day?\nA:",
+            "answer": "We need to notice: 1.\"Jack received 6 letters in the morning.\", 2.\"Jack received 7 letters in the afternoon.\"."
+        },
+        {
+            "question": "Question: Paul had 108 books and 55 pens. After selling some books and pens in a garage sale he had 66 books and 59 pens left. How many books did he sell in the garage sale?\nA:",
+            "answer": "We need to notice: 1.\"Paul had 108 books.\", 2.\"After selling some books in a garage sale he had 66 books left.\"."
+        },
+        {
+            "question": "Question: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
+            "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\"."
+        }
+    ],
+    "demo-1": [
+        {
+            "question": "Question: If Ann is 9 years old and her brother is twice her age, how old will her brother be in 3 years?\nA:",
+            "answer": "We need to notice: 1.\"Ann is 9 years old.\", 2.\"Her brother is twice her age.\"."
+        },
+        {
+            "question": "Question: Jack decides to visit a museum 150 miles from home. He drives 75 mph there and back. He spends 6 hours at the museum. How long is he gone from home?\nA:",
+            "answer": "We need to notice: 1.\"Jack decides to visit a museum 150 miles from home.\", 2.\"He drives 75 mph there.\", 3.\"He drives 75 mph back.\", 4.\"He spends 6 hours at the museum.\"."
+        },
+        {
+            "question": "Question: Robert had 3 pounds of candy, Cindy had 5 pounds of candy, and Aaron had 4 pounds of candy after Halloween. If they decide to pool and share their candy equally with each other, how much candy would each of them have?\nA:",
+            "answer": "We need to notice: 1.\"Robert had 3 pounds of candy.\", 2.\"Cindy had 5 pounds of candy.\", 3.\"Aaron had 4 pounds of candy.\", 4.\"They decide to pool and share their candy equally.\"."
+        },
+        {
+            "question": "Question: Susan made 100 cookies for Christmas and was going to equally divide them between her 6 nephews. Before Susan could package them, her husband snuck 4 cookies for himself. How many cookies will each of Susan’s nephews get?\nA:",
+            "answer": "We need to notice: 1.\"Susan made 100 cookies.\", 2.\"Susan was going to equally divide cookies between her 6 nephews.\", 3.\"Before Susan could package them, her husband snuck 4 cookies for himself.\"."
+        },
+        {
+            "question": "Question: Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long. He does this 3 times a week. How many hours does he spend on TV and reading in 4 weeks?\nA:",
+            "answer": "We need to notice: 1.\"Jim spends 2 hours watching TV.\", 2.\"Jim go to bed and reads for half as long as watching TV.\", 3.\"He does this 3 times a week.\"."
+        },
+        {
+            "question": "Question: Tom buys a bedroom set for $3000. He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set. He then has to pay 10% a month for the bedroom set. How much does he have to pay per month?\nA:",
+            "answer": "We need to notice: 1.\"Tom buys a bedroom set for $3000.\", 2.\"He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set.\", 3.\"He then has to pay 10% a month for the bedroom set.\"."
+        },
+        {
+            "question": "Question: If a classroom has 3 times as many girls as they do boys, and 1/10 as many nongendered children as they do boys, and the classroom has 30 boys. How many total children does it have?\nA:",
+            "answer": "We need to notice: 1.\"A classroom has 3 times as many girls as they do boys.\", 2.\"A classroom has 1/10 as many nongendered children as they do boys.\", 3.\"The classroom has 30 boys.\"."
+        }
+    ]
+}

@@ -1,32 +1,32 @@
 {
     "demo": [
         {
-            "question": "Q: Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nA:",
-            "answer": "To answer the question \"How old is Kody?\", we need to notice these conditions: 1.\"Not this year, but four years ago, Kody was only half as old as Mohamed.\", 2.\"This year Mohamed is currently twice 30 years old, not 30 years old.\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How old was Mohamed four years ago?\", 2.\"How old was Kody four years ago?\"."
+            "question": "Q: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many more crunches than push-ups did Zachary do?\"."
         },
         {
-            "question": "Q: If Pam is currently twice as young as Rena is, and in 10 years Rena will be 5 years older than her, how old is Pam now?\nA:",
-            "answer": "To answer the question \"How old is Pam now?\", we need to notice these conditions: 1.\"Pam is currently twice as young as Rena is.\", 2.\"In 10 years Rena will be 5 years older than Pam\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How much older is Rena than Pam currently?\"."
+            "question": "Q: There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many books are there in the ' crazy silly school ' series?\"."
         },
         {
-            "question": "Q: As a freelancer, Baylor is paid for every finished work of a client he does on a freelance marketplace. Currently, he has $4000 on his dashboard from previous work done. He is currently working for three clients, with the first client paying him half the amount of money he currently has on his dashboard once the job is done. The second client will pay him 2/5 times more money than the first client once Baylor finishes his work. The third client will pay him twice the amount of money the first and second clients pay him together once he finishes the job. How much money will Baylor have in his dashboard after all the clients pay him for his work?\nA:",
-            "answer": "To answer the question \"How much money will Baylor have in his dashboard after all the clients pay him for his work?\", we need to notice these conditions: 1.\"He has $4000 on his dashboard from previous work done.\", 2.\"The first client paying him half the amount of money he currently has on his dashboard.\", 3.\"The second client will pay him 2/5 times more money than the first client.\", 3.\"The third client will pay him twice the amount of money the first and second clients pay him together.\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How much will Baylor's first client pay him for his work?\", 2.\"How much more will Baylor's second client pay him for his work compared to the first client?\", 3.\"How much will Baylor's second client pay him for his work?\", 4.\"How much will the first and second clients pay him together once he finishes the job?\", 5.\"How much will Baylor's third client pay him for his work?\", 6.\"How much money will all the clients pay Baylor for his work?\"."
+            "question": "Q: Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. If he learns for 5 days, how many hours does he spend on learning english and chinese in all?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"If he learns for 5 days, how many hours does he spend on learning english and chinese in all?\"."
         },
         {
-            "question": "Q: Cappuccinos cost $2, iced teas cost $3, cafe lattes cost $1.5 and espressos cost $1 each. Sandy orders some drinks for herself and some friends. She orders three cappuccinos, two iced teas, two cafe lattes, and two espressos. How much change does she receive back for a twenty-dollar bill?\nA:",
-            "answer": "To answer the question \"How much change does she receive back for a twenty-dollar bill?\", we need to notice these conditions: 1.\"Cappuccinos cost $2.\", 2.\"Iced teas cost $3.\", 3.\"Cafe lattes cost $1.5.\", 4.\"Espressos cost $1.\", 5.\"Sandy orders three cappuccinos, two iced teas, two cafe lattes, and two espressos.\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How much did the cappuccinos cost in total?\", 2.\"How much did the iced teas cost in total?\", 3.\"How much did the cafe lattes cost in total?\", 4.\"How much did the espressos cost in total?\", 5.\"How much did the drinks cost in total?\"."
+            "question": "Q: Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends. How many cakes did each person eat?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many cakes did each person eat?\"."
         },
         {
-            "question": "Q: Betty & Paige are raising money for their kids' little league team by hosting a bake sale. Betty has baked 4 dozen chocolate chip cookies, 6 dozen oatmeal raisin cookies and 2 dozen regular brownies. Paige baked 6 dozen sugar cookies, 3 dozen blondies and 5 dozen cream cheese swirled brownies. If they sell the cookies for $1.00 apiece and the blondies/brownies at $2.00 apiece, how much money will they raise?\nA:",
-            "answer": "To answer the question \"How much money will they raise?\", we need to notice these conditions: 1.\"Betty has baked 4 dozen chocolate chip cookies, 6 dozen oatmeal raisin cookies and 2 dozen regular brownies.\", 2.\"Paige baked 6 dozen sugar cookies, 3 dozen blondies and 5 dozen cream cheese swirled brownies.\", 3.\"They sell the cookies for $1.00 apiece and the blondies/brownies at $2.00 apiece.\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How many dozen cookies did they bake (not including blondies/brownies)?\", 2.\"How many cookies did they bake (not including blondies/brownies)?\", 3.\"How many dozen blondies/brownies did they bake (not including cookies)?\", 4.\"How many blondies/brownies did they bake (not including cookies)?\", 5.\"How much money will they raise from the cookies (not including blondies/brownies)?\", 6.\"How much money will they raise from the blondies/brownies (not including cookies)?\"."
+            "question": "Q: Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. How many letters did jack receive in the day?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many letters did jack receive in the day?\"."
         },
         {
-            "question": "Q: On a moonless night, three fireflies danced in the evening breeze. They were joined by four less than a dozen more fireflies, before two of the fireflies flew away. How many fireflies remained?\nA:",
-            "answer": "To answer the question \"How many fireflies remained?\", we need to notice these conditions: 1.\"They were joined by four less than a dozen more fireflies, before two of the fireflies flew away.\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How many fireflies joined?\"."
+            "question": "Q: Paul had 108 books and 55 pens. After selling some books and pens in a garage sale he had 66 books and 59 pens left. How many books did he sell in the garage sale?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many books did he sell in the garage sale?\"."
         },
         {
-            "question": "Q: Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?\nA:",
-            "answer": "To answer the question \"How many popsicle sticks can they use for their Art class activity?\", we need to notice these conditions: 1.\"Sam has thrice as many as Sid.\", 2.\"Sid has twice as many as Steve.\", 3.\"Steve has 12 popsicle sticks.\";\nHaving these conditions, then we need to know these sub-questions: 1.\"How many popsicle sticks does Sid have?\", 2.\"How many popsicle sticks does Sam have?\"."
+            "question": "Q: Julia played tag with 17 kids on monday, 15 kids on tuesday and 2 kids on wednesday. How many kids did she play with altogether?\nA:",
+            "answer": "To answer this question, we need to know: 1.\"How many kids did she play with altogether?\"."
         }
     ]
 }

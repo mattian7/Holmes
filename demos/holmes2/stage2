@@ -1,0 +1,24 @@
+{
+    "demo": [
+        {
+            "question": "Josh had 7 marbles in his collection. He lost 8 marbles and found 10 new ones. How many more marbles did he find than those he lost?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Josh had 7 marbles in his collection.' 2.'He lost 8 marbles and found 10 new ones.' 3.'We need fo find the difference in marble number between he find and lost.'\nA:",
+            "answer": "1.\"Original, Josh's marble number = 7.\"\n2.\"Lost marble number = 8, found marble number = 10.\"\n3.\"Difference in number between find and lost = found marble number - lost marble number = 10 - 8.\""
+        },
+        {
+            "question": "Mary is baking a cake. The recipe calls for 14 cups of flour and 6 cups of sugar. She already put in 5 cups of flour. How many more cups of flour than cups of sugar does she need to add now?\nQ:",
+            "division": "Translate following sentences into equation: 1.'The recipe calls for 14 cups of flour and 6 cups of sugar.' 2.'She already put in 5 cups of flour.' 3.'We need to find the difference between the cups of flour and cups of sugar still needed.'\nA:",
+            "answer": "1.\"Cups of flour needed = 14, Cups of sugar needed = 6.\"\n2.\"Cups of flour already added = 5.\"\n3.\"Difference = cups of flour still needed - cups of sugar still needed= cups of flour needed - cups of flour added - cups of sugar needed.\""
+        },
+        {
+            "question": "Rachel had to complete 7 pages of math homework, 11 pages of reading homework and 8 more pages of biology homework. How many more pages of reading homework than biology homework did she have?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Rachel had to complete 7 pages of math homework, 11 pages of reading homework and 8 more pages of biology homework.'\nA:",
+            "answer": "1.\"pages number of math homework = 7, pages number of reading homework = 11, pages number of biology homework =8.\""
+        },
+        {
+            "question": "For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Gwen's birthday she received 8 dollars from her mom.' 2.'Her dad gave her 5 more dollars.'\nA:",
+            "answer": "1.\"dollars received from mom = 8.\"\n2.\"dollars received from dad = 5.\""
+        }
+    ]
+}

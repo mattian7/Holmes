@@ -1,0 +1,68 @@
+{
+    "demo1": [
+        {
+            "question": "Josh had 7 marbles in his collection. He lost 8 marbles and found 10 new ones. How many more marbles did he find than those he lost?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Josh had 7 marbles in his collection.' 2.'He lost 8 marbles and found 10 new ones.' 3.'We need fo find the difference in marble number between he find and lost.'\nA:",
+            "answer": "1.\"Original, Josh's marble number = 7.\"\n2.\"Lost marble number = 8, found marble number = 10.\"\n3.\"Difference in number between find and lost = found marble number - lost marble number = 10 - 8.\""
+        },
+        {
+            "question": "Mary is baking a cake. The recipe calls for 14 cups of flour and 6 cups of sugar. She already put in 5 cups of flour. How many more cups of flour than cups of sugar does she need to add now?\nQ:",
+            "division": "Translate following sentences into equation: 1.'The recipe calls for 14 cups of flour and 6 cups of sugar.' 2.'She already put in 5 cups of flour.' 3.'We need to find the difference between the cups of flour and cups of sugar still needed.'\nA:",
+            "answer": "1.\"Cups of flour needed = 14, Cups of sugar needed = 6.\"\n2.\"Cups of flour already added = 5.\"\n3.\"Difference = cups of flour still needed - cups of sugar still needed= cups of flour needed - cups of flour added - cups of sugar needed.\""
+        },
+        {
+            "question": "Rachel had to complete 7 pages of math homework, 11 pages of reading homework and 8 more pages of biology homework. How many more pages of reading homework than biology homework did she have?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Rachel had to complete 7 pages of math homework, 11 pages of reading homework and 8 more pages of biology homework.'\nA:",
+            "answer": "1.\"pages number of math homework = 7, pages number of reading homework = 11, pages number of biology homework =8.\""
+        },
+        {
+            "question": "For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Gwen's birthday she received 8 dollars from her mom.' 2.'Her dad gave her 5 more dollars.'\nA:",
+            "answer": "1.\"dollars received from mom = 8.\"\n2.\"dollars received from dad = 5.\""
+        }
+    ],
+    "demo2": [
+        {
+            "question": " Haley was playing a video game and had 14 lives. In a hard part of the game she lost 4 lives. If she got 36 more lives in the next level, how many lives would she have?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Haley was playing a video game and had 14 lives.' 2.'In a hard part of the game she lost 4 lives.' 3.'She got 36 more lives in the next level.' 4.'The total number of the final number of lives is what we need fo find.'\nA:",
+            "answer": "1.\"Original, Haley's lives number = 14.\"\n2.\"Haley's lives number - 4.\"\n3.\"Haley's lives number + 36.\"\n4.\"Haley's final lives number = 14 - 4 + 36.\""
+        },
+        {
+            "question": "A trivia team had 7 members total, but during a game 2 members didn't show up. If each member that did show up scored 4 points, how many points were scored total?\nQ:",
+            "division": "Translate following sentences into equation: 1.'A trivia team had 7 members total.' 2.'During a game 2 members didn't show up.' 3.'Each member that did show up scored 4 points.' 4.'How many points is what we need to find.'\nA:",
+            "answer": "1.\"The original number of members = 7.\"\n2.\"The actual number = The original number - 2.\"\n3.\"Each member that did show up scored 4 points.\"\n4.\"Points = actual number of member * 4.\""
+        },
+        {
+            "question": "At the arcade Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?\nQ:",
+            "division": "Translate following sentences into equation: 1.'At the arcade Jerry won 4 tickets.' 2.'He spent 2 tickets on a beanie.' 3.'Later he won 47 more tickets'\nA:",
+            "answer": "1.\"Original, Jerry's tickets number = 4.\"\n2.\"Jerry's ticket number - 2.\"\n3.\"Jerry's ticket number + 47.\""
+        },
+        {
+            "question": "For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Gwen's birthday she received 8 dollars from her mom.' 2.'Her dad gave her 5 more dollars.'\nA:",
+            "answer": "1.\"dollars received from mom = 8.\"\n2.\"dollars received from dad = 5.\""
+        }
+    ],
+    "demo": [
+        {
+            "question": " Haley was playing a video game and had 14 lives. In a hard part of the game she lost 4 lives. If she got 36 more lives in the next level, how many lives would she have?\nQ:",
+            "division": "Translate following sentences into equation: 1.'Haley was playing a video game and had 14 lives.' 2.'In a hard part of the game she lost 4 lives.' 3.'She got 36 more lives in the next level.' 4.'The total number of the final number of lives is what we need fo find.'\nA:",
+            "answer": "1.\"Original, Haley's lives number = 14.\"\n2.\"Haley's lives number - 4.\"\n3.\"Haley's lives number + 36.\"\n4.\"Haley's final lives number = 14 - 4 + 36.\""
+        },
+        {
+            "question": "A trivia team had 7 members total, but during a game 2 members didn't show up. If each member that did show up scored 4 points, how many points were scored total?\nQ:",
+            "division": "Translate following sentences into equation: 1.'A trivia team had 7 members total.' 2.'During a game 2 members didn't show up.' 3.'Each member that did show up scored 4 points.' 4.'How many points is what we need to find.'\nA:",
+            "answer": "1.\"The original number of members = 7.\"\n2.\"The actual number = The original number - 2.\"\n3.\"Each member that did show up scored 4 points.\"\n4.\"Points = actual number of member * 4.\""
+        },
+        {
+            "question": "At the arcade Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?\nQ:",
+            "division": "Translate following sentences into equation: 1.'At the arcade Jerry won 4 tickets.' 2.'He spent 2 tickets on a beanie.' 3.'Later he won 47 more tickets'\nA:",
+            "answer": "1.\"Original, Jerry's tickets number = 4.\"\n2.\"Jerry's ticket number - 2.\"\n3.\"Jerry's ticket number + 47.\""
+        },
+        {
+            "question": "A pet store had 78 puppies. In one day they sold 30 of them and put the rest into cages with 8 in each cage. How many cages did they use?\nQ:",
+            "division": "Translate following sentences into equation: 1.'A pet store had 78 puppies.' 2.'In one day they sold 30 of them.' 3.'They put the rest into cages with 8 in each cage.'\nA:",
+            "answer": "1.\"The original number of puppies = 78.\"\n2.\"The number of rest puppies = 78 - 30.\"\n3.\"The number of cages = The number of rest puppies / 8.\""
+        }
+    ]
+}

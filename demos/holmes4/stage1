@@ -1,0 +1,92 @@
+{
+    "demo3": [
+        {
+            "question": "Q: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?\nA:",
+            "answer": "We need to notice: 1.\"Zachary did 46 push-ups.\", 2.\"Zachary did 58 push-ups.\"."
+        },
+        {
+            "question": "Q: There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?\nA:",
+            "answer": "We need to notice: 1.\"You have read 13 of the books.\", 2.\"You are yet to read 8 books.\", 3.\"The sum of read and unread books is equal to how many books are here.\"."
+        },
+        {
+            "question": "Q: At the arcade Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?\nA:",
+            "answer": "We need to notice: 1.\"At the arcade Jerry won 4 tickets.\", 2.\"If he spent 2 tickets on a beanie and later won 47 more tickets.\"."
+        },
+        {
+            "question": "Q: Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends. How many cakes did each person eat?\nA:",
+            "answer": "We need to notice: 1.\"Matthew had 30 cakes.\", 2.\"Matthew gave equal numbers of crackers and cakes to his 2 friends.\"."
+        },
+        {
+            "question": "Q: Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. How many letters did jack receive in the day?\nA:",
+            "answer": "We need to notice: 1.\"Jack received 6 letters in the morning.\", 2.\"Jack received 7 letters in the afternoon.\"."
+        },
+        {
+            "question": "Q: Bianca had 45 coloring books. If she gave away 6 of them, but then bought 20 more, how many would she have total?\nA:",
+            "answer": "We need to notice: 1.\"Bianca had 45 coloring books.\", 2.\"She gave away 6 of them, but then bought 20 more.\"."
+        },
+        {
+            "question": "Q: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
+            "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\"."
+        }
+    ],
+    "demo": [
+        {
+            "question": "Q: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?\nA:",
+            "answer": "We need to notice: 1.\"Zachary did 46 push-ups.\", 2.\"Zachary did 58 push-ups.\"."
+        },
+        {
+            "question": "Q: There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?\nA:",
+            "answer": "We need to notice: 1.\"You have read 13 of the books.\", 2.\"You are yet to read 8 books.\", 3.\"The sum of read and unread books is equal to how many books are here.\"."
+        },
+        {
+            "question": "Q: Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. If he learns for 5 days, how many hours does he spend on learning english and chinese in all?\nA:",
+            "answer": "We need to notice: 1.\"Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese.\", 2.\"He learns for 5 days.\"."
+        },
+        {
+            "question": "Q: Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends. How many cakes did each person eat?\nA:",
+            "answer": "We need to notice: 1.\"Matthew had 30 cakes.\", 2.\"Matthew gave equal numbers of crackers and cakes to his 2 friends.\"."
+        },
+        {
+            "question": "Q: Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. How many letters did jack receive in the day?\nA:",
+            "answer": "We need to notice: 1.\"Jack received 6 letters in the morning.\", 2.\"Jack received 7 letters in the afternoon.\"."
+        },
+        {
+            "question": "Q: Paul had 108 books and 55 pens. After selling some books and pens in a garage sale he had 66 books and 59 pens left. How many books did he sell in the garage sale?\nA:",
+            "answer": "We need to notice: 1.\"Paul had 108 books.\", 2.\"After selling some books in a garage sale he had 66 books left.\"."
+        },
+        {
+            "question": "Q: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
+            "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\"."
+        }
+    ],
+    "demo1": [
+        {
+            "question": "Q: Haley was playing a video game and had 14 lives. In a hard part of the game she lost 4 lives. If she got 36 more lives in the next level, how many lives would she have?\nA:",
+            "answer": "We need to notice: 1.\"Haley was playing a video game and had 14 lives.\", 2.\"In a hard part of the game she lost 4 lives.\", 3.\"She got 36 more lives in the next level.\"."
+        },
+        {
+            "question": "Q: There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?\nA:",
+            "answer": "We need to notice: 1.\"You have read 13 of the books.\", 2.\"You are yet to read 8 books.\", 3.\"The sum of read and unread books is equal to how many books are here.\"."
+        },
+        {
+            "question": "Q: A waiter had 14 customers to wait on. If 3 customers left and he got another 39 customers, how many customers would he have?\nA:",
+            "answer": "We need to notice: 1.\"A waiter had 14 customers to wait on.\", 2.\"3 customers left and he got another 39 customers.\"."
+        },
+        {
+            "question": "Q: At the arcade Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?\nA:",
+            "answer": "We need to notice: 1.\"At the arcade Jerry won 4 tickets.\", 2.\"If he spent 2 tickets on a beanie and later won 47 more tickets.\"."
+        },
+        {
+            "question": "Q: A pet store had 78 puppies. In one day they sold 30 of them and put the rest into cages with 8 in each cage. How many cages did they use?\nA:",
+            "answer": "We need to notice: 1.\"A pet store had 78 puppies.\", 2.\"In one day they sold 30 of them and put the rest into cages with 8 in each cage.\"."
+        },
+        {
+            "question": "Q: Bianca had 45 coloring books. If she gave away 6 of them, but then bought 20 more, how many would she have total?\nA:",
+            "answer": "We need to notice: 1.\"Bianca had 45 coloring books.\", 2.\"She gave away 6 of them, but then bought 20 more.\"."
+        },
+        {
+            "question": "Q: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
+            "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\"."
+        }
+    ]
+}

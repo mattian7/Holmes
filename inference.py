@@ -11,7 +11,7 @@ def parse_arguments():
                         help="dataset used for experiment"
                         )
     parser.add_argument("--method", type=str, default="key_cot",
-                        choices=["zero_shot_cot", "few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "tree_cot"], help="method"
+                        choices=["few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "holmes", "holmes+"], help="method"
                         )
     parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3", "gpt3_chat", "gpt4"])
     parser.add_argument("--random_seed", type=int, default=1, help="set random seed")
@@ -33,7 +33,7 @@ def parse_arguments():
     parser.add_argument("--limit_dataset_size", type=int, default=0,
                         help="whether to limit test dataset size. if 0, we use all the samples in the dataset"
                         )
-    parser.add_argument("--api_time_interval", type=float, default=3,
+    parser.add_argument("--api_time_interval", type=float, default=1,
                         help="sleep between runs to avoid excedding the rate limit of openai api"
                         )
     parser.add_argument("--log_dir", type=str, default="./log/", help="log directory")
@@ -41,6 +41,7 @@ def parse_arguments():
         "--demo_path", type=str, default="demos/keycot4/stage", help="pre-generated demos used for experiment"
     )
     parser.add_argument("--output_dir", type=str, default="experiment/gsm8k", help="output directory")
+    parser.add_argument("--resume_correction", type=int, default=0, help="resume from how many data was correct before")
 
     args = parser.parse_args()
     if args.dataset == "aqua":
@@ -99,7 +100,7 @@ def main():
 
     #print("OPENAI_API_KEY:")
     #print(os.getenv("OPENAI_API_KEY")[0:5] + '**********')
-    openai.api_key="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"
+    openai.api_key="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"
     decoder = Decoder()
     print("setup data loader ...")
     dataloader = setup_data_loader(args)
@@ -123,14 +124,34 @@ def main():
     elif args.method == "few_shot_cot":
         demo_path = args.demo_path
         fewshot_stage1 = create_fewshot(args, demo_path)
+    elif args.method == "holmes":
+        demo_path = args.demo_path + "1"
+        fewshot_stage1 = create_fewshot(args, demo_path)
+        demo_path = args.demo_path + "2"
+        fewshot_stage2 = create_fewshot(args, demo_path)
+        demo_path = args.demo_path + "3"
+        fewshot_stage3 = create_fewshot(args, demo_path)
+        demo_path = args.demo_path + "4"
+        fewshot_stage4 = create_fewshot(args, demo_path)
+    elif args.method == "holmes+":
+        demo_path = args.demo_path + "1"
+        fewshot_stage1 = create_fewshot(args, demo_path)
+        demo_path = args.demo_path + "2"
+        fewshot_stage2 = create_fewshot(args, demo_path)
+        demo_path = args.demo_path + "3"
+        fewshot_stage3 = create_fewshot(args, demo_path)
     else:
         pass
 
-    total = 0
+    if args.resume_id ==0:
+        total = 0
+    else:
+        total = args.resume_id - 1
     correct_list = []
-    max_length = args.max_length_cot if "cot" in args.method else args.max_length_direct
+    correct_list.append(args.resume_correction)
+    max_length = args.max_length_cot
 
-    with open(args.output_dir, "w") as wp:
+    with open(args.output_dir, "a") as wp:
         for i, data in enumerate(dataloader):
             if i < args.resume_id - 1:
             # if i < 297:
@@ -142,13 +163,14 @@ def main():
             wp.write("{}st data".format(i + 1))
 
             x_, y_ = data
-            x = "Q: " + x_[0] + "\n"
+            x = "Question: " + x_[0] + "\n"
+            #x = "Q: " + x_[0] + "\n"
             y = y_[0].strip()
 
             output_line["question"] = x
             output_line["gold_ans"] = y
             key_error_flag = False
-
+            ltm_error_flag = False
             if args.method == "key_cot":
 
                 q_stage12 = x + "A:"
@@ -236,34 +258,134 @@ def main():
                 print("\n")
             elif args.method == "ltm_cot":
                 q_stage1 = x + "A:"
-                sub_q = decoder.key_cot_decode(fewshot_stage1, q_stage1, args, max_length)
+                while True:
+                    try:
+                        sub_q = decoder.key_cot_decode(fewshot_stage1, q_stage1, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(3)
+                        continue
+
                 output_line["sub_questions"] = sub_q
                 print(sub_q)
 
                 subq_list = extract_question(sub_q)
-                print(subq_list)
+                if len(subq_list)!=0:
+                    print(subq_list)
 
-                q_stage2 = x + "A:Let's break down this question:"
-                j = 1
-                for q in subq_list:
-                    q_stage2 += ' ' + str(j) + '.' + q
-                    j += 1
-                q_stage2 += '\n'
-                answer = decoder.key_cot_decode(fewshot_stage2, q_stage2, args, max_length)
+                    q_stage2 = x + "A:Let's break down this question:"
+                    j = 1
+                    for q in subq_list:
+                        q_stage2 += ' ' + str(j) + '.' + q
+                        j += 1
+                    q_stage2 += '\n'
+                    while True:
+                        try:
+                            answer = decoder.key_cot_decode(fewshot_stage2, q_stage2, args, max_length)
+                            break
+                        except Exception as e:
+                            print("api Error:", e)
+                            time.sleep(3)
+                            continue
+                    print(answer)
+                    print("\n")
+                else:
+                    print("generate sub question wrong!")
+                    ltm_error_flag = True
+            elif args.method == "holmes":
+
+                q_stage1 = 'Q: Rewrite this problem by removing information which is unnecessary for solving the final question: \"'+x_[0]+'\"\nA:'
+                while True:
+                    try:
+                        new_q = decoder.key_cot_decode(fewshot_stage1, q_stage1, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:",e)
+                        time.sleep(2)
+                        continue
+
+                print(q_stage1)
+
+                q_stage2 = "Q:" + new_q + "\nA:"
+                while True:
+                    try:
+                        answer = decoder.key_cot_decode(fewshot_stage2, q_stage2, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(2)
+                        continue
+
+                print(q_stage2)
                 print(answer)
                 print("\n")
+            elif args.method == "holmes+":
+                q_stage1 = x + "A:"
+                while True:
+                    try:
+                        keys = decoder.key_cot_decode(fewshot_stage1, q_stage1, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(1)
+                        continue
+                print(keys)
+                output_line["k"] = keys
+                clist = extract_keys(keys)
+                q_stage2 = trans2math(clist, x_[0])
+
+                while True:
+                    try:
+                        trans2math_keys = decoder.key_cot_decode(fewshot_stage2, q_stage2, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(1)
+                        continue
+
+                clist_new = extract_keys(trans2math_keys)
+                hint = "With the Equation Hints:"
+                for c in clist_new:
+                    hint += " '" + c + "',"
+                hint += " we will answer the question."
+                q_stage3 = x + "A: " + hint
+                while True:
+                    try:
+                        answer = decoder.key_cot_decode(fewshot_stage3, q_stage3, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(1)
+                        continue
+                print(q_stage3)
+                print(answer)
+                print("\n")
+
             elif args.method == "few_shot_cot":
                 q = x + "A:"
-                answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
+                while True:
+                    try:
+                        answer = decoder.key_cot_decode(fewshot_stage1, q, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(1)
+                        continue
+                print(q)
+                print(answer)
+                print("\n")
 
             if key_error_flag:
                 pred = 'Wrong answer because of wrong format answer of LLM'
+            elif ltm_error_flag:
+                pred = 'Wrong sub question list because of wrong format answer of LLM'
             else:
                 pred = answer_cleaning(args, answer)
 
             output_line["pred_ans"] = pred
 
-            output_json = json.dumps(output_line)
+
 
             # Choose the most frequent answer from the list ...
             print("pred : {}".format(pred))
@@ -274,6 +396,8 @@ def main():
             # correct = (np.array([pred]) == np.array([y])).sum().item()
             y = y.replace(",", "")
             if pred == '':
+                correct = 0
+            elif key_error_flag or ltm_error_flag:
                 correct = 0
             elif float(pred)==float(y):
                 correct = 1

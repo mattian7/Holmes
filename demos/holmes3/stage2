@@ -1,0 +1,68 @@
+{
+    "demo1": [
+        {
+            "question": "Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Mohamed is currently twice 30 years old.' 2.'Four years ago, Kody was only half as old as Mohamed.' 3.'Kody's current age is what we need to find.'\nA:",
+            "answer": "1.\"Mohamed is currently 2 * 30 years old.\"\n2.\"Four years ago, Kody's age = 1/2 * Mohamed's age.\"\n3.\"Kody's current age = Kody's age four years ago + 4.\""
+        },
+        {
+            "question": "Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Sam has thrice as many as Sid.' 2.'Sid has twice as many as Steve.' 3.'Steve has 12 popsicle sticks.' 3.'The total number of popsicle is what we need to find.'\nA:",
+            "answer": "1.\"Sam's popsicle number = Sid's popsicle number * 3.\"\n2.\"Sid's popsicle number = Steven's popsicle number * 2.\"\n3.\"Steven's popsicle number = 12.\"\n4.\"Total number of popsicle = Sam's number + Sid's number + Steven's number.\""
+        },
+        {
+            "question": "Tom buys a bedroom set for $3000. He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set. He then has to pay 10% a month for the bedroom set. How much does he have to pay per month?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Tom buys a bedroom set for $3000.' 2.'He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set.' 3.'He then has to pay 10% a month for the bedroom set.'\nA:",
+            "answer": "1.\"Tom buys a bedroom set for $3000.\"\n2.\"Tom has already paid for $1000.\"\n3.\"Each month he need to pay 10% * (3000 - 1000).\""
+        },
+        {
+            "question": "Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long. He does this 3 times a week. How many hours does he spend on TV and reading in 4 weeks?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long.' 2.'He does this 3 times a week.' 3.'The total time of TV and reading last 4 weeks is we need to find.'\nA:",
+            "answer": "1.\"The time spend on TV = 2 hours, spend on bed and read = 1/2 * 2 = 1 hour.\"\n2.\"The time spend on TV and reading in one week = (2 + 1) * 3 = 9 hours.\"\n3.\"For 4 weeks, time spend on TV and reading = 9 * 4 hours.\""
+        }
+    ],
+    "demo-best": [
+        {
+            "question": "Jack decides to visit a museum 150 miles from home. He drives 75 mph there and back. He spends 6 hours at the museum. How long is he gone from home?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Jack decides to visit a museum 150 miles from home.' 2.'He drives 75 mph there and back.' 3.'He spends 6 hours at the museum.' 4.'The total time he gone from home is what we need to find.'\nA:",
+            "answer": "1.\"Distance from home to museum = 150.\"\n2.\"Jack's drive speed = 75 mph.\"\n3.\"The time spend on museum = 6 hours.\"\n4.\"Total time = time of driving to museum * 2 + time spend at museum.\""
+        },
+        {
+            "question": "Sam, Sid, and Steve brought popsicle sticks for their group activity in their Art class. Sam has thrice as many as Sid, and Sid has twice as many as Steve. If Steve has 12 popsicle sticks, how many popsicle sticks can they use for their Art class activity?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Sam has thrice as many as Sid.' 2.'Sid has twice as many as Steve.' 3.'Steve has 12 popsicle sticks.' 3.'The total number of popsicle is what we need to find.'\nA:",
+            "answer": "1.\"Sam's popsicle number = Sid's popsicle number * 3.\"\n2.\"Sid's popsicle number = Steven's popsicle number * 2.\"\n3.\"Steven's popsicle number = 12.\"\n4.\"Total number of popsicle = Sam's number + Sid's number + Steven's number.\""
+        },
+        {
+            "question": "Tom buys a bedroom set for $3000. He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set. He then has to pay 10% a month for the bedroom set. How much does he have to pay per month?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Tom buys a bedroom set for $3000.' 2.'He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set.' 3.'He then has to pay 10% a month for the bedroom set.'\nA:",
+            "answer": "1.\"Tom buys a bedroom set for $3000.\"\n2.\"Tom has already paid for $1000.\"\n3.\"Each month he need to pay 10% * (3000 - 1000).\""
+        },
+        {
+            "question": "Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long. He does this 3 times a week. How many hours does he spend on TV and reading in 4 weeks?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long.' 2.'He does this 3 times a week.' 3.'The total time of TV and reading last 4 weeks is we need to find.'\nA:",
+            "answer": "1.\"The time spend on TV = 2 hours, spend on bed and read = 1/2 * 2 = 1 hour.\"\n2.\"The time spend on TV and reading in one week = (2 + 1) * 3 = <<(2+1)*3=9>>9 hours.\"\n3.\"For 4 weeks, time spend on TV and reading = 4 * 9.\""
+        }
+    ],
+    "demo": [
+        {
+            "question": "Sara is checking out two different stores to buy a computer. The first store offers a device for $950 with a 6% discount. The second sells the same computer for €920 with a 5% discount. What is the difference in price between the two stores?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'The first store offers a device for $950 with a 6% discount.' 2.'The second sells the same computer for €920 with a 5% discount.' 3.'The difference in price between the two stores is what we need to find.'\nA:",
+            "answer": "1.\"Price of first store = $950 * (1 - 6%) = $950 * 94%.\"\n2.\"Price of second store = $920 * (1 - 5%) = $920 * 95%.\"\n3.\"Difference(bigger one -smaller one) = Price of first store - Price of second store. This is a hint of answer.\""
+        },
+        {
+            "question": "There are 36 seagulls on the roof of the Taco Bell. Kids scare 1/4 of them away by throwing stones, and 1/3 of the remaining birds decide to fly to McDonald's parking lot. How many seagulls are left?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'There are 36 seagulls on the roof of the Taco Bell.' 2.'Kids scare 1/4 of them away by throwing stones.' 3.'1/3 of the remaining birds decide to fly to McDonald's parking lot.'\nA:",
+            "answer": "1.\"The original number of seagulls = 36.\"\n2.\"After kids' scaring, remaining birds = 36 * (1 - 1/4) = 36 * 3/4.\"\n3.\"Remaining birds = remaining birds in last stage * (1 - 1/3) = 27 * 2/3.\""
+        },
+        {
+            "question": "Tom buys a bedroom set for $3000. He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set. He then has to pay 10% a month for the bedroom set. How much does he have to pay per month?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'Tom buys a bedroom set for $3000.' 2.'He sells his old bedroom for $1000 and uses that to pay for part of the bedroom set.' 3.'He then has to pay 10% a month for the bedroom set.'\nA:",
+            "answer": "1.\"Total price of bedroom = $3000.\"\n2.\"Unpaid Money = $3000 - $1000.\"\n3.\"Each month he need to pay 10% * Unpaid Money. This is a hint of answer.\""
+        },
+        {
+            "question": "Harry is joining a marathon that's why he practices and varies his workouts from day to day. He ran 10 meters per hour on Monday. From Tuesday to Thursday he ran 50% faster than on Monday. Then on Friday, he ran 60% faster than he ran on Thursday. How fast did Harry run on Friday?\nQuestion:",
+            "division": "Translate following sentences into equation: 1.'He ran 10 meters per hour on Monday.' 2.'From Tuesday to Thursday he ran 50% faster than on Monday.' 3.'Then on Friday, he ran 60% faster than he ran on Thursday.'\nA:",
+            "answer": "1.\"Harry's speed on Monday = 10 m/h.\"\n2.\"From Tuesday to Thursday, Harry's speed = Speed on Monday * (1 + 50%).\"\n3.\"Harry's speed on Friday = Speed on Thursday * (1 + 60%). This is a hint of answer.\""
+        }
+    ]
+}

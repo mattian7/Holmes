@@ -1,24 +1,24 @@
 {
     "demo": [
         {
-            "question": "Q: Four years ago, Kody was only half as old as Mohamed. If Mohamed is currently twice 30 years old, how old is Kody?\nA:",
-            "division": "Let's break down this problem: 1.How old was Mohamed four years ago?(Hint: Notice that \"Mohamed is currently twice 30 years old.\"), 2.How old is Kody?(Hint: Notice that \"Four years ago, Kody was only half as old as Mohamed.\")\n",
-            "answer": "1.We were told that Mohamed is currently twice 30 years old, so he is currently 30 * 2 = 60 years old. That means that four years ago he must have been 60 - 4 = 56 years old. The answer is 56.\n2.Four years ago, Kody was half as old as Mohamed, so Kody must have been 56 / 2 = 28 years old then. Since Kody was 28 years old four years ago, she must now be 28 + 4 = 32 years old. The answer is 32."
+            "question": "Q: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Zachary did 46 push-ups.', 2.'Zachary did 58 push-ups.'; Having these conditions, then we need to solve these questions: 1.'How many more crunches than push-ups did Zachary do?'\nA:",
+            "answer": "condition 1 is the key information for question 1; condition 2 is the key information for question 1;"
         },
         {
-            "question": "Q: Carla bought 2 bags of mini peanut butter cups on clearance. Each bag was $6.00 but was 75% off. How much did she spend on 2 bags of candy?\nA:",
-            "division": "Let's break down this problem: 1.How much did she spend on 2 bags of candy?(Hint: Notice that \"Carla bought 2 bags of mini peanut butter cups on clearance. Each bag was $6.00 but was 75% off.\")\n",
-            "answer": "1.Each bag was $6.00 but was 75% off. So each bag cost $6.00 * (1 - 0.75) = $6.00 * 0.25 = $1.50. Carla bought 2 bags. So she spent $1.50 * 2 = $3.00. The answer is 3."
+            "question": "Q: There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books. How many books are there in the ' crazy silly school ' series?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'You have read 13 of the books.', 2.'You are yet to read 8 books.', 3.'The sum of read and unread books is equal to how many books are here.'; Having these conditions, then we need to solve these questions: 1.'How many books in total have you read and yet to read?', 2.'How many books are there in the ' crazy silly school ' series?'\nA:",
+            "answer": "condition 1 is the key information for question 1; condition 2 is the key information for question 1; condition 3 and the answer of question 1 is the key information for question 2;"
         },
         {
-            "question": "Q: If Pam is currently twice as young as Rena is, and in 10 years Rena will be 5 years older than her, how old is Pam now?\nA:",
-            "division": "Let's break down this problem: 1.How much older is Rena than Pam currently?(Hint: Notice that \"Pam is currently twice as young as Rena is.\"), 2.How old is Pam now?(Hint: Notice that \"In 10 years Rena will be 5 years older than Pam.\")\n",
-            "answer": "1.Since Rena will be 5 years older than Pam in 10 years, she must be 5 years older than Pam now as well. The answer is 5.\n2.If Pam is currently twice as young as Rena, that means that Rena is currently twice as old as Pam is. So if P stands for Pam's age now and R stands for Rena's age now, then we know that R = 2 * P And since Rena is 5 years older than Pam now, we know that R = P + 5. By substitution, we have P + 5 = 2 * P, which means that P = 5. The answer is 5."
+            "question": "Q: Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. How many letters did jack receive in the day?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Jack received 6 letters in the morning.', 2.'Jack received 7 letters in the afternoon.'; Having these conditions, then we need to solve these questions: 1.'How many letters did jack receive in the day?'\nA:",
+            "answer": "condition 1 is the key information for question 1; condition 2 is the key information for question 1;"
         },
         {
-            "question": "Q: Cappuccinos cost $2, iced teas cost $3, cafe lattes cost $1.5 and espressos cost $1 each. Sandy orders some drinks for herself and some friends. She orders three cappuccinos, two iced teas, two cafe lattes, and two espressos. How much change does she receive back for a twenty-dollar bill?\nA:",
-            "division": "Let's break down this problem: 1.How much did Sandy spend on drinks?(Hint: Notice that \"Cappuccinos cost $2, iced teas cost $3, cafe lattes cost $1.5 and espressos cost $1 each.\" and \"Sandy orders three cappuccinos, two iced teas, two cafe lattes, and two espressos.\")\n",
-            "answer": "1.Sandy ordered three cappuccinos, which cost $2 each, so she spent $2 * 3 = $6 on cappuccinos. She ordered two iced teas, which cost $3 each, so she spent $3 * 2 = $6 dollars on ice teas. She ordered two cafe lattes, which cost $1.5 each, so she spent $1.5 * 2 = $3 on cafe lattes. She ordered two espressos, which cost $1 each, so she spent $1 * 2 = $2 on espressos. So altogether, Sandy spent $6 + $6 + $3 + $2 = $17 on drinks. The answer is 17."
+            "question": "Q: Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends. How many cakes did each person eat?\nHint:",
+            "hint": "To answer this question, we need to notice these conditions: 1.'Matthew had 30 cakes.', 2.'Matthew gave equal numbers of crackers and cakes to his 2 friends.', 3.'The number of cakes divided by 2 people is the number of cakes each person eat.'; Having these conditions, then we need to solve these questions: 1.'How many cakes did each person eat?'\nA:",
+            "answer": "condition 1 is the key information for question 1; condition 2 is the key information for question 1; condition 3 is the key information for question 1;"
         }
     ]
 }

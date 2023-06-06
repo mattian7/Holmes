@@ -1,0 +1,25 @@
+{
+    "demo": [
+        {
+            "question": "Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?\nQ:",
+            "division": "Let's solve one by one: 1.If they ate 35, how many pieces do they have left in total?(Hint: Notice that 'Leah's chocolates = 32 and her sister's = 42.', 'The chocolate number - 35.')\nA:",
+            "answer": "1.Originally, Leah's chocolates = 32 and her sister's = 42. So in total they had 32 + 42 = 74. After eating 35, they had 74 - 35 = 39. The answer is 39."
+        },
+        {
+            "question": "Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?\nQ:",
+            "division": "Let's solve one by one: 1.How many toys does he have now?(Hint: Notice that 'The original number of Shawn's toy = 5.', 'Shawn got 2 * 2 = 4 toys from parents.')\nA:",
+            "answer": "1.The original number of Shawn's toy = 5. Shawn got 2 * 2 = 4 toys from parents, then that is 4 more toys. 5 + 4 = 9. The answer is 9."
+        },
+        {
+            "question": "Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will paint 1/4 the number of ceilings he did this week. How many ceilings will be left to paint after next week?\nQ:",
+            "division": "Let's solve one by one: 1.How many ceilings will Michelangelo paint in two weeks?(Hint: Notice that 'This week, he paints 12 of them.', 'Next week, he will paint 1/4 * the number of pating this week = 1/4 * 12.'), 2.How many ceilings will be left to paint after next week?(Hint: Notice that 'Michelangelo has 28 ceilings to paint.', and the answer of question 1)\nA:",
+            "answer": "1.This week he paints 12 of them, next week he will pain 12 * 1/4 = 3 of them. So, in two weeks, he will paint 12 + 3 = 15 ceilings. The answer is 15.\n2.Originally, he has 28 ceilings to paint. So, 28 - 15 = 13 ceilings will be left to paint after next week. The answer is 13."
+        },
+        {
+            "question": "Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?\nQ:",
+            "division": "Let's solve one by one: 1.How many golf balls did he have at the end of wednesday?(Hint: Notice that 'The ball Michael lost on tuesday = 23', 'The ball Michael lost on wednesday = 2', 'At the end of wednesday, Michael has 58 - 23 -2 balls')\nA:",
+            "answer": "1.Michael started with 58 golf balls. The ball Michael lost on tuesday = 23. The ball Michael lost on wednesday = 2. So, at the end of wednesday, Michael has 58 - 23 -2 = 33 balls. The answer is 33."
+        }
+
+    ]
+}
