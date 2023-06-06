@@ -1,17 +1,19 @@
 from statistics import mean
 from torch.utils.data import Dataset
 import openai
-import os
+import sys
 import json
 import torch
+import glob
 import numpy as np
+import pandas as pd
 import random
 import re
 import multiprocessing
 import time
 
-#openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key="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"
+
+
 '''
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
@@ -31,16 +33,16 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
 
     # https://beta.openai.com/account/api-keys
 
-    if args.model == 'gpt3':
+    if args.model == 'gpt3-003':
+        engine = "text-davinci-003"
+    elif args.model == 'gpt3-002':
         engine = "text-davinci-002"
     elif args.model == 'gpt3_chat':
         engine = "gpt-3.5-turbo"
-    elif args.model == 'gpt4':
-        engine = "gpt-4"
     else:
         raise ValueError("model is not properly defined ...")
 
-    if engine == 'text-davinci-002':
+    if engine == 'text-davinci-003' or engine == 'text-davinci-002':
         response = openai.Completion.create(
             model=engine,
             prompt=fewshot + question,
@@ -61,11 +63,17 @@ def decoder_for_gpt3(fewshot, question, args, max_length):
             answer = response["choices"][0]["text"]
     # gpt-3.5-turbo and gpt-4
     else:
+        if args.dataset.startswith("math"):
+            format_prompt = """Answer the final question Q according to the given prompts.
+                      You should append a sentence like \"The answer is [Your Answer].\" at the end of your output.\n"""
+        else:
+            format_prompt = ""
+        content = format_prompt + fewshot + question
         response = openai.ChatCompletion.create(
             model=engine,
             messages=[
-                {"role": "system", "content": "Follow the given examples and answer the question."},
-                {"role": "user", "content": fewshot + question}
+                #"role": "system", "content": "Follow the given examples and answer the question."},
+                {"role": "user", "content": content}
             ],
             max_tokens=max_length,
             temperature=args.temperature,
@@ -181,6 +189,9 @@ def create_fewshot(args, demo_path):
             else:
                 for i in index_list:
                     demo_text += x[i] + " " + y[i] + "\n\n"
+    elif args.method == "zero_shot_ps+":
+        with open(demo_path, encoding="utf-8") as f:
+            demo_text = f.read()
     else:
         demo_text = ""
     return demo_text
@@ -233,20 +244,6 @@ def data_reader(args):
                 questions.append(json_res["question"].strip())
                 answers.append(json_res["answer"].split("#### ")[-1])
 
-    elif args.dataset == "commonsensqa":
-        with open(args.dataset_path) as f:
-            lines = f.readlines()
-            for line in lines:
-                json_res = decoder.raw_decode(line)[0]
-                choice = "Answer Choices:"
-                for c in json_res["question"]["choices"]:
-                    choice += " ("
-                    choice += c["label"]
-                    choice += ") "
-                    choice += c["text"]
-                questions.append(json_res["question"]["stem"].strip() + " " + choice)
-                answers.append(json_res["answerKey"])
-
     elif args.dataset in ("addsub", "multiarith", "singleeq"):
         with open(args.dataset_path) as f:
             json_data = json.load(f)
@@ -255,19 +252,6 @@ def data_reader(args):
                 a = str(line["lSolutions"][0])
                 if a[-2:] == ".0":
                     a = a[:-2]
-                questions.append(q)
-                answers.append(a)
-
-    elif args.dataset == "strategyqa":
-        with open(args.dataset_path) as f:
-            json_data = json.load(f)["examples"]
-            for line in json_data:
-                q = line["input"].strip()
-                a = int(line["target_scores"]["Yes"])
-                if a == 1:
-                    a = "yes"
-                else:
-                    a = "no"
                 questions.append(q)
                 answers.append(a)
 
@@ -282,49 +266,25 @@ def data_reader(args):
                 questions.append(q)
                 answers.append(a)
 
-    elif args.dataset in ("bigbench_date", "object_tracking"):
+    elif args.dataset.startswith("math"):
         with open(args.dataset_path) as f:
             json_data = json.load(f)
-            json_data = json_data["examples"]
-            if args.dataset == "bigbench_date":
-                choice_index = ['A', 'B', 'C', 'D', 'E', 'F']
-            elif args.dataset in ("object_tracking"):
-                choice_index = ['A', 'B', 'C']
-            else:
-                raise ValueError("dataset is not properly defined ...")
             for line in json_data:
-                q = line["input"].strip()
-                if args.dataset == "bigbench_date":
-                    choice = "Answer Choices:"
-                    # Randomly shuffle the answer choice dictionary because the original answer is always A ...
-                    choice_dic = shuffleDict(line["target_scores"])
-                elif args.dataset == "object_tracking":
-                    choice = "\nWhich choice is true ? Answer Choices:"
-                    choice_dic = line["target_scores"]
-                else:
-                    raise ValueError("dataset is not properly defined ...")
-                for i, key_value in enumerate(choice_dic.items()):
-                    key, value = key_value
-                    choice += " ("
-                    choice += choice_index[i]
-                    choice += ") "
-                    choice += key
-                    if value == 1:
-                        a = choice_index[i]
-                        # a = key
-                q = q + " " + choice
+                q = line["problem"]
+                a = remove_boxed(last_boxed_only_string(line["solution"]))
                 questions.append(q)
                 answers.append(a)
 
-    elif args.dataset in ("coin_flip", "last_letters"):
+    elif args.dataset == "gsmic":
         with open(args.dataset_path) as f:
             json_data = json.load(f)
-            json_data = json_data["examples"]
             for line in json_data:
-                q = line["question"]
+                q = line["new_question"]
                 a = line["answer"]
                 questions.append(q)
                 answers.append(a)
+
+
 
     else:
         raise ValueError("dataset is not properly defined ...")
@@ -392,30 +352,37 @@ def answer_cleaning(args, pred, must_choice=False):
     pred = preds[-1]
 
     if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot", "holmes", "holmes+"):
-        preds = pred.split("The answer is")
+        preds = re.split(r"[Tt]he answer is ", pred)
         answer_flag = True if len(preds) > 1 else False
         pred = preds[-1]
 
-    if args.dataset in ("aqua", "commonsensqa"):
+    if args.dataset =="aqua":
         pred = re.findall(r'A|B|C|D|E', pred)
-    elif args.dataset == "bigbench_date":
-        pred = re.findall(r'A|B|C|D|E|F', pred)
-    elif args.dataset in ("object_tracking"):
-        pred = re.findall(r'A|B|C', pred)
-    elif args.dataset in ("gsm8k", "addsub", "multiarith", "svamp", "singleeq"):
+    elif args.dataset in ("gsm8k", "addsub", "multiarith", "svamp", "singleeq", "gsmic"):
         if must_choice:
             pred = re.findall(r'A|B|C|D', pred)
         else:
             pred = pred.replace(",", "")
             pred = [s for s in re.findall(r'-?\d+\.?\d*', pred)]
-    elif args.dataset in ("strategyqa", "coin_flip"):
-        pred = pred.lower()
-        pred = re.sub("\"|\'|\n|\.|\s|\:|\,", " ", pred)
-        pred = pred.split(" ")
-        pred = [i for i in pred if i in ("yes", "no")]
-    elif args.dataset == "last_letters":
-        pred = re.sub("\"|\'|\n|\.|\s", "", pred)
-        pred = [pred]
+    elif args.dataset.startswith("math"):
+        print(pred)
+        pat = re.compile(r"\\boxed{.*}")
+        boxed_span = pat.search(pred, 1)
+        if answer_flag:
+            if pred[-1] == ".":
+                pred = pred[:-1]
+            pred = re.sub("[$]", "", pred)
+            span = re.search(r"\\boxed{.*}", pred)
+            if span:
+                span = span.span()
+                pred = pred[span[0] + 7:span[1] - 1]
+            pred = [pred]
+        elif boxed_span:
+            span = boxed_span.span()
+            pred = [pred[span[0] + 7:span[1] - 1]]
+        else:
+            pred = pred.replace(",", "")
+            pred = [s for s in re.findall(r'-?\d+\.?\d*', pred)]
     else:
         raise ValueError("dataset is not properly defined ...")
 
@@ -423,14 +390,14 @@ def answer_cleaning(args, pred, must_choice=False):
     if len(pred) == 0:
         pred = ""
     else:
-        if args.method in ("few_shot", "few_shot_cot", "auto_cot", "key_cot", "ltm_cot", "holmes", "holmes+"):
+        if args.method in ("few_shot_cot", "auto_cot", "key_cot", "ltm_cot", "holmes", "holmes+"):
             if answer_flag:
                 # choose the first element in list ...
                 pred = pred[0]
             else:
                 # choose the last element in list ...
                 pred = pred[-1]
-        elif args.method in ("zero_shot", "zero_shot_cot"):
+        elif args.method =="zero_shot_ps+":
             # choose the first element in list ...
             pred = pred[0]
         else:
@@ -596,24 +563,6 @@ def generate_hint(condition_list, question_list, location_dict_key, location_dic
     return hint
 
 
-'''
-def generate_hint(condition_list, question_list, location_dict):
-    hint = "Let's break down this problem:"
-    j = 1
-    for i in range(len(question_list)-1):
-        if len(location_dict[i+1])==0:
-            hint += " " + str(j) + "." + question_list[i]
-            j += 1
-        else:
-            for k in range(len(location_dict[i+1])):
-                hint += " " + str(j) + ".What means '" + condition_list[location_dict[i+1][k]-1]+"'?"
-                j += 1
-            hint += " " + str(j) + "." + question_list[i]
-            j += 1
-    i = len(question_list)-1
-    hint += " " + str(j) + "." + question_list[i] + "\n"
-    return hint
-'''
 
 def extract_question(sub_q):
     information = sub_q.split("we need to know:")
@@ -638,3 +587,243 @@ def trans2math(key_list, question):
 
     return target_question
 
+
+# utils for MATH dataset
+
+def remove_boxed(s):
+    left = "\\boxed{"
+    try:
+        assert s[:len(left)] == left
+        assert s[-1] == "}"
+        return s[len(left):-1]
+    except:
+        return None
+
+
+def last_boxed_only_string(string):
+    idx = string.rfind("\\boxed")
+    if idx < 0:
+        idx = string.rfind("\\fbox")
+        if idx < 0:
+            return None
+
+    i = idx
+    right_brace_idx = None
+    num_left_braces_open = 0
+    while i < len(string):
+        if string[i] == "{":
+            num_left_braces_open += 1
+        if string[i] == "}":
+            num_left_braces_open -= 1
+            if num_left_braces_open == 0:
+                right_brace_idx = i
+                break
+        i += 1
+
+    if right_brace_idx == None:
+        retval = None
+    else:
+        retval = string[idx:right_brace_idx + 1]
+
+    return retval
+
+
+def _fix_fracs(string):
+    substrs = string.split("\\frac")
+    new_str = substrs[0]
+    if len(substrs) > 1:
+        substrs = substrs[1:]
+        for substr in substrs:
+            new_str += "\\frac"
+            if substr[0] == "{":
+                new_str += substr
+            else:
+                try:
+                    assert len(substr) >= 2
+                except:
+                    return string
+                a = substr[0]
+                b = substr[1]
+                if b != "{":
+                    if len(substr) > 2:
+                        post_substr = substr[2:]
+                        new_str += "{" + a + "}{" + b + "}" + post_substr
+                    else:
+                        new_str += "{" + a + "}{" + b + "}"
+                else:
+                    if len(substr) > 2:
+                        post_substr = substr[2:]
+                        new_str += "{" + a + "}" + b + post_substr
+                    else:
+                        new_str += "{" + a + "}" + b
+    string = new_str
+    return string
+
+
+def _fix_a_slash_b(string):
+    if len(string.split("/")) != 2:
+        return string
+    a = string.split("/")[0]
+    b = string.split("/")[1]
+    try:
+        a = int(a)
+        b = int(b)
+        assert string == "{}/{}".format(a, b)
+        new_string = "\\frac{" + str(a) + "}{" + str(b) + "}"
+        return new_string
+    except:
+        return string
+
+
+def _remove_right_units(string):
+    # "\\text{ " only ever occurs (at least in the val set) when describing units
+    if "\\text{ " in string:
+        splits = string.split("\\text{ ")
+        assert len(splits) == 2
+        return splits[0]
+    else:
+        return string
+
+
+def _fix_sqrt(string):
+    if "\\sqrt" not in string:
+        return string
+    splits = string.split("\\sqrt")
+    new_string = splits[0]
+    for split in splits[1:]:
+        if split[0] != "{":
+            a = split[0]
+            new_substr = "\\sqrt{" + a + "}" + split[1:]
+        else:
+            new_substr = "\\sqrt" + split
+        new_string += new_substr
+    return new_string
+
+
+def _strip_string(string):
+    # linebreaks
+    string = string.replace("\n", "")
+    # print(string)
+
+    # remove inverse spaces
+    string = string.replace("\\!", "")
+    # print(string)
+
+    # replace \\ with \
+    string = string.replace("\\\\", "\\")
+    # print(string)
+
+    # replace tfrac and dfrac with frac
+    string = string.replace("tfrac", "frac")
+    string = string.replace("dfrac", "frac")
+    # print(string)
+
+    # remove \left and \right
+    string = string.replace("\\left", "")
+    string = string.replace("\\right", "")
+    # print(string)
+
+    # Remove circ (degrees)
+    string = string.replace("^{\\circ}", "")
+    string = string.replace("^\\circ", "")
+
+    # remove dollar signs
+    string = string.replace("\\$", "")
+
+    # remove units (on the right)
+    string = _remove_right_units(string)
+
+    # remove percentage
+    string = string.replace("\\%", "")
+    string = string.replace("\%", "")
+
+    # " 0." equivalent to " ." and "{0." equivalent to "{." Alternatively, add "0" if "." is the start of the string
+    string = string.replace(" .", " 0.")
+    string = string.replace("{.", "{0.")
+    # if empty, return empty string
+    if len(string) == 0:
+        return string
+    if string[0] == ".":
+        string = "0" + string
+
+    # to consider: get rid of e.g. "k = " or "q = " at beginning
+    if len(string.split("=")) == 2:
+        if len(string.split("=")[0]) <= 2:
+            string = string.split("=")[1]
+
+    # fix sqrt3 --> sqrt{3}
+    string = _fix_sqrt(string)
+
+    # remove spaces
+    string = string.replace(" ", "")
+
+    # \frac1b or \frac12 --> \frac{1}{b} and \frac{1}{2}, etc. Even works with \frac1{72} (but not \frac{72}1). Also does a/b --> \\frac{a}{b}
+    string = _fix_fracs(string)
+
+    # manually change 0.5 --> \frac{1}{2}
+    if string == "0.5":
+        string = "\\frac{1}{2}"
+
+    # NOTE: X/Y changed to \frac{X}{Y} in dataset, but in simple cases fix in case the model output is X/Y
+    string = _fix_a_slash_b(string)
+
+    return string
+
+
+def is_equiv(str1, str2, verbose=False):
+    if str1 is None and str2 is None:
+        print("WARNING: Both None")
+        return True
+    if str1 is None or str2 is None:
+        return False
+
+    try:
+        ss1 = _strip_string(str1)
+        ss2 = _strip_string(str2)
+        if verbose:
+            print(ss1, ss2)
+        return ss1 == ss2
+    except:
+        return str1 == str2
+
+
+# Data sampling for GSM-IC dataset
+def sample(df, n_sample=10):
+    groups = df.groupby(["original_question"])
+    sampled_data = []
+    for _, group in groups:
+        sampled_data.extend(random.choices(group.to_dict("records"), k=n_sample))
+    return sampled_data
+
+
+def GSMICSampling(rseed=42):
+    # Reading data from these paths
+    path1 = "./dataset/GSM-IC/GSM-IC_2step.json"
+    path2 = "./dataset/GSM-IC/GSM-IC_mstep.json"
+    data1 = []
+    data2 = []
+    with open(path1, "r+", encoding="utf8") as f:
+        json_data = json.load(f)
+        data1.extend(json_data)
+    with open(path2, "r+", encoding="utf8") as f:
+        json_data = json.load(f)
+        data2.extend(json_data)
+    print(len(data1), len(data2))
+    df1 = pd.DataFrame(data1)
+    df2 = pd.DataFrame(data2)
+    df1.head()
+
+    random.seed(rseed)
+    # save 2-step test data
+    sampled_data_1 = sample(df1)
+    len(sampled_data_1)
+    with open("./dataset/GSM-IC/test_2step.json", "w", encoding="utf8") as f:
+        json.dump(sampled_data_1, f, indent=4)
+    # save multi-step test data
+    sampled_data_2 = sample(df2)
+    len(sampled_data_2)
+    with open("./dataset/GSM-IC/test_mstep.json", "w", encoding="utf8") as f:
+        json.dump(sampled_data_2, f, indent=4)
+    # save all test data
+    with open("./dataset/GSM-IC/test.json", "w", encoding="utf8") as f:
+        json.dump(sampled_data_1 + sampled_data_2, f, indent=4)

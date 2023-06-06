@@ -1,0 +1,19 @@
+13st data: correct? 0: correct_number? 11.0: accuracy? 84.61538461538461
+14st data: correct? 1: correct_number? 12.0: accuracy? 85.71428571428571
+15st data: correct? 1: correct_number? 13.0: accuracy? 86.66666666666667
+16st data: correct? 1: correct_number? 14.0: accuracy? 87.5
+17st data: correct? 1: correct_number? 15.0: accuracy? 88.23529411764706
+18st data: correct? 1: correct_number? 16.0: accuracy? 88.88888888888889
+19st data: correct? 0: correct_number? 16.0: accuracy? 84.21052631578947
+20st data: correct? 0: correct_number? 16.0: accuracy? 80.0
+21st data: correct? 1: correct_number? 17.0: accuracy? 80.95238095238095
+22st data: correct? 1: correct_number? 18.0: accuracy? 81.81818181818183
+23st data: correct? 1: correct_number? 19.0: accuracy? 82.6086956521739
+24st data: correct? 1: correct_number? 20.0: accuracy? 83.33333333333334
+25st data: correct? 1: correct_number? 21.0: accuracy? 84.0
+26st data: correct? 1: correct_number? 22.0: accuracy? 84.61538461538461
+27st data: correct? 1: correct_number? 23.0: accuracy? 85.18518518518519
+28st data: correct? 0: correct_number? 23.0: accuracy? 82.14285714285714
+29st data: correct? 1: correct_number? 24.0: accuracy? 82.75862068965517
+30st data: correct? 1: correct_number? 25.0: accuracy? 83.33333333333334
+31st data

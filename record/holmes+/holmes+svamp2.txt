@@ -1,0 +1,36 @@
+1st data: correct? 0: correct_number? 0.0: accuracy? 0.0
+2st data1st data: correct? 0: correct_number? 0.0: accuracy? 0.0
+2st data1st data: correct? 1: correct_number? 1.0: accuracy? 100.0
+2st data: correct? 1: correct_number? 2.0: accuracy? 100.0
+3st data: correct? 1: correct_number? 3.0: accuracy? 100.0
+4st data: correct? 1: correct_number? 4.0: accuracy? 100.0
+5st data: correct? 1: correct_number? 5.0: accuracy? 100.0
+6st data: correct? 1: correct_number? 6.0: accuracy? 100.0
+7st data: correct? 1: correct_number? 7.0: accuracy? 100.0
+8st data: correct? 1: correct_number? 8.0: accuracy? 100.0
+9st data: correct? 1: correct_number? 9.0: accuracy? 100.0
+10st data: correct? 1: correct_number? 10.0: accuracy? 100.0
+11st data: correct? 1: correct_number? 11.0: accuracy? 100.0
+12st data: correct? 1: correct_number? 12.0: accuracy? 100.0
+13st data: correct? 0: correct_number? 12.0: accuracy? 92.3076923076923
+14st data: correct? 1: correct_number? 13.0: accuracy? 92.85714285714286
+15st data: correct? 1: correct_number? 14.0: accuracy? 93.33333333333333
+16st data: correct? 1: correct_number? 15.0: accuracy? 93.75
+17st data: correct? 1: correct_number? 16.0: accuracy? 94.11764705882352
+18st data: correct? 1: correct_number? 17.0: accuracy? 94.44444444444444
+19st data: correct? 1: correct_number? 18.0: accuracy? 94.73684210526315
+20st data: correct? 1: correct_number? 19.0: accuracy? 95.0
+21st data: correct? 1: correct_number? 20.0: accuracy? 95.23809523809523
+22st data: correct? 1: correct_number? 21.0: accuracy? 95.45454545454545
+23st data: correct? 0: correct_number? 21.0: accuracy? 91.30434782608695
+24st data: correct? 1: correct_number? 22.0: accuracy? 91.66666666666666
+25st data: correct? 0: correct_number? 22.0: accuracy? 88.0
+26st data: correct? 0: correct_number? 22.0: accuracy? 84.61538461538461
+27st data: correct? 1: correct_number? 23.0: accuracy? 85.18518518518519
+28st data: correct? 1: correct_number? 24.0: accuracy? 85.71428571428571
+29st data: correct? 1: correct_number? 25.0: accuracy? 86.20689655172413
+30st data: correct? 1: correct_number? 26.0: accuracy? 86.66666666666667
+31st data: correct? 1: correct_number? 27.0: accuracy? 87.09677419354838
+32st data: correct? 0: correct_number? 27.0: accuracy? 84.375
+33st data: correct? 1: correct_number? 28.0: accuracy? 84.84848484848484
+34st data

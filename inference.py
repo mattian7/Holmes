@@ -1,3 +1,4 @@
+import sys
 import argparse
 import time
 from utils import *
@@ -6,14 +7,17 @@ from utils import *
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Zero-shot-CoT")
     parser.add_argument("--dataset", type=str, default="gsm8k",
-                        choices=["aqua", "gsm8k", "gsmic", "commonsensqa", "addsub", "multiarith",
-                                 "strategyqa", "svamp", "singleeq", "coin_flip", "last_letters"],
+                        choices=["aqua", "gsm8k", "gsmic", "addsub", "multiarith",
+                                 "svamp", "singleeq", "math_prealgebra",
+                                 "math_algebra", "math_counting_and_probability", "math_geometry",
+                                 "math_intermediate_algebra",
+                                 "math_number_theory", "math_precalculus"],
                         help="dataset used for experiment"
                         )
-    parser.add_argument("--method", type=str, default="key_cot",
-                        choices=["few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "holmes", "holmes+"], help="method"
+    parser.add_argument("--method", type=str, default="holmes+",
+                        choices=["few_shot_cot", "auto_cot", "ltm_cot", "key_cot", "holmes", "holmes+", "zero_shot_ps+"], help="method"
                         )
-    parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3", "gpt3_chat", "gpt4"])
+    parser.add_argument("--model", type=str, default='gpt3_chat', choices=["gpt3-003", "gpt3_chat", "gpt3-002"])
     parser.add_argument("--random_seed", type=int, default=1, help="set random seed")
     parser.add_argument("--resume_id", type=int, default=0,
                         help="resume from which question id (current line number in the output file)"
@@ -27,7 +31,7 @@ def parse_arguments():
     parser.add_argument("--max_length_cot", type=int, default=512,
                         help="maximum length of output tokens by model for reasoning extraction"
                         )
-    parser.add_argument("--max_length_direct", type=int, default=32,
+    parser.add_argument("--max_length_direct", type=int, default=512,
                         help="maximum length of output tokens by model for answer extraction"
                         )
     parser.add_argument("--limit_dataset_size", type=int, default=0,
@@ -38,9 +42,9 @@ def parse_arguments():
                         )
     parser.add_argument("--log_dir", type=str, default="./log/", help="log directory")
     parser.add_argument(
-        "--demo_path", type=str, default="demos/keycot4/stage", help="pre-generated demos used for experiment"
+        "--demo_path", type=str, default="demos/holmes2/stage", help="pre-generated demos used for experiment"
     )
-    parser.add_argument("--output_dir", type=str, default="experiment/gsm8k", help="output directory")
+    parser.add_argument("--output_dir", type=str, default="record/holmes+/holmes+gsmic.txt", help="output directory")
     parser.add_argument("--resume_correction", type=int, default=0, help="resume from how many data was correct before")
 
     args = parser.parse_args()
@@ -50,40 +54,25 @@ def parse_arguments():
     elif args.dataset == "gsm8k":
         args.dataset_path = "./dataset/grade-school-math/test.jsonl"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
-    elif args.dataset == "gsmic":
-        args.dataset_path = "./dataset/GSM-irrelevant-context/test.jsonl"
-        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
-    elif args.dataset == "commonsensqa":
-        args.dataset_path = "./dataset/CommonsenseQA/dev_rand_split.jsonl"
-        args.direct_answer_trigger = "\nTherefore, among A through E, the answer is"
-        args.plausible_answer_trigger = "Choose the most plausible answer from among choices A through E."
     elif args.dataset == "addsub":
         args.dataset_path = "./dataset/AddSub/AddSub.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "multiarith":
         args.dataset_path = "./dataset/MultiArith/MultiArith.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
-    elif args.dataset == "strategyqa":
-        args.dataset_path = "./dataset/StrategyQA/task.json"
-        args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"
     elif args.dataset == "svamp":
         args.dataset_path = "./dataset/SVAMP/SVAMP.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     elif args.dataset == "singleeq":
         args.dataset_path = "./dataset/SingleEq/questions.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
-    elif args.dataset == "bigbench_date":
-        args.dataset_path = "./dataset/Bigbench_Date/task.json"
-        args.direct_answer_trigger = "\nTherefore, among A through F, the answer is"
-    elif args.dataset == "object_tracking":
-        args.dataset_path = "./dataset/Bigbench_object_tracking/task.json"
-        args.direct_answer_trigger = "\nTherefore, among A through C, the answer is"
-    elif args.dataset == "coin_flip":
-        args.dataset_path = "./dataset/coin_flip/coin_flip.json"
-        args.direct_answer_trigger = "\nTherefore, the answer (Yes or No) is"
-    elif args.dataset == "last_letters":
-        args.dataset_path = "./dataset/last_letters/last_letters.json"
+    elif args.dataset.startswith("math"):
+        subtask = args.dataset[5:]
+        args.dataset_path = "./dataset/MATH/test/{}/{}.json".format(subtask, subtask)
         args.direct_answer_trigger = "\nTherefore, the answer is"
+    elif args.dataset == "gsmic":
+        args.dataset_path = "./dataset/GSM-IC/test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     else:
         raise ValueError("dataset is not properly defined ...")
 
@@ -98,9 +87,8 @@ def main():
 
     fix_seed(args.random_seed)
 
-    #print("OPENAI_API_KEY:")
-    #print(os.getenv("OPENAI_API_KEY")[0:5] + '**********')
-    openai.api_key="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"
+
+
     decoder = Decoder()
     print("setup data loader ...")
     dataloader = setup_data_loader(args)
@@ -121,7 +109,7 @@ def main():
         fewshot_stage1 = create_fewshot(args, demo_path)
         demo_path = args.demo_path + "2"
         fewshot_stage2 = create_fewshot(args, demo_path)
-    elif args.method == "few_shot_cot":
+    elif (args.method == "few_shot_cot") or(args.method == "zero_shot_ps+"):
         demo_path = args.demo_path
         fewshot_stage1 = create_fewshot(args, demo_path)
     elif args.method == "holmes":
@@ -163,8 +151,8 @@ def main():
             wp.write("{}st data".format(i + 1))
 
             x_, y_ = data
-            x = "Question: " + x_[0] + "\n"
-            #x = "Q: " + x_[0] + "\n"
+            #x = "Question: " + x_[0] + "\n"
+            x = "Q: " + x_[0] + "\n"
             y = y_[0].strip()
 
             output_line["question"] = x
@@ -361,7 +349,6 @@ def main():
                 print(q_stage3)
                 print(answer)
                 print("\n")
-
             elif args.method == "few_shot_cot":
                 q = x + "A:"
                 while True:
@@ -375,6 +362,25 @@ def main():
                 print(q)
                 print(answer)
                 print("\n")
+            elif args.method == "zero_shot_ps+":
+                q = x + "A: " + fewshot_stage1
+                while True:
+                    try:
+                        answer0 = decoder.key_cot_decode("", q, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(1)
+                        continue
+                z = "\n".join([q, answer0, args.direct_answer_trigger])
+                while True:
+                    try:
+                        answer = decoder.key_cot_decode("", z, args, max_length)
+                        break
+                    except Exception as e:
+                        print("api Error:", e)
+                        time.sleep(1)
+                        continue
 
             if key_error_flag:
                 pred = 'Wrong answer because of wrong format answer of LLM'
@@ -394,8 +400,12 @@ def main():
 
             # Checking answer ...
             # correct = (np.array([pred]) == np.array([y])).sum().item()
-            y = y.replace(",", "")
-            if pred == '':
+            if not args.dataset.startswith("math"):
+                y = y.replace(",", "")
+
+            if args.dataset.startswith("math"):
+                correct = int(is_equiv(pred, y))
+            elif pred == '':
                 correct = 0
             elif key_error_flag or ltm_error_flag:
                 correct = 0
