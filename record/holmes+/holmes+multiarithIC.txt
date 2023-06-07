@@ -1,0 +1,3 @@
+1st data: correct? 1: correct_number? 1.0: accuracy? 100.0
+2st data: correct? 1: correct_number? 2.0: accuracy? 100.0
+3st data

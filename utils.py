@@ -244,7 +244,7 @@ def data_reader(args):
                 questions.append(json_res["question"].strip())
                 answers.append(json_res["answer"].split("#### ")[-1])
 
-    elif args.dataset in ("addsub", "multiarith", "singleeq"):
+    elif args.dataset in ("addsub", "multiarith", "singleeq", "multiarithic", "singleeqic"):
         with open(args.dataset_path) as f:
             json_data = json.load(f)
             for line in json_data:
@@ -358,7 +358,7 @@ def answer_cleaning(args, pred, must_choice=False):
 
     if args.dataset =="aqua":
         pred = re.findall(r'A|B|C|D|E', pred)
-    elif args.dataset in ("gsm8k", "addsub", "multiarith", "svamp", "singleeq", "gsmic"):
+    elif args.dataset in ("gsm8k", "addsub", "multiarith", "svamp", "singleeq", "gsmic", "multiarithic", "singleeqic"):
         if must_choice:
             pred = re.findall(r'A|B|C|D', pred)
         else:

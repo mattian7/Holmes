@@ -8,7 +8,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Zero-shot-CoT")
     parser.add_argument("--dataset", type=str, default="gsm8k",
                         choices=["aqua", "gsm8k", "gsmic", "addsub", "multiarith",
-                                 "svamp", "singleeq", "math_prealgebra",
+                                 "svamp", "singleeq", "multiarithic", "singleeqic", "math_prealgebra",
                                  "math_algebra", "math_counting_and_probability", "math_geometry",
                                  "math_intermediate_algebra",
                                  "math_number_theory", "math_precalculus"],
@@ -72,6 +72,12 @@ def parse_arguments():
         args.direct_answer_trigger = "\nTherefore, the answer is"
     elif args.dataset == "gsmic":
         args.dataset_path = "./dataset/GSM-IC/test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "multiarithic":
+        args.dataset_path = "./dataset/MultiArith-IC/test.json"
+        args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
+    elif args.dataset == "singleeq":
+        args.dataset_path = "./dataset/SingleEq-IC/test.json"
         args.direct_answer_trigger = "\nTherefore, the answer (arabic numerals) is"
     else:
         raise ValueError("dataset is not properly defined ...")

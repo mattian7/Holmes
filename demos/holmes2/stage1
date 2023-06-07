@@ -1,5 +1,5 @@
 {
-    "demo": [
+    "demo-best": [
         {
             "question": "Q: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary. How many more crunches than push-ups did Zachary do?\nA:",
             "answer": "We need to notice: 1.\"Zachary did 46 push-ups.\", 2.\"Zachary did 58 push-ups.\", 3.\"The number of crunches Zachary did is irrelevant to this question.\"."
@@ -27,6 +27,36 @@
         {
             "question": "Q: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
             "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\", 3.\"The dollars she spent is irrelevant to this question.\"."
+        }
+    ],
+    "demo": [
+        {
+            "question": "Q: Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than Zachary. In the same gym class, there were 25 students in total. How many more crunches than push-ups did Zachary do?\nA:",
+            "answer": "We need to notice: 1.\"Zachary did 46 push-ups.\", 2.\"Zachary did 58 push-ups.\", 3.\"The number of crunches Zachary did is irrelevant to this question.\", 4.\"The number of students is irrelevant to this question.\"."
+        },
+        {
+            "question": "Q: There are many different books in the 'crazy silly school' series. If you have read 13 of the books and are yet to read 8 books. The author of the series, Mr. Johnson, has written a total of 35 books. How many books are there in the 'crazy silly school' series?\nA:",
+            "answer": "We need to notice: 1.\"You have read 13 of the books.\", 2.\"You are yet to read 8 books.\", 3.\"The sum of read and unread books is equal to how many books are here.\", 4.\"How many books did the author write is irrelevant to this question.\"."
+        },
+        {
+            "question": "Q: Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. During the weekend, Ryan also spends 3 hours on playing video games each day. If he learns for 5 days, how many hours does he spend on learning english and chinese in all?\nA:",
+            "answer": "We need to notice: 1.\"Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese.\", 2.\"He learns for 5 days.\", 3.\"How long does Ryan spend on games is irrelevant to this question.\"."
+        },
+        {
+            "question": "Q: Matthew had 29 crackers and 30 cakes. The total number of cookies Matthew had was 15. If Matthew gave equal numbers of crackers and cakes to his 2 friends. How many cakes did each person eat?\nA:",
+            "answer": "We need to notice: 1.\"Matthew had 30 cakes.\", 2.\"Matthew gave equal numbers of crackers and cakes to his 2 friends.\", 3.\"The number of crackers and cookies is irrelevant to this question.\"."
+        },
+        {
+            "question": "Q: Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. The total number of text messages Jack received during the day was 24. How many letters did jack receive in the day?\nA:",
+            "answer": "We need to notice: 1.\"Jack received 6 letters in the morning.\", 2.\"Jack received 7 letters in the afternoon.\", 3.\"The number of emails and text messages Jack received is irrelevant to this question.\"."
+        },
+        {
+            "question": "Q: Paul had 108 books and 55 pens. After selling some books and pens in a garage sale he had 66 books and 59 pens left. Paul also sold 4 tables during the garage sale. How many books did he sell in the garage sale?\nA:",
+            "answer": "We need to notice: 1.\"Paul had 108 books.\", 2.\"After selling some books in a garage sale he had 66 books left.\", 3.\"The number of pens and tables is irrelevant to this question.\"."
+        },
+        {
+            "question": "Q: For Gwen's birthday she received 8 dollars from her mom. Her dad gave her 5 more dollars. The total number of guests at Gwen's birthday party was 12. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?\nA:",
+            "answer": "We need to notice: 1.\"For Gwen's birthday she received 8 dollars from her mom.\", 2.\"Her dad gave her 5 more dollars.\", 3.\"The dollars she spent is irrelevant to this question.\", 4.\"The number of guests is irrelevant to this question.\"."
         }
     ]
 }

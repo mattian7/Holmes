@@ -1,0 +1,756 @@
+{
+    "demos": [
+        {
+            "idx": 334,
+            "question": " [Irrelevant Sentence]. Henry was helping the cafeteria workers pick up lunch trays, but he could only carry 9 trays at a time. If he had to pick up 29 trays from one table and 52 trays from another, how many trips will he make? ",
+            "in-topic": "[ROLE] has been working in the cageteria for [NUMBER] days",
+            "off-topic": "[ROLE] bought [NUMBER] CDs",
+            "role": ["Henry's father", "Mary", "Mia"],
+            "number": [
+                29,
+                52,
+                9,
+                19,
+                22
+            ],
+            "gold_ans": 9.0
+        },
+        {
+            "idx": 389,
+            "question": " [Irrelevant Sentence]. Wendy uploaded 22 pictures from her phone and 2 from her camera to facebook. If Wendy sorted the pics into 4 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ",
+            "in-topic": "[ROLE] took [NUMBER] pictures last week",
+            "off-topic": "[ROLE] bought [NUMBER] books",
+            "role": ["Wendy's mother", "Sandy", "Sandy's friend"],
+            "number": [
+                22,
+                2,
+                4,
+                12,
+                14
+            ],
+            "gold_ans": 6.0
+        },
+        {
+            "idx": 393,
+            "question": " For a birthday party Tom bought 4 regular sodas and 52 diet sodas. [Irrelevant Sentence]. If his fridge would only hold 7 on each shelf, how many shelves would he fill up? ",
+            "in-topic": "[ROLE] brought [NUMBER] friends to celebrate",
+            "off-topic": "[ROLE] taught them [NUMBER] games to play",
+            "role": ["Tom's brother", "Jayson", "Jayson's brother"],
+            "number": [
+                4,
+                52,
+                7,
+                144,
+                9
+            ],
+            "gold_ans": 8.0
+        },
+        {
+            "idx": 10,
+            "question": " [Irrelevant Sentence]. Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash? ",
+            "in-topic": "[ROLE] bought [NUMBER] short sleeve shirts",
+            "off-topic": "[ROLE] scored [NUMBER] goals",
+            "role": ["Valk", "Oliver's sister", "Valk's niece"],
+            "number": [
+                39,
+                47,
+                20,
+                44,
+                11
+            ],
+            "gold_ans": 66.0
+        },
+        {
+            "idx": 193,
+            "question": " [Irrelevant Sentence]. In fourth grade there were 4 students at the start of the year. During the year 3 fourth grade students left and 42 new students came to fourth grade. How many students were in fourth grade at the end? ",
+            "in-topic": "In [ROLE] there were [NUMBER] students at the start of the year",
+            "off-topic": "In [ROLE] there were [NUMBER] teachers",
+            "role": ["fifth grade", "third grade", "student union"],
+            "number": [
+                4,
+                42,
+                3,
+                11,
+                13
+            ],
+            "gold_ans": 43.0
+        },
+        {
+            "idx": 576,
+            "question": " [Irrelevant Sentence]. Wendy had 82 files on her computer. Wendy deleted 37 of them from computer and put the rest into folders with 5 files in each one. How many folders did Wendy end up with? ",
+            "in-topic": "[ROLE] had [NUMBER] papers in her schoolbag.",
+            "off-topic": "[ROLE] sold [NUMBER] concert tickets",
+            "role": ["Wendy's grandmother", "Sady", "Sady's sister"],
+            "number": [
+                82,
+                37,
+                5,
+                128,
+                95
+            ],
+            "gold_ans": 9.0
+        },
+        {
+            "idx": 431,
+            "question": " At the fair Adam bought 13 tickets. After riding the ferris wheel he had 4 tickets left. [Irrelevant Sentence]. If each ticket cost 9 dollars, how much money did Adam spend riding the ferris wheel? ",
+            "in-topic": "At the fair [ROLE] ate [NUMBER] pies.",
+            "off-topic": "[ROLE] planted [NUMBER] trees",
+            "role": ["Adam's girlfriend", "Bob", "Bob's wife"],
+            "number": [
+                9,
+                13,
+                4,
+                15
+            ],
+            "gold_ans": 81.0
+        },
+        {
+            "idx": 54,
+            "question": " [Irrelevant Sentence]. Paige had 43 math problems and 12 science problems for homework. If Paige finished 44 of her own problems at school, how many problems did she have to do for homework? ",
+            "in-topic": "[ROLE] had [NUMBER] math problems and [NUMBER] science problems for homework.",
+            "off-topic": "[ROLE] caught [NUMBER] fish",
+            "role": ["Paige's cousin", "Paul", "Paige's aunt"],
+            "number": [
+                43,
+                12,
+                44,
+                45,
+                69
+            ],
+            "gold_ans": 11.0
+        },
+        {
+            "idx": 475,
+            "question": " [Irrelevant Sentence]. At lunch a waiter had 7 customers and 4 of them didn't leave a tip. If he got $9 each from the ones who did tip, how much money did he earn at lunch? ",
+            "in-topic": "At breakfast [ROLE] had [NUMBER] customers",
+            "off-topic": "[ROLE] received [number] awards",
+            "role": ["the manager", "the customer", "the steward"],
+            "number": [
+                9,
+                7,
+                4,
+                2,
+                8
+            ],
+            "gold_ans": 27.0
+        },
+        {
+            "idx": 266,
+            "question": " [Irrelevant Sentence]. While shopping for music online, Zoe bought 3 country albums and 5 pop albums. Each album came with a lyric sheet and had 3 songs. How many songs did Zoe buy total? ",
+            "in-topic": "While shopping for books online, [ROLE] bought [NUMBER] fictions.",
+            "off-topic": "[ROLE] typed [NUMBER] pages",
+            "role": ["Joe", "Zoe's mother", "John", "John's father"],
+            "number": [
+                3,
+                3,
+                5,
+                9,
+                91
+            ],
+            "gold_ans": 24.0
+        },
+        {
+            "idx": 269,
+            "question": " Frank was collecting cans for recycling. [Irrelevant Sentence]. On Saturday Frank filled 5 bags up and on Sunday he filled 3 more bags. If each bag had 5 cans in it, how many cans did he pick up total during the weekend? ",
+            "in-topic": "On Monday [ROLE] filled [NUMBER] bags up",
+            "off-topic": "[ROLE] ran [NUMBER] miles on Sunday.",
+            "role": ["Frank's sister", "Emily", "Sam", "Sam's uncle"],
+            "number": [
+                5,
+                5,
+                3,
+                10,
+                8
+            ],
+            "gold_ans": 40.0
+        },
+        {
+            "idx": 162,
+            "question": " Janet was playing a video game and had 47 lives. [Irrelevant Sentence]. In a hard part of the game Janet lost 23 lives. If she got 46 more lives in the next level, how many lives would she have? ",
+            "in-topic": "[ROLE] was playing another video game and had [NUMBER] lives.",
+            "off-topic": "[ROLE] watched [NUMBER] episodes",
+            "role": ["Jannie", "Janet's sister", "Jannie's mother"],
+            "number": [
+                47,
+                46,
+                23,
+                12,
+                6
+            ],
+            "gold_ans": 70.0
+        },
+        {
+            "idx": 85,
+            "question": " A pet store had 15 siamese cats and 49 house cats. [Irrelevant Sentence]. During a sale the pet store sold 19 cats. How many cats do they have left? ",
+            "in-topic": "[ROLE] had [NUMBER] dogs.",
+            "off-topic": "[ROLE] counted [NUMBER] dollar bills",
+            "role": ["A bank", "A primary school", "A retailer"],
+            "number": [
+                15,
+                49,
+                19,
+                1000,
+                5000
+            ],
+            "gold_ans": 45.0
+        },
+        {
+            "idx": 580,
+            "question": " [Irrelevant Sentence]. The company invited 24 people to a luncheon, but 10 of them didn't show up. If the tables they had held 7 people each, how many tables do they need? ",
+            "in-topic": "The average salary of [ROLE]'s company is $[NUMBER].",
+            "off-topic": "[ROLE] lifted [NUMBER] pounds",
+            "role": ["Nesterov", "Adam", "Adam's neigbor"],
+            "number": [
+                24,
+                10,
+                7,
+                150,
+                250
+            ],
+            "gold_ans": 2.0
+        },
+        {
+            "idx": 273,
+            "question": " While playing a trivia game, Adam answered 8 questions correct in the first half and 2 questions correct in the second half. [Irrelevant Sentence]. If each question was worth 8 points, what was Adam's final score? ",
+            "in-topic": "[ROLE] answered [NUMBER] questions correct in the first half and [NUMBER] questions correct in the second half.",
+            "off-topic": "[ROLE] answered [NUMBER] questions",
+            "role": ["Adam's brother", "Matthew", "Matthew's sister"],
+            "number": [
+                8,
+                8,
+                2,
+                25,
+                10
+            ],
+            "gold_ans": 80.0
+        },
+        {
+            "idx": 379,
+            "question": " [Irrelevant Sentence]. A group of 3 friends went into the restaurant. The chef already had 8 chicken wings cooked but cooked 10 more for the group. If they each got the same amount how many would each person get? ",
+            "in-topic": "[ROLE] ordered [NUMBER] fish in a restaurant",
+            "off-topic": "[ROLE] planted [NUMBER] trees",
+            "role": ["The manager", "The dustman", "Foolman", "Avia"],
+            "number": [
+                8,
+                10,
+                3,
+                5,
+                7
+            ],
+            "gold_ans": 6.0
+        },
+        {
+            "idx": 420,
+            "question": " There were 8 friends playing a video game online when 5 players quit. [Irrelevant Sentence]. If each player left had 5 lives, how many lives did they have total? ",
+            "in-topic": "[ROLE] was playing a video game online with [NUMBER] lives left.",
+            "off-topic": "[ROLE] solved [NUMBER] math problems",
+            "role": ["Noah", "Nova", "Noz's friend"],
+            "number": [
+                5,
+                8,
+                5,
+                23,
+                22
+            ],
+            "gold_ans": 15.0
+        },
+        {
+            "idx": 122,
+            "question": " Faye had 34 coloring books. [Irrelevant Sentence]. If Faye gave away 3 of his books, but then bought 48 more, how many would she have total? ",
+            "in-topic": "[ROLE] had [NUMBER] coloring books.",
+            "off-topic": "[ROLE] wrote [NUMBER] letters.",
+            "role": ["Faye's brother", "Mia", "Mia's boyfriend", "Henry"],
+            "number": [
+                34,
+                48,
+                3,
+                32,
+                180
+            ],
+            "gold_ans": 79.0
+        },
+        {
+            "idx": 132,
+            "question": " At the arcade Jerry won 4 tickets. [Irrelevant Sentence]. If Jerry spent 2 tickets on a beanie and later won 47 more tickets, how many would he have? ",
+            "in-topic": "[ROLE] won [NUMBER] tickets.",
+            "off-topic": "[ROLE] painted [NUMBER] walls.",
+            "role": ["Tom", "Tom's friend", "Landlord"],
+            "number": [
+                4,
+                47,
+                2,
+                999,
+                9
+            ],
+            "gold_ans": 49.0
+        },
+        {
+            "idx": 137,
+            "question": " [Irrelevant Sentence]. George had 28 socks. If he threw away 4 old socks of his that didn't fit and bought 36 new socks, how many socks would he have? ",
+            "in-topic": "[ROLE] had [NUMBER] socks",
+            "off-topic": "[ROLE] baked [NUMBER] cookies",
+            "role": ["George's teacher", "Sophia", "George's uncle"],
+            "number": [
+                28,
+                36,
+                4,
+                55,
+                5
+            ],
+            "gold_ans": 60.0
+        },
+        {
+            "idx": 374,
+            "question": " [Irrelevant Sentence]. Amy had 18 math problems and 6 spelling problems. If Amy can finish 4 problems in an hour how long will it take her to finish all the problems? ",
+            "in-topic": "For homework [ROLE] had [NUMBER] problems",
+            "off-topic": "[ROLE] solved [NUMBER] difficult problems",
+            "role": ["Alexandra", "Amy's tutor", "Amy's mentor", "Alexandra's follower"],
+            "number": [
+                18,
+                6,
+                4,
+                25,
+                529
+            ],
+            "gold_ans": 6.0
+        },
+        {
+            "idx": 382,
+            "question": " [Irrelevant Sentence]. Jerry made 14 dollars mowing lawns and 31 dollars weed eating. If Jerry only spent 5 dollar a week, how long would the money last him? ",
+            "in-topic": "[ROLE] earn [NUMBER] dollars by hardworking",
+            "off-topic": "[ROLE] bought [NUMBER] new cars",
+            "role": ["Jerry's cat", "James", "James's coach"],
+            "number": [
+                14,
+                31,
+                5,
+                2,
+                2000
+            ],
+            "gold_ans": 9.0
+        },
+        {
+            "idx": 291,
+            "question": " Lana was unboxing some of her old winter clothes. [Irrelevant Sentence]. Lana found 4 boxes of clothing and inside each box there were 2 scarves and 6 mittens. How many pieces of winter clothing did Lana have total? ",
+            "in-topic": "Lana found [NUMBER] boxes of books borrowed from [ROLE]",
+            "off-topic": "[ROLE] built [NUMBER] sandcastles",
+            "role": ["Aya", "Lana's pet", "Lana's brother", "Dom"],
+            "number": [
+                4,
+                2,
+                6,
+                12,
+                127
+            ],
+            "gold_ans": 32.0
+        },
+        {
+            "idx": 35,
+            "question": " Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. [Irrelevant Sentence]. If only 64 of the carrots were good, how many bad carrots did they have? ",
+            "in-topic": "Meanwhile, [ROLE] picked [NUMBER] apples",
+            "off-topic": "[ROLE] painted [NUMBER] beautiful pictures",
+            "role": ["Haley's father", "Helen", "Helen's stepmother", "Haley's grandfather"],
+            "number": [
+                39,
+                38,
+                64,
+                5,
+                2
+            ],
+            "gold_ans": 13.0
+        },
+        {
+            "idx": 182,
+            "question": "[Irrelevant Sentence]. Debby had 30 coloring books. If Debby gave away 7 of her books, but then bought 35 more, how many would she have total? ",
+            "in-topic": "[ROLE] had [NUMBER] coloring books.",
+            "off-topic": "[ROLE] ate [NUMBER] apples",
+            "role": ["Charlotte", "Debby's mother", "Charlotte's father", "Debby's neighbor"],
+            "number": [
+                30,
+                35,
+                7,
+                10,
+                20
+            ],
+            "gold_ans": 58.0
+        },
+        {
+            "idx": 579,
+            "question": " [Irrelevant Sentence]. Nancy uploaded 51 pictures to Facebook. She put 11 pics into one album and put the rest into 8 different albums. How many pictures were in each album? ",
+            "in-topic": "[ROLE] took [NUMBER] pictures last week.",
+            "off-topic": "[ROLE] wrote a letter consisting of [NUMBER] pages to her pen pal",
+            "role": ["Nancy's grandma", "Mia's grandpa", "Mia"],
+            "number": [
+                51,
+                11,
+                8,
+                4,
+                14
+            ],
+            "gold_ans": 5.0
+        },
+        {
+            "idx": 26,
+            "question": " A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. [Irrelevant Sentence]. How many cats does the pet store have left? ",
+            "in-topic": "[ROLE] bought [NUMBER] dogs.",
+            "off-topic": "[ROLE] caught [NUMBER] fish during his fishing trip",
+            "role": ["Liam", "Liam's brother", "Liam's great-grandfather"],
+            "number": [
+                12,
+                20,
+                20,
+                14,
+                144
+            ],
+            "gold_ans": 12.0
+        },
+        {
+            "idx": 80,
+            "question": " [Irrelevant Sentence]. The school cafeteria ordered 6 red apples and 15 green apples for students lunches. But, if only 5 students wanted fruit, how many extra did the cafeteria end up with? ",
+            "in-topic": "[ROLE] ordered [NUMBER] dishes for teachers lunches",
+            "off-topic": "[ROLE] scored [NUMBER] goals in the soccer match",
+            "role": ["Ethan", "Ethan's teammate", "Ethan's classmate", "Eason"],
+            "number": [
+                6,
+                15,
+                5,
+                3,
+                4,
+                10
+            ],
+            "gold_ans": 16.0
+        },
+        {
+            "idx": 394,
+            "question": " Victor was helping the cafeteria workers pick up lunch trays, but he could only carry 7 trays at a time. [Irrelevant Sentence]. If Victor had to pick up 23 trays from one table and 5 trays from another, how many trips will he make? ",
+            "in-topic": "[ROLE] could carry [NUMBER] trays at a time.",
+            "off-topic": "[ROLE] received a package with [NUMBER] books",
+            "role": ["Jacob", "Abigail", "Victor's dormmate", "Victor's girlfriend"],
+            "number": [
+                23,
+                5,
+                7,
+                77,
+                777
+            ],
+            "gold_ans": 4.0
+        },
+        {
+            "idx": 122,
+            "question": " [Irrelevant Sentence]. Faye had 34 coloring books. If Faye gave away 3 of her books, but then bought 48 more, how many would she have total? ",
+            "in-topic": "[ROLE] had [NUMBER] coloring books.",
+            "off-topic": "[ROLE] solved [NUMBER] challenging puzzles in record time",
+            "role": ["Logan", "Faye's sister", "Logan's father", "Faye's mother"],
+            "number": [
+                34,
+                48,
+                3,
+                10,
+                43
+            ],
+            "gold_ans": 79.0
+        },
+        {
+            "idx": 217,
+            "question": " Luke was putting his spare change into piles. He had 5 piles of quarters and 5 piles of dimes. [Irrelevant Sentence]. If each pile had 3 coins in it, how many coins did Luke have total? ",
+            "in-topic": "[ROLE] had [NUMBER] piles of quarters.",
+            "off-topic": "[ROLE] counted [NUMBER] seashells collected during the beach vacation",
+            "role": ["Chloe", "Luke's sister", "Paul", "Lily"],
+            "number": [
+                3,
+                5,
+                5,
+                15,
+                15000
+            ],
+            "gold_ans": 30.0
+        },
+        {
+            "idx": 539,
+            "question": " Nancy was planting vegetables in her garden. [Irrelevant Sentence]. She started with 52 seeds and planted 28 of them in the big garden and in each of her small gardens put 4 seeds each. How many small gardens did Nancy have? ",
+            "in-topic": "Her garden already havs [NUMBER] carrots planted by [ROLE]",
+            "off-topic": "[ROLE] read [NUMBER] chapters of a novel in one sitting",
+            "role": ["Olivia", "Isabelle", "Nancy's classmate"],
+            "number": [
+                52,
+                28,
+                4,
+                5,
+                8
+            ],
+            "gold_ans": 6.0
+        },
+        {
+            "idx": 504,
+            "question": " [Irrelevant Sentence]. Katie baked 18 cupcakes for her school's bake sale. If Katie's brother, Todd, ate 8 of Katie's cupcakes, how many packages could she make if she put 2 cupcake in each package? ",
+            "in-topic": "[ROLE] baked [NUMBER] bread.",
+            "off-topic": "[ROLE] watched a series marathon and finished [NUMBER] episodes in a day",
+            "role": ["Harry", "Katie's mother", "Harper"],
+            "number": [
+                18,
+                8,
+                2,
+                9,
+                52
+            ],
+            "gold_ans": 5.0
+        },
+        {
+            "idx": 316,
+            "question": " [Irrelevant Sentence]. John made 6 dollars mowing lawns and 18 dollars weed eating. If John only spent 3 dollar a week, how long would the money last him? ",
+            "in-topic": "[ROLE] made [NUMBER] dollars.",
+            "off-topic": "[ROLE] measured the length of the room and found it to be [NUMBER] meters.",
+            "role": ["Noah", "Katie", "John's cousin", "John's brother"],
+            "number": [
+                6,
+                18,
+                3,
+                7,
+                26,
+                666
+            ],
+            "gold_ans": 8.0
+        },
+        {
+            "idx": 596,
+            "question": " Tom bought 40 tickets at the state fair. [Irrelevant Sentence]. Tom spent 28 tickets at the 'dunk a clown' booth and decided to use the rest on rides. If each ride cost 4 tickets, how many rides could Tom go on? ",
+            "in-topic": "[ROLE] bought [NUMBER] tickets.",
+            "off-topic": "[ROLE] saved $[NUMBER] from the allowance for a special purchase",
+            "role": ["Tom's mother", "Chloe", "Sarah", "Ann"],
+            "number": [
+                40,
+                28,
+                4,
+                50,
+                500000
+            ],
+            "gold_ans": 3.0
+        },
+        {
+            "idx": 541,
+            "question": "[Irrelevant Sentence]. Bianca was planting vegetables in her garden. She started with 52 seeds and planted 40 of them in the big garden and in each of her small gardens put 2 seeds each. How many small gardens did Bianca have? ",
+            "in-topic": "[ROLE] planted [NUMBER] seeds.",
+            "off-topic": "[ROLE] wrote a poem consisting of [NUMBER] stanzas",
+            "role": ["Samuel", "Bianca's friend", "Biance's english teacher"],
+            "number": [
+                52,
+                40,
+                2,
+                6,
+                216
+            ],
+            "gold_ans": 6.0
+        },
+        {
+            "idx": 241,
+            "question": " Edward was working as a sacker at a grocery store where he made 6 dollars an hour. [Irrelevant Sentence]. On Monday Edward worked 3 hours and on Tuesday he worked 5 hours. How much money did Edward make in those two days? ",
+            "in-topic": "[ROLE] was working as a sacker at a grocery store where he made [NUMBER] dollars an hour.",
+            "off-topic": "[ROLE] ate [NUMBER] slices of pizza at the party",
+            "role": ["Lily", "Edward's sister", "Ada"],
+            "number": [
+                6,
+                3,
+                5,
+                4,
+                12
+            ],
+            "gold_ans": 48.0
+        },
+        {
+            "idx": 313,
+            "question": "[Irrelevant Sentence]. A pet shelter had 9 puppies when another 12 were brought in. If 3 puppies a day are adopted, how long would it take for all of them to be adopted? ",
+            "in-topic": "[ROLE] has [NUMBER] puppies.",
+            "off-topic": "[ROLE] bought [NUMBER] tickets for the amusement park",
+            "role": ["Zoey", "Morisa", "Cloude", "Asa"],
+            "number": [
+                9,
+                12,
+                3,
+                2,
+                8
+            ],
+            "gold_ans": 7.0
+        },
+        {
+            "idx": 354,
+            "question": " Jerry was helping the cafeteria workers pick up lunch trays, but he could only carry 8 trays at a time. [Irrelevant Sentence]. If Jerry had to pick up 9 trays from one table and 7 trays from another, how many trips will he make? ",
+            "in-topic": "[ROLE] could  carry [NUMBER] trays at a time.",
+            "off-topic": "[ROLE] saved up for a new bike and managed to gather $[NUMBER]",
+            "role": ["William", "Jerry's brother", "Eric"],
+            "number": [
+                9,
+                7,
+                8,
+                108,
+                50
+            ],
+            "gold_ans": 2.0
+        },
+        {
+            "idx": 231,
+            "question": " While shopping for music online, Megan bought 2 country albums and 8 pop albums. Each album came with a lyric sheet and had 7 songs. [Irrelevant Sentence]. How many songs did Megan buy total? ",
+            "in-topic": "[ROLE] bought [NUMBER] books.",
+            "off-topic": "[ROLE] received [NUMBER] like in his latest video",
+            "role": ["Megan's brother", "David", "Megan's uncle"],
+            "number": [
+                7,
+                2,
+                8,
+                233,
+                5000,
+                10
+            ],
+            "gold_ans": 70.0
+        },
+        {
+            "idx": 503,
+            "question": " [Irrelevant Sentence]. Edward bought 79 tickets at the state fair. He spent 23 tickets at the 'dunk a clown' booth and decided to use the rest on rides. If each ride cost 7 tickets, how many rides could he go on? ",
+            "in-topic": "[ROLE] bought [NUMBER] tickets at the state fair.",
+            "off-topic": "[ROLE] bought [NUMBER] oranges from the grocery store",
+            "role": ["Jackson", "Jack", "Samuel", "Edward's friend"],
+            "number": [
+                79,
+                23,
+                7,
+                10,
+                11
+            ],
+            "gold_ans": 8.0
+        },
+        {
+            "idx": 7,
+            "question": " While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. [Irrelevant Sentence]. If Megan later deleted 31 of her pictures of vacation, how many pictures from her vacation did she still have? ",
+            "in-topic": "After vacation, [ROLE] took [NUMBER] pictures at home.",
+            "off-topic": "[ROLE] saved $[NUMBER] for a special occasion",
+            "role": ["Megan's mother", "Lucas", "Henry"],
+            "number": [
+                15,
+                18,
+                31,
+                500,
+                50
+            ],
+            "gold_ans": 2.0
+        },
+        {
+            "idx": 211,
+            "question": "[Irrelevant Sentence]. A pet store has 9 bird cages. If each cage has 2 parrots and 2 parakeets in it, how many birds does the pet store have total? ",
+            "in-topic": "[ROLE] has [NUMBER] bird cages.",
+            "off-topic": "[ROLE] completed a [NUMBER]-minute workout session for fitness.",
+            "role": ["Sophia", "Adam", "William", "Eric"],
+            "number": [
+                9,
+                2,
+                2,
+                20,
+                40
+            ],
+            "gold_ans": 36.0
+        },
+        {
+            "idx": 337,
+            "question": " Paul made 68 dollars mowing lawns and 13 dollars weed eating. [Irrelevant Sentence]. If Paul only spent 9 dollar a week, how long would the money last him? ",
+            "in-topic": "[ROLE] made [NUMBER] dollars mowing lawns and [NUMBER] dollars weed eating.",
+            "off-topic": "[ROLE] swam [NUMBER] meters in the race.",
+            "role": ["Paul's brother", "Paul's sister", "Tom", "Grace"],
+            "number": [
+                68,
+                13,
+                9,
+                256,
+                59
+            ],
+            "gold_ans": 9.0
+        },
+        {
+            "idx": 267,
+            "question": " [Irrelevant Sentence]. Megan was organizing her book case making sure each of the shelves had exactly 7 books on it. If she had 8 shelves of mystery books and 2 shelves of picture books, how many books did she have total? ",
+            "in-topic": "[ROLE] lent [NUMBER] books to Megan.",
+            "off-topic": "[ROLE] read [NUMBER] books in the library",
+            "role": ["Megan's dormmate", "Megan's neighbor", "Logan"],
+            "number": [
+                7,
+                8,
+                2,
+                3,
+                13
+            ],
+            "gold_ans": 70.0
+        },
+        {
+            "idx": 484,
+            "question": " At the fair Kaleb bought 6 tickets. [Irrelevant Sentence]. After riding the ferris wheel Kaleb had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel? ",
+            "in-topic": "[ROLE] bought [NUMBER] tickets.",
+            "off-topic": "[ROLE] bought [NUMBER] tickets of the movie",
+            "role": ["Kaleb's sister", "Katie", "Kaleb's classmate"],
+            "number": [
+                9,
+                6,
+                3,
+                5,
+                10
+            ],
+            "gold_ans": 27.0
+        },
+        {
+            "idx": 246,
+            "question": " While shopping for music online, Isabel bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. [Irrelevant Sentence]. How many songs did Isabel buy total? ",
+            "in-topic": "In those 9 songs, [NUMBER] of them were produced by [ROLE]",
+            "off-topic": "[ROLE] visited [NUMBER] different countries",
+            "role": ["Isabel's sister", "Jean", "Austin", "Isabel's father"],
+            "number": [
+                9,
+                6,
+                2,
+                3
+            ],
+            "gold_ans": 72.0
+        },
+        {
+            "idx": 93,
+            "question": " While shopping, Emily bought 5 green towels and 30 white towels. [Irrelevant Sentence]. If Emily gave her mother 26 of them, how many towels did Emily end up with? ",
+            "in-topic": "[ROLE] bought [NUMBER] green towels",
+            "off-topic": "[ROLE] also bought [NUMBER] black towels",
+            "role": ["Emily's sister", "Amelia", "Emily's mother"],
+            "number": [
+                5,
+                30,
+                26,
+                15,
+                225
+            ],
+            "gold_ans": 9.0
+        },
+        {
+            "idx": 528,
+            "question": " [Irrelevant Sentence]. The company invited 18 people to a luncheon, but 12 of them didn't show up. If the tables they had held 3 people each, how many tables do they need? ",
+            "in-topic": "The average salary of [ROLE]'s company is $[NUMBER].",
+            "off-topic": "[ROLE] hired [NUMBER] more employees.",
+            "role": ["The boss", "The manager", "The dustman", "The programmer"],
+            "number": [
+                18,
+                12,
+                3,
+                17,
+                14
+            ],
+            "gold_ans": 2.0
+        },
+        {
+            "idx": 550,
+            "question": " [Irrelevant Sentence]. Will had 59 pieces of clothing to wash. Will put 32 of his clothing in one load, but decided to split the rest into 9 equal loads. How many pieces of clothing could go in each of the small loads? ",
+            "in-topic": "[ROLE] had [NUMBER] pieces of clothing to wash.",
+            "off-topic": "[ROLE] cooked [NUMBER] dishes for dinner",
+            "role": ["Will's mother", "Will's grandma", "Megan"],
+            "number": [
+                59,
+                32,
+                9,
+                3,
+                5,
+                7
+            ],
+            "gold_ans": 3.0
+        }
+    ]
+}
