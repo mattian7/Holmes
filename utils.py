@@ -841,9 +841,11 @@ def GSMICSampling(rseed=42):
     if input_data == "addsub":
         path = "./dataset/AddSub/AddSub.json"
         question_key = "sQuestion"
+        offset = 1
     elif input_data == "svamp":
         path = "./dataset/SVAMP/SVAMP.json"
         question_key = "Body"
+        offset = 0
     else:
         raise ValueError("dataset is not properly defined ...")
     
@@ -865,7 +867,7 @@ def GSMICSampling(rseed=42):
         sents = sent_tk(item[question_key])
         used_ic = random.choices(ic_list, k = n_ic)
         for i in range(n_ic):
-            insert_idx = random.randint(0, len(sents))
+            insert_idx = random.randint(0, len(sents) - offset)
             sents.insert(insert_idx, used_ic[i])
         item[question_key] = " ".join(sents)
         noisy_data += [item]
