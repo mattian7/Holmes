@@ -1,0 +1,802 @@
+[
+    {
+        "ID": "chal-786",
+        "Body": "Daniel caught 3 fish in the river. Sophia scored 4 goals. Ethan read 10 books. Faye was placing her pencils into rows with 5 pencils in each row. If she had 35 pencils and 7 crayons Ava wrote 8 songs.",
+        "Question": "How many rows could she make?",
+        "Equation": "( 35.0 / 5.0 )",
+        "Answer": 7.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-504",
+        "Body": "Bobby had 19 pieces of candy. Sophia scored 4 goals. He ate 2 pieces of candy. Charlotte painted 5 beautiful paintings. Ava wrote 8 songs. Charlotte painted 5 beautiful paintings.",
+        "Question": "How many pieces of candy does he still have left?",
+        "Equation": "( 19.0 - 2.0 )",
+        "Answer": 17.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-568",
+        "Body": "Mary is baking a cake. The recipe calls for 5 cups of sugar and 13 cups of flour. Harper watched 7 movies in a row. Ava wrote 8 songs. She already put in some cups of flour. If she still needs 12 more cups of flour Amelia ran 6 miles every day for a week. Jacob played 9 different musical instruments.",
+        "Question": "How many cups of flour did she put in?",
+        "Equation": "( 13.0 - 12.0 )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-443",
+        "Body": "Alexander visited 3 different countries. Olivia ate 2 pizzas. Being his favorite, he saved checking on the grapevines for his last stop. He was told by 294 of the pickers that they fill 244 drums of grapes per day and 47 drums of raspberries per day. Olivia ate 2 pizzas. James answered 10 questions correctly.",
+        "Question": "How many drums of grapes would be filled in 146 days?",
+        "Equation": "( 244.0 * 146.0 )",
+        "Answer": 35624.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-337",
+        "Body": "In a school there are 34 girls and 841 boys. Abigail cooked 5 delicious dishes for the guests. Harper watched 7 movies in a row. Lily planted 8 trees in the garden. Charlotte painted 5 beautiful paintings.",
+        "Question": "How many more boys than girls does the school have?",
+        "Equation": "( 841.0 - 34.0 )",
+        "Answer": 807.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-12",
+        "Body": "Noah received 7 messages. Charlotte painted 5 beautiful paintings. Ava wrote 8 songs. Lily planted 8 trees in the garden. They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs",
+        "Question": "How many chairs do they have in the backyard?",
+        "Equation": "( 11.0 * 13.0 )",
+        "Answer": 143.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-973",
+        "Body": "Ava wrote 8 songs. Alexander visited 3 different countries. Olivia ate 2 pizzas. A book has 3 chapters. Amelia ran 6 miles every day for a week. The first chapter is 53 pages long the second chapter is 75 pages long and the third chapter is 21 pages long.",
+        "Question": "How many more pages does the first chapter have than the third chapter?",
+        "Equation": "( 53.0 - 21.0 )",
+        "Answer": 32.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-128",
+        "Body": "Emily bought 3 apples. Liam sold 5 cars. A farmer had 171 tomatoes in his garden. Ava wrote 8 songs. Lily planted 8 trees in the garden. If he picked 134 of them yesterday and 30 today.",
+        "Question": "How many will he have left after today?",
+        "Equation": "( ( 171.0 - 134.0 ) - 30.0 )",
+        "Answer": 7.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-278",
+        "Body": "Emily bought 3 apples. Jesse needs a carpet of size 10 square feet to cover her room. If her room is 2 feet wide Alexander visited 3 different countries. William counted 6 shooting stars in the night sky. Sophia scored 4 goals.",
+        "Question": "What is the length of her room?",
+        "Equation": "( 10.0 / 2.0 )",
+        "Answer": 5.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-549",
+        "Body": "Jacob played 9 different musical instruments. Emily bought 3 apples. Ava wrote 8 songs. Emily is making bead necklaces for her friends. Abigail cooked 5 delicious dishes for the guests. She was able to make 6 necklaces and she had 18 beads.",
+        "Question": "How many beads did each necklace need?",
+        "Equation": "( 18.0 / 6.0 )",
+        "Answer": 3.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-8",
+        "Body": "James answered 10 questions correctly. Emily bought 3 apples. Alexander visited 3 different countries. Ethan read 10 books. Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies.",
+        "Question": "How many more cookies did he eat than those he gave to his friend?",
+        "Equation": "( 18.0 - 9.0 )",
+        "Answer": 9.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-529",
+        "Body": "Abigail cooked 5 delicious dishes for the guests. Ethan read 10 books. Jack received 3 emails in the afternoon, 6 emails in the morning and some more in the evening. Ava wrote 8 songs. Ethan read 10 books. If he received a total of 10 emails in the day",
+        "Question": "How many emails did jack receive in the evening?",
+        "Equation": "( 10.0 - ( 6.0 + 3.0 ) )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-577",
+        "Body": "Harper watched 7 movies in a row. Julia played tag with 15 kids on monday, 18 kids on tuesday and 7 kids on wednesday. Daniel caught 3 fish in the river. Harper watched 7 movies in a row. Harper watched 7 movies in a row.",
+        "Question": "How many more kids did she play with on monday and tuesday than on wednesday?",
+        "Equation": "( ( 15.0 + 18.0 ) - 7.0 )",
+        "Answer": 26.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-756",
+        "Body": "Ava wrote 8 songs. Liam sold 5 cars. Bryan took a look at his books as well. If he has a total of 42 books and each bookshelf contains 2 books Amelia ran 6 miles every day for a week. Samuel built 4 sandcastles on the beach.",
+        "Question": "How many bookshelves does he have?",
+        "Equation": "( 42.0 / 2.0 )",
+        "Answer": 21.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-425",
+        "Body": "James answered 10 questions correctly. Samuel built 4 sandcastles on the beach. The Razorback t-shirt shop sells each t-shirt for $ 51 dollars. James answered 10 questions correctly. During the Arkansas and Texas tech game they offered a discount of $ 8 per t-shirt and sold 130 t-shirts. Daniel caught 3 fish in the river.",
+        "Question": "How much money did they make from selling the t-shirts?",
+        "Equation": "( ( 51.0 - 8.0 ) * 130.0 )",
+        "Answer": 5590.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-859",
+        "Body": "Bryan took a look at his books and magazines. Charlotte painted 5 beautiful paintings. Liam sold 5 cars. Emily bought 3 apples. If he has 23 books and 61 magazines in each of his 29 bookshelves Mia hired 6 new employees.",
+        "Question": "How many books and magazines does he have in total?",
+        "Equation": "( ( 23.0 + 61.0 ) * 29.0 )",
+        "Answer": 2436.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-81",
+        "Body": "Noah received 7 messages. 36 children were riding on the bus. Emily bought 3 apples. At the bus stop 68 children got off the bus while some more got on the bus. William counted 6 shooting stars in the night sky. Ethan read 10 books. Then there were 12 children altogether on the bus.",
+        "Question": "How many more children got off the bus than those that got on?",
+        "Equation": "( 36.0 - 12.0 )",
+        "Answer": 24.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-335",
+        "Body": "Emily bought 3 apples. Noah received 7 messages. Rachel had to complete 5 pages of math homework, 10 pages of reading homework and 6 more pages of biology homework. Emily bought 3 apples. Daniel caught 3 fish in the river.",
+        "Question": "How many pages of reading and biology homework did she have to complete?",
+        "Equation": "( 10.0 + 6.0 )",
+        "Answer": 16.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-553",
+        "Body": "Alexander visited 3 different countries. 2 children were riding on the bus. At the bus stop some more children got on the bus. Abigail cooked 5 delicious dishes for the guests. Daniel caught 3 fish in the river. Then there were 10 children altogether on the bus. Lily planted 8 trees in the garden.",
+        "Question": "How many more children are on the bus now than there were before the bus stop?",
+        "Equation": "( 10.0 - 2.0 )",
+        "Answer": 8.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-118",
+        "Body": "15 campers went rowing in the morning. Amelia ran 6 miles every day for a week. Ava wrote 8 songs. Jacob played 9 different musical instruments. Some more campers went rowing in the afternoon. Charlotte painted 5 beautiful paintings. If a total of 32 campers went rowing that day",
+        "Question": "How many campers went rowing in the afternoon?",
+        "Equation": "( 32.0 - 15.0 )",
+        "Answer": 17.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-197",
+        "Body": "Jake has 8 fewer peaches and 10 more apples than Steven. Steven has 11 apples and 18 peaches. Emily bought 3 apples. Lily planted 8 trees in the garden. Jacob played 9 different musical instruments. Lily planted 8 trees in the garden.",
+        "Question": "How many more peaches than apples does Steven have?",
+        "Equation": "( 18.0 - 11.0 )",
+        "Answer": 7.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-552",
+        "Body": "Ethan read 10 books. Baker made 155 cakes. Amelia ran 6 miles every day for a week. Jacob played 9 different musical instruments. If his friend bought 140 cakes from him Olivia ate 2 pizzas.",
+        "Question": "How many cakes would baker still have?",
+        "Equation": "( 155.0 - 140.0 )",
+        "Answer": 15.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-506",
+        "Body": "Ava wrote 8 songs. After eating a hearty meal they went to see the Buckingham palace. Samuel built 4 sandcastles on the beach. Charlotte painted 5 beautiful paintings. There, Rachel learned that 705 visitors came to the Buckingham palace that day. Benjamin solved 9 math problems. If there were 191 visitors the previous day and 457 visitors the day before that",
+        "Question": "How many more visitors visited the Buckingham palace on that day than on the previous 245 days?",
+        "Equation": "( 705.0 - ( 191.0 + 457.0 ) )",
+        "Answer": 57.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-629",
+        "Body": "Baker made 14 cakes and 153 pastries. Emily bought 3 apples. Lily planted 8 trees in the garden. If he sold 8 pastries and 97 cakes Samuel built 4 sandcastles on the beach. Ava wrote 8 songs.",
+        "Question": "How many more cakes than pastries did baker sell?",
+        "Equation": "( 97.0 - 8.0 )",
+        "Answer": 89.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-939",
+        "Body": "Noah received 7 messages. James answered 10 questions correctly. The ring toss game at the carnival made the same amount of money each day. Daniel caught 3 fish in the river. In total in 5 days they earned 165 dollars. Emily bought 3 apples.",
+        "Question": "How much did they make per day?",
+        "Equation": "( 165.0 / 5.0 )",
+        "Answer": 33.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-609",
+        "Body": "Liam sold 5 cars. At the arcade Dave had won 19 tickets. Jacob played 9 different musical instruments. If he used 12 to buy some toys and 7 more to buy some clothes Lily planted 8 trees in the garden. Noah received 7 messages.",
+        "Question": "How many more tickets did Dave use to buy toys than he did to buy clothes?",
+        "Equation": "( 12.0 - 7.0 )",
+        "Answer": 5.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-160",
+        "Body": "The school is planning a field trip. Alexander visited 3 different countries. The school has 87 classrooms. Ava wrote 8 songs. Samuel built 4 sandcastles on the beach. Benjamin solved 9 math problems. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus.",
+        "Question": "How many buses are needed to take the trip?",
+        "Equation": "( 58.0 / 2.0 )",
+        "Answer": 29.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-484",
+        "Body": "Charlotte painted 5 beautiful paintings. Sophia scored 4 goals. James answered 10 questions correctly. Paul got a box of 110 crayons for his birthday. Noah received 7 messages. During the school year he gave 90 crayons to his friends while he lost 412 crayons.",
+        "Question": "How many more crayons did he lose than those he gave to his friends?",
+        "Equation": "( 412.0 - 90.0 )",
+        "Answer": 322.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-350",
+        "Body": "Charlotte painted 5 beautiful paintings. 3 red peaches, and some more green peaches are in the basket. If there are 10 more green peaches than red peaches in the basket Ethan read 10 books. Harper watched 7 movies in a row. Olivia ate 2 pizzas.",
+        "Question": "How many green peaches are in the basket?",
+        "Equation": "( 3.0 + 10.0 )",
+        "Answer": 13.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-137",
+        "Body": "Samuel built 4 sandcastles on the beach. Last week Fred had 111 dollars and Jason had 40 dollars. Olivia ate 2 pizzas. Fred washed cars over the weekend and now has 115 dollars. Jason delivered newspapers and now has 44 dollars. Noah received 7 messages. Ethan read 10 books.",
+        "Question": "How much money did they earn by washing cars?",
+        "Equation": "( 115.0 - 111.0 )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-689",
+        "Body": "The school is planning a field trip. The school has 21 classrooms. Harper watched 7 movies in a row. There are 98 students in the school and 7 school buses. Ethan read 10 books. Alexander visited 3 different countries. If all buses are full Ethan read 10 books.",
+        "Question": "How many seats are in each bus?",
+        "Equation": "( 98.0 / 7.0 )",
+        "Answer": 14.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-968",
+        "Body": "Jacob played 9 different musical instruments. Mary is baking a cake. Sophia scored 4 goals. The recipe calls for 10 cups of flour 2 cups of sugar and 80 cups of salt. She already put in 7 cups of flour. Benjamin solved 9 math problems. Emily bought 3 apples.",
+        "Question": "How many more cups of flour than cups of sugar does she need to add now?",
+        "Equation": "( ( 10.0 - 7.0 ) - 2.0 )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-92",
+        "Body": "Because of the decision Sofia asked the students to suggest specific types of food. Daniel caught 3 fish in the river. Harper watched 7 movies in a row. If 408 students suggested adding mashed potatoes while 42 suggested adding bacon to the menu Charlotte painted 5 beautiful paintings. Jacob played 9 different musical instruments.",
+        "Question": "How many more students suggested mashed potatoes than those that suggested bacon?",
+        "Equation": "( 408.0 - 42.0 )",
+        "Answer": 366.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-492",
+        "Body": "Harper watched 7 movies in a row. Liam sold 5 cars. Benjamin solved 9 math problems. Jake has 7 fewer peaches than Steven who has 14 more peaches than Jill. Steven has 15 peaches. Ava wrote 8 songs.",
+        "Question": "How many peaches does Jake have?",
+        "Equation": "( 15.0 - 7.0 )",
+        "Answer": 8.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-48",
+        "Body": "Sophia scored 4 goals. Ava wrote 8 songs. Lily planted 8 trees in the garden. Lily planted 8 trees in the garden. Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. If there are 8 action figures on his shelf now",
+        "Question": "How many action figures did he add to the shelf?",
+        "Equation": "( ( 8.0 + 10.0 ) - 7.0 )",
+        "Answer": 11.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-566",
+        "Body": "Charlotte painted 5 beautiful paintings. Abigail cooked 5 delicious dishes for the guests. You had 14 bags with equal number of cookies. Noah received 7 messages. If you had 28 cookies and 86 candies in total Olivia ate 2 pizzas.",
+        "Question": "How many bags of cookies do you have?",
+        "Equation": "( 28.0 / 14.0 )",
+        "Answer": 2.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-31",
+        "Body": "Abigail cooked 5 delicious dishes for the guests. Mia hired 6 new employees. Harper watched 7 movies in a row. Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. Emily bought 3 apples. The next day she found 12 more bags worth of cans.",
+        "Question": "How many more bags did she find on the next day than she had on monday?",
+        "Equation": "( 12.0 - 7.0 )",
+        "Answer": 5.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-35",
+        "Body": "Charlotte painted 5 beautiful paintings. Harper watched 7 movies in a row. Noah received 7 messages. Jack received 6 emails in the morning, 3 emails in the afternoon and some more in the evening. If he received a total of 10 emails in the day Amelia ran 6 miles every day for a week.",
+        "Question": "How many emails did Jack receive in the afternoon?",
+        "Equation": "( 10.0 - ( 6.0 + 3.0 ) )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-796",
+        "Body": "Emily bought 3 apples. Ava wrote 8 songs. Baker made 61 pastries and 167 cakes. Charlotte painted 5 beautiful paintings. Lily planted 8 trees in the garden. If he sold 108 cakes and 44 pastries",
+        "Question": "How many cakes would baker still have?",
+        "Equation": "( 167.0 - 108.0 )",
+        "Answer": 59.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-889",
+        "Body": "Amelia ran 6 miles every day for a week. Benjamin solved 9 math problems. Noah received 7 messages. They decided to hold the party in their backyard. Harper watched 7 movies in a row. If they have 5 sets of tables and each set has 10 chairs",
+        "Question": "How many more chairs than tables do they have?",
+        "Equation": "( ( 5.0 * 10.0 ) - 5.0 )",
+        "Answer": 45.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-901",
+        "Body": "Olivia ate 2 pizzas. Marco and his dad went strawberry picking. Sophia scored 4 goals. Together their strawberries weighed 20 pounds. His dad's strawberries weighed 17 pounds. Abigail cooked 5 delicious dishes for the guests. Mia hired 6 new employees.",
+        "Question": "How much did marco's strawberries weigh?",
+        "Equation": "( 20.0 - 17.0 )",
+        "Answer": 3.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-440",
+        "Body": "Every day Ryan spends 7 hours on learning english and some more hours on learning chinese. Benjamin solved 9 math problems. Liam sold 5 cars. Amelia ran 6 miles every day for a week. Olivia ate 2 pizzas. If he spends 2 hours more on learning english than on learning chinese",
+        "Question": "How many hours does he spend on learning chinese?",
+        "Equation": "( 7.0 - 2.0 )",
+        "Answer": 5.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-467",
+        "Body": "Liam sold 5 cars. Ethan read 10 books. Harper watched 7 movies in a row. The ring toss game at the carnival made 382 dollars in the first 44 days and 374 dollars in the remaining 10 days. Charlotte painted 5 beautiful paintings.",
+        "Question": "How much did they make in all?",
+        "Equation": "( 382.0 + 374.0 )",
+        "Answer": 756.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-610",
+        "Body": "A grocery store had 30 bottles of regular soda, 8 bottles of diet soda and 41 apples. Alexander visited 3 different countries. William counted 6 shooting stars in the night sky. Jacob played 9 different musical instruments. Olivia ate 2 pizzas.",
+        "Question": "How many bottles did they have total?",
+        "Equation": "( 30.0 + 8.0 )",
+        "Answer": 38.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-65",
+        "Body": "Charlotte painted 5 beautiful paintings. Baker made 149 cakes and 91 pastries. Harper watched 7 movies in a row. If he sold 10 cakes and 90 pastries Ethan read 10 books. Ethan read 10 books.",
+        "Question": "How many cakes would baker still have?",
+        "Equation": "( 149.0 - 10.0 )",
+        "Answer": 139.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-869",
+        "Body": "William counted 6 shooting stars in the night sky. The grasshopper and the frog had a jumping contest. Sophia scored 4 goals. Amelia ran 6 miles every day for a week. The grasshopper jumped 9 inches and the frog jumped 12 inches. Ethan read 10 books.",
+        "Question": "How much farther did the frog jump than the grasshopper?",
+        "Equation": "( 12.0 - 9.0 )",
+        "Answer": 3.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-510",
+        "Body": "Marco and his dad went strawberry picking. Marco's strawberries weighed 15 pounds. Ethan read 10 books. Amelia ran 6 miles every day for a week. Emily bought 3 apples. If together their strawberries weighed 37 pounds. Samuel built 4 sandcastles on the beach.",
+        "Question": "How much did his dad's strawberries weigh?",
+        "Equation": "( 37.0 - 15.0 )",
+        "Answer": 22.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-785",
+        "Body": "Liam sold 5 cars. Abigail cooked 5 delicious dishes for the guests. Ed had 24 more marbles than Doug. James answered 10 questions correctly. Doug lost 27 of his marbles at the playground while Ed found 9 more marbles. Charlotte painted 5 beautiful paintings.",
+        "Question": "How many more marbles did Ed have than Doug then?",
+        "Equation": "( ( 24.0 + 27.0 ) + 9.0 )",
+        "Answer": 60.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-488",
+        "Body": "Ava wrote 8 songs. Olivia ate 2 pizzas. Debby bought 153 water bottles when they were on sale. She drank the same number of bottles each day. Jacob played 9 different musical instruments. If the bottles lasted for 17 days Abigail cooked 5 delicious dishes for the guests.",
+        "Question": "How many bottles did she drink each day?",
+        "Equation": "( 153.0 / 17.0 )",
+        "Answer": 9.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-404",
+        "Body": "Liam sold 5 cars. Lily planted 8 trees in the garden. James answered 10 questions correctly. Dave had 16 apps and 77 files on his phone. After deleting some apps and files he had 5 apps and 23 files left. James answered 10 questions correctly.",
+        "Question": "How many apps did he delete?",
+        "Equation": "( 16.0 - 5.0 )",
+        "Answer": 11.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-303",
+        "Body": "Jake has 13 more apples and 17 fewer peaches than Steven. Steven has 8 peaches and 12 apples. Liam sold 5 cars. William counted 6 shooting stars in the night sky. Liam sold 5 cars. Olivia ate 2 pizzas.",
+        "Question": "How many apples does Jake have?",
+        "Equation": "( 13.0 + 12.0 )",
+        "Answer": 25.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-898",
+        "Body": "Ava wrote 8 songs. There are 17 different movies and 11 different books in the ' crazy silly school ' series. If you read 13 of the books and watched 63 of the movies Amelia ran 6 miles every day for a week. Samuel built 4 sandcastles on the beach. James answered 10 questions correctly.",
+        "Question": "How many more movies than books are there in the ' crazy silly school ' series?",
+        "Equation": "( 17.0 - 11.0 )",
+        "Answer": 6.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-162",
+        "Body": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Emily bought 3 apples. Olivia ate 2 pizzas. Now she has 15 left. Samuel built 4 sandcastles on the beach. Noah received 7 messages.",
+        "Question": "How many fishes disappeared?",
+        "Equation": "( ( 7.0 + 12.0 ) - 15.0 )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-280",
+        "Body": "Abigail cooked 5 delicious dishes for the guests. Jacob played 9 different musical instruments. Rebecca wants to split a collection of eggs into groups of 6. Alexander visited 3 different countries. Rebecca has 18 eggs 72 bananas and 66 marbles. Sophia scored 4 goals.",
+        "Question": "How many groups will be created?",
+        "Equation": "( 18.0 / 6.0 )",
+        "Answer": 3.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-688",
+        "Body": "3 birds were sitting on the fence. 2 more birds and 6 more storks came to join them. Sophia scored 4 goals. Ava wrote 8 songs. Jacob played 9 different musical instruments. Olivia ate 2 pizzas.",
+        "Question": "How many more storks than birds are sitting on the fence?",
+        "Equation": "( 6.0 - ( 3.0 + 2.0 ) )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-233",
+        "Body": "Olivia ate 2 pizzas. Edward spent $ 16 to buy books and $ 8 to buy pens. Sophia scored 4 goals. Ethan read 10 books. Now he has $ 19. Harper watched 7 movies in a row.",
+        "Question": "How much more did Edward spend on books than pens?",
+        "Equation": "( 16.0 - 8.0 )",
+        "Answer": 8.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-762",
+        "Body": "Noah received 7 messages. Charlotte painted 5 beautiful paintings. Paco had 37 sweet cookies and 11 salty cookies. Emily bought 3 apples. Alexander visited 3 different countries. He ate 5 sweet cookies and 2 salty cookies.",
+        "Question": "How many more sweet cookies than salty cookies did he eat?",
+        "Equation": "( 5.0 - 2.0 )",
+        "Answer": 3.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-695",
+        "Body": "William counted 6 shooting stars in the night sky. Charlotte painted 5 beautiful paintings. Charlotte painted 5 beautiful paintings. Sophia scored 4 goals. He has 9 apples more than Adam and Jackie together do. Adam and Jackie have 7 apples between them.",
+        "Question": "How many apples does He have?",
+        "Equation": "( 7.0 + 9.0 )",
+        "Answer": 16.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-790",
+        "Body": "Daniel caught 3 fish in the river. Benjamin solved 9 math problems. Emily bought 3 apples. Harper watched 7 movies in a row. Winter is almost here and most animals are migrating to warmer countries. There are 8 bird families living near the mountain. If 42 bird families flew away to africa and 31 bird families flew away to asia",
+        "Question": "How many more bird families flew away to africa than those that flew away to asia?",
+        "Equation": "( 42.0 - 31.0 )",
+        "Answer": 11.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-587",
+        "Body": "Liam sold 5 cars. Emily bought 3 apples. William counted 6 shooting stars in the night sky. 21 children were riding on the bus. At the bus stop 10 children got off the bus while some more got on the bus. Samuel built 4 sandcastles on the beach. Then there were 16 children altogether on the bus.",
+        "Question": "How many children got on the bus at the bus stop?",
+        "Equation": "( ( 16.0 - 21.0 ) + 10.0 )",
+        "Answer": 5.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-359",
+        "Body": "Winter is almost here and most animals are migrating to warmer countries. There are 38 bird families living near the mountain. If 47 bird families flew away to africa and 94 bird families flew away to asia Abigail cooked 5 delicious dishes for the guests. Samuel built 4 sandcastles on the beach. Amelia ran 6 miles every day for a week. Lily planted 8 trees in the garden.",
+        "Question": "How many more bird families flew away to asia than those that flew away to africa?",
+        "Equation": "( 94.0 - 47.0 )",
+        "Answer": 47.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-749",
+        "Body": "Lily planted 8 trees in the garden. Ava wrote 8 songs. Dan has $ 7. William counted 6 shooting stars in the night sky. Sophia scored 4 goals. He bought a candy bar for $ 2 and a chocolate for $ 3.",
+        "Question": "How much money is left?",
+        "Equation": "( 7.0 - ( 2.0 + 3.0 ) )",
+        "Answer": 2.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-76",
+        "Body": "Amelia ran 6 miles every day for a week. If each bag has 41 cookies and you had 53 bags of cookies James answered 10 questions correctly. Olivia ate 2 pizzas. Noah received 7 messages.",
+        "Question": "How many cookies would you have?",
+        "Equation": "( 53.0 * 41.0 )",
+        "Answer": 2173.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-904",
+        "Body": "Danny collects bottle caps and wrappers. He found 58 bottle caps and 25 wrappers at the park. James answered 10 questions correctly. Abigail cooked 5 delicious dishes for the guests. Sophia scored 4 goals. James answered 10 questions correctly. Now he has 11 wrappers and 12 bottle caps in his collection.",
+        "Question": "How many more bottle caps than wrappers does danny have now?",
+        "Equation": "( 12.0 - 11.0 )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-964",
+        "Body": "Olivia ate 2 pizzas. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Lily planted 8 trees in the garden. Adam has 9 apples. Jackie has 10 apples.",
+        "Question": "How many more apples does Jackie have than Adam?",
+        "Equation": "( 10.0 - 9.0 )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-29",
+        "Body": "Mia hired 6 new employees. A grocery store had 49 bottles of regular soda, 40 bottles of diet soda and 6 bottles of lite soda. Alexander visited 3 different countries. Samuel built 4 sandcastles on the beach. Charlotte painted 5 beautiful paintings.",
+        "Question": "How many bottles of regular soda and diet soda did they have altogether?",
+        "Equation": "( 40.0 + 49.0 )",
+        "Answer": 89.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-654",
+        "Body": "Abigail cooked 5 delicious dishes for the guests. For Gwen's birthday she received some dollars. She spent 8 dollars and has 6 dollars left with her. Lily planted 8 trees in the garden. Mia hired 6 new employees. Emily bought 3 apples.",
+        "Question": "How much money did Gwen receive for her birthday?",
+        "Equation": "( 8.0 + 6.0 )",
+        "Answer": 14.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-466",
+        "Body": "Emily bought 3 apples. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. 46 campers went rowing on a day. Abigail cooked 5 delicious dishes for the guests. 43 campers went rowing in the morning and some more campers went rowing in the afternoon.",
+        "Question": "How many campers went rowing in the afternoon?",
+        "Equation": "( 46.0 - 43.0 )",
+        "Answer": 3.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-71",
+        "Body": "William counted 6 shooting stars in the night sky. Amelia ran 6 miles every day for a week. If Lewis earns $ 1357 every week during the 223 weeks of a harvest season. Benjamin solved 9 math problems. William counted 6 shooting stars in the night sky.",
+        "Question": "How much money will he earn if he works for 73 harvest seasons?",
+        "Equation": "( ( 1357.0 * 223.0 ) * 73.0 )",
+        "Answer": 22090603.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-315",
+        "Body": "Ava wrote 8 songs. Olivia ate 2 pizzas. Charlotte painted 5 beautiful paintings. Frank put some pieces of candy equally into 2 bags. Daniel caught 3 fish in the river. If he had 16 pieces of candy",
+        "Question": "How many pieces of candy are in each bag?",
+        "Equation": "( 16.0 / 2.0 )",
+        "Answer": 8.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-211",
+        "Body": "Harper watched 7 movies in a row. James answered 10 questions correctly. Lily planted 8 trees in the garden. Mia hired 6 new employees. Baker made 170 cakes. He sold 78 of them and bought 31 new cakes.",
+        "Question": "How many more cakes did baker sell than those he bought?",
+        "Equation": "( 78.0 - 31.0 )",
+        "Answer": 47.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-301",
+        "Body": "Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 49 g of colors to paint them. Charlotte painted 5 beautiful paintings. If the feathers require 288 g of wax and right now he just needs 260 g Charlotte painted 5 beautiful paintings. Liam sold 5 cars. Jacob played 9 different musical instruments.",
+        "Question": "How many grams of wax does he already have?",
+        "Equation": "( 288.0 - 260.0 )",
+        "Answer": 28.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-916",
+        "Body": "Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Emily bought 3 apples. A school has 485 pupils. There are 232 girls and the rest are boys. Sophia scored 4 goals.",
+        "Question": "How many boys are there in that school?",
+        "Equation": "( 485.0 - 232.0 )",
+        "Answer": 253.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-169",
+        "Body": "Danny collects bottle caps. Jacob played 9 different musical instruments. He found 63 bottle caps at the park while he threw away 51 old ones. Amelia ran 6 miles every day for a week. Mia hired 6 new employees. Noah received 7 messages. Now he has 33 bottle caps in his collection.",
+        "Question": "How many bottle caps did danny have at first?",
+        "Equation": "( ( 33.0 + 51.0 ) - 63.0 )",
+        "Answer": 21.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-183",
+        "Body": "James answered 10 questions correctly. Mia hired 6 new employees. Because of the decision Sofia asked the students to suggest specific types of food. Benjamin solved 9 math problems. Mia hired 6 new employees. If 269 students suggested adding bacon 330 suggested adding mashed potatoes to the menu and 76 suggested adding tomatoes",
+        "Question": "How many more students suggested mashed potatoes than those that suggested bacon?",
+        "Equation": "( 330.0 - 269.0 )",
+        "Answer": 61.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-287",
+        "Body": "Daniel caught 3 fish in the river. Charlotte painted 5 beautiful paintings. Emily bought 3 apples. Paul got a box of 589 crayons for his birthday. Olivia ate 2 pizzas. During the school year he gave 571 crayons to his friends while he lost 161 crayons.",
+        "Question": "How many more crayons did he give to his friends than those he lost?",
+        "Equation": "( 571.0 - 161.0 )",
+        "Answer": 410.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-946",
+        "Body": "Emily bought 3 apples. Emily bought 3 apples. Last week Fred had 78 dollars and Jason had 31 dollars. Jason delivered newspapers and now has 57 dollars. Alexander visited 3 different countries. Fred washed cars over the weekend and now has 90 dollars. Harper watched 7 movies in a row.",
+        "Question": "How much money did Jason earn by delivering newspapers?",
+        "Equation": "( 57.0 - 31.0 )",
+        "Answer": 26.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-696",
+        "Body": "Harper watched 7 movies in a row. Amelia ran 6 miles every day for a week. Dave had 11 apps and 3 files on his phone. Lily planted 8 trees in the garden. After deleting some apps and files he had 24 files and 2 apps left. Amelia ran 6 miles every day for a week.",
+        "Question": "How many more files than apps does he have left on the phone?",
+        "Equation": "( 24.0 - 2.0 )",
+        "Answer": 22.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-615",
+        "Body": "Emily bought 3 apples. Harper watched 7 movies in a row. Daniel caught 3 fish in the river. Next on his checklist is wax to stick the feathers together. If he has 557 g of wax and right now he just needs 17 g Olivia ate 2 pizzas.",
+        "Question": "Total how many grams of wax do the feathers require?",
+        "Equation": "( 557.0 + 17.0 )",
+        "Answer": 574.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-914",
+        "Body": "David did 51 push-ups in gym class today. Mia hired 6 new employees. David did 49 more push-ups than Zachary. James answered 10 questions correctly. Jacob played 9 different musical instruments. Olivia ate 2 pizzas.",
+        "Question": "How many push-ups did Zachary and David do altogether?",
+        "Equation": "( ( 51.0 + 51.0 ) - 49.0 )",
+        "Answer": 53.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-742",
+        "Body": "William counted 6 shooting stars in the night sky. Daniel caught 3 fish in the river. William counted 6 shooting stars in the night sky. Noah received 7 messages. Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. If he learns for 5 days",
+        "Question": "How many hours does he spend on learning english and chinese in all?",
+        "Equation": "( ( 6.0 + 7.0 ) * 5.0 )",
+        "Answer": 65.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-398",
+        "Body": "Charlotte painted 5 beautiful paintings. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. At the arcade Dave had won 13 tickets. Emily bought 3 apples. If he used 8 to buy some toys and 18 more to buy some clothes",
+        "Question": "How many more tickets did Dave use to buy clothes than he did to buy toys?",
+        "Equation": "( 18.0 - 8.0 )",
+        "Answer": 10.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-28",
+        "Body": "Matthew gave equal numbers of crackers and cakes to his 28 friends. William counted 6 shooting stars in the night sky. Amelia ran 6 miles every day for a week. Amelia ran 6 miles every day for a week. Harper watched 7 movies in a row. If he had 13 crackers and 15 cakes initially",
+        "Question": "How many crackers and cakes did each person eat?",
+        "Equation": "( ( 13.0 + 15.0 ) / 28.0 )",
+        "Answer": 1.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-90",
+        "Body": "Lily planted 8 trees in the garden. Noah received 7 messages. After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 317 visitors came to the Buckingham palace that day. Emily bought 3 apples. William counted 6 shooting stars in the night sky. If there were 295 visitors the previous day",
+        "Question": "How many more visitors visited the Buckingham palace on that day than on the previous day?",
+        "Equation": "( 317.0 - 295.0 )",
+        "Answer": 22.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-809",
+        "Body": "Olivia ate 2 pizzas. Amelia ran 6 miles every day for a week. Jacob played 9 different musical instruments. He then went to see the oranges being harvested. Ava wrote 8 songs. He found out that they harvested 56 sacks of oranges.",
+        "Question": "How many sacks did they harvest per day if they harvested for a total of 14 days?",
+        "Equation": "( 56.0 / 14.0 )",
+        "Answer": 4.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-52",
+        "Body": "Samuel built 4 sandcastles on the beach. You have read 8 books from the ' crazy silly school ' series. Liam sold 5 cars. Charlotte painted 5 beautiful paintings. If there are a total of 14 different books in the ' crazy silly school ' series Noah received 7 messages.",
+        "Question": "How many more do you still have to read?",
+        "Equation": "( 14.0 - 8.0 )",
+        "Answer": 6.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-405",
+        "Body": "Lily planted 8 trees in the garden. Paco had 39 sweet cookies and 6 salty cookies. Abigail cooked 5 delicious dishes for the guests. Abigail cooked 5 delicious dishes for the guests. Jacob played 9 different musical instruments. He ate 23 salty cookies and 32 sweet cookies.",
+        "Question": "How many more sweet cookies than salty cookies did he eat?",
+        "Equation": "( 32.0 - 23.0 )",
+        "Answer": 9.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-766",
+        "Body": "Sophia scored 4 goals. Benjamin solved 9 math problems. There are 203 bananas and 63 oranges in Philip's collection. Charlotte painted 5 beautiful paintings. Ava wrote 8 songs. If the bananas are organized into 7 groups and oranges are organized into 95 groups",
+        "Question": "How big is each group of bananas?",
+        "Equation": "( 203.0 / 7.0 )",
+        "Answer": 29.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-210",
+        "Body": "Liam sold 5 cars. Paco had 6 cookies. He gave 30 cookies to his friend and ate 23 cookies. Ethan read 10 books. Charlotte painted 5 beautiful paintings. William counted 6 shooting stars in the night sky.",
+        "Question": "How many more cookies did he give to his friend than those he ate?",
+        "Equation": "( 30.0 - 23.0 )",
+        "Answer": 7.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-494",
+        "Body": "Daniel caught 3 fish in the river. Sophia scored 4 goals. Abigail cooked 5 delicious dishes for the guests. Paul had 51 books and 106 pens. After selling some books and pens in a garage sale he had 82 books and 14 pens left. Charlotte painted 5 beautiful paintings.",
+        "Question": "How many pens did he sell in the garage sale?",
+        "Equation": "( 106.0 - 14.0 )",
+        "Answer": 92.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-331",
+        "Body": "Harper watched 7 movies in a row. James answered 10 questions correctly. At the zoo, a cage had snakes and alligators. The total number of animals in the cage was 79. If 24 snakes and 51 alligators were hiding Lily planted 8 trees in the garden. Amelia ran 6 miles every day for a week.",
+        "Question": "How many animals were not hiding in all?",
+        "Equation": "( ( 79.0 - 24.0 ) - 51.0 )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-517",
+        "Body": "Benjamin solved 9 math problems. Ava wrote 8 songs. Benjamin solved 9 math problems. 4 birds and 3 storks were sitting on the fence. 6 more storks came to join them. Alexander visited 3 different countries.",
+        "Question": "How many more storks than birds are sitting on the fence?",
+        "Equation": "( ( 3.0 + 6.0 ) - 4.0 )",
+        "Answer": 5.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-10",
+        "Body": "Olivia ate 2 pizzas. A waiter had some customers. After 9 customers left he still had 12 customers. Mia hired 6 new employees. Samuel built 4 sandcastles on the beach. William counted 6 shooting stars in the night sky.",
+        "Question": "How many customers did he have at the start?",
+        "Equation": "( 9.0 + 12.0 )",
+        "Answer": 21.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-958",
+        "Body": "Alexander visited 3 different countries. Charlotte painted 5 beautiful paintings. James answered 10 questions correctly. Harper watched 7 movies in a row. If each bag has 3 cookies and you had 21 cookies in total",
+        "Question": "How many bags of cookies do you have?",
+        "Equation": "( 21.0 / 3.0 )",
+        "Answer": 7.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-834",
+        "Body": "Amelia ran 6 miles every day for a week. Liam sold 5 cars. Harper watched 7 movies in a row. There are 22 different books and 10 different movies in the ' crazy silly school ' series. If you read 12 of the books and watched 56 of the movies Lily planted 8 trees in the garden.",
+        "Question": "How many more books do you still have to read?",
+        "Equation": "( 22.0 - 12.0 )",
+        "Answer": 10.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-177",
+        "Body": "Mia hired 6 new employees. Lily planted 8 trees in the garden. Steven has 12 peaches. Jake has 4 fewer peaches than Steven who has 67 more peaches than Jill. Emily bought 3 apples. Mia hired 6 new employees.",
+        "Question": "How many peaches does Jake have?",
+        "Equation": "( 12.0 - 4.0 )",
+        "Answer": 8.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-583",
+        "Body": "Rachel had to complete 8 pages of math homework. Harper watched 7 movies in a row. If she had to complete 3 more pages of math homework than reading homework Ethan read 10 books. Harper watched 7 movies in a row. William counted 6 shooting stars in the night sky.",
+        "Question": "How many pages did she have to complete in all?",
+        "Equation": "( ( 8.0 + 8.0 ) - 3.0 )",
+        "Answer": 13.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-336",
+        "Body": "Amelia ran 6 miles every day for a week. Jerry had 7 action figures and 2 books on a shelf in his room. Sophia scored 4 goals. Liam sold 5 cars. Alexander visited 3 different countries. Later he added 4 more books to the shelf.",
+        "Question": "How many more action figures than books were on his shelf?",
+        "Equation": "( 7.0 - ( 2.0 + 4.0 ) )",
+        "Answer": 1.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-333",
+        "Body": "Frank was reading through his favorite book. The book had 2 chapters each with 405 pages. Charlotte painted 5 beautiful paintings. Ethan read 10 books. It took frank 664 days to finish the book. Olivia ate 2 pizzas. Mia hired 6 new employees.",
+        "Question": "How many chapters did he read per day?",
+        "Equation": "( 664.0 / 2.0 )",
+        "Answer": 332.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-519",
+        "Body": "Emily bought 3 apples. Abigail cooked 5 delicious dishes for the guests. Jacob played 9 different musical instruments. Abigail cooked 5 delicious dishes for the guests. 6 packs of dvds can be bought with 120 dollars.",
+        "Question": "How much does each pack cost?",
+        "Equation": "( 120.0 / 6.0 )",
+        "Answer": 20.0,
+        "Type": "Common-Division"
+    }
+]
