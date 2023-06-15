@@ -1,5 +1,6 @@
 from statistics import mean
 from torch.utils.data import Dataset
+from nltk import sent_tokenize as sent_tk
 import openai
 import sys
 import json
@@ -827,3 +828,48 @@ def GSMICSampling(rseed=42):
     # save all test data
     with open("./dataset/GSM-IC/test.json", "w", encoding="utf8") as f:
         json.dump(sampled_data_1 + sampled_data_2, f, indent=4)
+
+  def make_mic_dataset(input_data, output_data, ic_list, n_ic = 2, n_sample = 100):
+    '''
+    input_data: name of input dataset, it should be one of ['addsub', 'svamp']
+    output_data: path of output dataset
+    ic_list: a list of irrelevant contexts if argument is a list; 
+    path of json data containing irrelevant contexts if argument is a string
+    n_ic: number of irrelevant context
+    n_sample: number of items to sample
+    '''
+    if input_data == "addsub":
+        path = "./dataset/AddSub/AddSub.json"
+        question_key = "sQuestion"
+    elif input_data == "svamp":
+        path = "./dataset/SVAMP/SVAMP.json"
+        question_key = "Body"
+    else:
+        raise ValueError("dataset is not properly defined ...")
+    
+    if isinstance(ic_list, str):
+        with open(ic_list, "r+", encoding="utf8") as f:
+            ic_list = json.load(f)
+    elif isinstance(ic_list, list):
+        pass
+    else:
+        raise ValueError("ic_list should be list or string.")
+
+    with open(path, "r+", encoding="utf8") as f:
+        json_data = json.load(f)
+
+    used_data = random.sample(json_data, k = n_sample)
+    noisy_data = []
+
+    for item in used_data:
+        sents = sent_tk(item[question_key])
+        used_ic = random.choices(ic_list, k = n_ic)
+        for i in range(n_ic):
+            insert_idx = random.randint(0, len(sents))
+            sents.insert(insert_idx, used_ic[i])
+        item[question_key] = " ".join(sents)
+        noisy_data += [item]
+    
+    with open(output_data, "w+", encoding="utf8") as f:
+        print("Writing noisy data into {}".format(output_data))
+        json.dump(noisy_data, f, indent=4)
