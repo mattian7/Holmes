@@ -1,802 +1,802 @@
 [
     {
-        "ID": "chal-890",
-        "Body": "After resting they decided to go for a swim. Emily bought 3 apples. The depth of the water is 16 times Ron's height. Dean is 9 feet taller than Ron. If Ron stands at 13 feet",
-        "Question": "How deep was the water?",
-        "Equation": "( 13.0 * 16.0 )",
-        "Answer": 208.0,
-        "Type": "Multiplication"
+        "ID": "chal-372",
+        "Body": "In a school there are 402 more girls than boys. William counted 6 shooting stars in the night sky. If there are 739 girls",
+        "Question": "How many boys are there in that school?",
+        "Equation": "( 739.0 - 402.0 )",
+        "Answer": 337.0,
+        "Type": "Subtraction"
     },
     {
-        "ID": "chal-777",
-        "Body": "Noah received 7 messages. There are 87 oranges and 290 bananas in Philip's collection. If the bananas are organized into 2 groups and oranges are organized into 93 groups",
-        "Question": "How big is each group of bananas?",
-        "Equation": "( 290.0 / 2.0 )",
-        "Answer": 145.0,
+        "ID": "chal-400",
+        "Body": "William counted 6 shooting stars in the night sky. An industrial machine can make 3 shirts a minute. It made 4 shirts yesterday and 8 shirts today.",
+        "Question": "How many minutes did the machine work in all?",
+        "Equation": "( ( 4.0 + 8.0 ) / 3.0 )",
+        "Answer": 4.0,
         "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-38",
-        "Body": "For Gwen's birthday she received 5 dollars from her dad. James answered 10 questions correctly. Her mom gave her 7 more dollars. If she spent 4 dollars.",
-        "Question": "How much more money did she receive from her mom than she did from her dad?",
-        "Equation": "( 7.0 - 5.0 )",
-        "Answer": 2.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-787",
-        "Body": "Some children were riding on the bus. At the bus stop 2 more children got on the bus. Then there were 41 children altogether on the bus. Samuel built 4 sandcastles on the beach.",
-        "Question": "How many children were riding on the bus before the bus stop?",
-        "Equation": "( 41.0 - 2.0 )",
-        "Answer": 39.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-820",
-        "Body": "For 19 weeks of harvest Lewis earns a total of $ 133. Abigail cooked 5 delicious dishes for the guests.",
-        "Question": "How much money does he earn each week?",
-        "Equation": "( 133.0 / 19.0 )",
-        "Answer": 7.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-870",
-        "Body": "In Haley's class 13 boys love to play marbles and 50 boys love to play cards. If Haley has 26 marbles Samuel built 4 sandcastles on the beach.",
-        "Question": "How many will each of the boys receive?",
-        "Equation": "( 26.0 / 13.0 )",
-        "Answer": 2.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-978",
-        "Body": "David did 36 more push-ups but 33 less crunches than Zachary in gym class today. William counted 6 shooting stars in the night sky. If Zachary did 58 push-ups and 33 crunches",
-        "Question": "How many more push-ups than crunches did Zachary do?",
-        "Equation": "( 58.0 - 33.0 )",
-        "Answer": 25.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-241",
-        "Body": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Lily planted 8 trees in the garden. Helen baked 519 chocolate chip cookies and 300 raisin cookies yesterday. And she baked 280 raisin cookies and 359 chocolate chip cookies this morning.",
-        "Question": "How many more raisin cookies did Helen bake yesterday compared to today?",
-        "Equation": "( 300.0 - 280.0 )",
-        "Answer": 20.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-925",
-        "Body": "Ethan read 10 books. There are many different books in the ' crazy silly school ' series. If you have read 13 of the books and are yet to read 8 books",
-        "Question": "How many books are there in the ' crazy silly school ' series?",
-        "Equation": "( 13.0 + 8.0 )",
-        "Answer": 21.0,
-        "Type": "Addition"
-    },
-    {
-        "ID": "chal-932",
-        "Body": "White t - shirts can be purchased in packages of 53. If mom buys 57 packages of white t - shirts and 34 trousers Lily planted 8 trees in the garden.",
-        "Question": "How many white t - shirts will she have?",
-        "Equation": "( 53.0 * 57.0 )",
-        "Answer": 3021.0,
-        "Type": "Multiplication"
-    },
-    {
-        "ID": "chal-424",
-        "Body": "Ethan read 10 books. Because of the decision Sofia asked the students to suggest specific types of food. 457 students suggested adding mashed potatoes while others suggested adding bacon to the menu. If 63 more students suggested adding mashed potatoes than those that suggested bacon",
-        "Question": "How many students suggested bacon?",
-        "Equation": "( 457.0 - 63.0 )",
-        "Answer": 394.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-302",
-        "Body": "Mary is baking a cake. The recipe calls for 14 cups of flour and 6 cups of sugar. Emily bought 3 apples. She already put in 5 cups of flour.",
-        "Question": "How many more cups of flour than cups of sugar does she need to add now?",
-        "Equation": "( ( 14.0 - 5.0 ) - 6.0 )",
-        "Answer": 3.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-751",
-        "Body": "Emily bought 3 apples. After Jessie started to go jogging everyday she lost 126 kilograms. She currently weighs 66 kilograms.",
-        "Question": "How much did she weigh before starting to jog?",
-        "Equation": "( 66.0 + 126.0 )",
-        "Answer": 192.0,
-        "Type": "Addition"
-    },
-    {
-        "ID": "chal-499",
-        "Body": "5 children were riding on the bus. At the bus stop 63 children got off the bus while some more got on the bus. Abigail cooked 5 delicious dishes for the guests. Then there were 14 children altogether on the bus.",
-        "Question": "How many more children got on the bus than those that got off?",
-        "Equation": "( 14.0 - 5.0 )",
-        "Answer": 9.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-845",
-        "Body": "Sophia scored 4 goals. There were 21 roses in the vase. Jessica threw away 34 roses from the vase and cut some more new roses from her flower garden to put in the vase. There are now 15 roses in the vase.",
-        "Question": "How many more roses did she throw away than those she cut from her garden?",
-        "Equation": "( 21.0 - 15.0 )",
-        "Answer": 6.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-546",
-        "Body": "Dan has $ 4. Ava wrote 8 songs. For a total of $ 3 he bought 10 candy bar each one costing the same amount of money.",
-        "Question": "How much money is left?",
-        "Equation": "( 4.0 - 3.0 )",
-        "Answer": 1.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-269",
-        "Body": "Lily planted 8 trees in the garden. Melissa played 3 games and scored a total of 81 points scoring the same for each game.",
-        "Question": "How many points did she score in each game?",
-        "Equation": "( 81.0 / 3.0 )",
-        "Answer": 27.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-906",
-        "Body": "Jesse's room is 2 feet long and 12 feet wide. If each tile is of size 4 square feet William counted 6 shooting stars in the night sky.",
-        "Question": "How many tiles does she need to cover the whole floor?",
-        "Equation": "( ( 2.0 * 12.0 ) / 4.0 )",
-        "Answer": 6.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-79",
-        "Body": "Julia played tag with 8 kids on monday, 11 kids on tuesday and 9 kids on wednesday. Alexander visited 3 different countries.",
-        "Question": "How many more kids did she play with on tuesday than on wednesday?",
-        "Equation": "( 11.0 - 9.0 )",
-        "Answer": 2.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-301",
-        "Body": "Next on his checklist is wax to stick the feathers together and colors to paint them. He needs a total of 49 g of colors to paint them. Olivia ate 2 pizzas. If the feathers require 288 g of wax and right now he just needs 260 g",
-        "Question": "How many grams of wax does he already have?",
-        "Equation": "( 288.0 - 260.0 )",
-        "Answer": 28.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-183",
-        "Body": "Benjamin solved 9 math problems. Because of the decision Sofia asked the students to suggest specific types of food. If 269 students suggested adding bacon 330 suggested adding mashed potatoes to the menu and 76 suggested adding tomatoes",
-        "Question": "How many more students suggested mashed potatoes than those that suggested bacon?",
-        "Equation": "( 330.0 - 269.0 )",
-        "Answer": 61.0,
-        "Type": "Subtraction"
     },
     {
         "ID": "chal-330",
-        "Body": "Emily bought 3 apples. He then went to see the oranges being harvested. He found out that they harvest 71 sacks of unripe oranges and 60 sacks of ripe oranges per day.",
+        "Body": "William counted 6 shooting stars in the night sky. He then went to see the oranges being harvested. He found out that they harvest 71 sacks of unripe oranges and 60 sacks of ripe oranges per day.",
         "Question": "How many more sacks of unripe oranges than ripe oranges are harvested per day?",
         "Equation": "( 71.0 - 60.0 )",
         "Answer": 11.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-527",
-        "Body": "They decided to hold the party in their backyard. They have some sets of tables, each having the 3 chairs. If there are a total of 9 chairs in the backyard Olivia ate 2 pizzas.",
-        "Question": "How many sets of tables do they have?",
-        "Equation": "( 9.0 / 3.0 )",
-        "Answer": 3.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-930",
-        "Body": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 512 visitors came to the Buckingham palace that day. Ethan read 10 books. If there were 471 visitors the previous day and 808 visitors the day before that",
-        "Question": "How many visited the Buckingham palace within the past 89 days?",
-        "Equation": "( ( 512.0 + 471.0 ) + 808.0 )",
-        "Answer": 1791.0,
-        "Type": "Addition"
-    },
-    {
-        "ID": "chal-673",
-        "Body": "Ethan read 10 books. Bobby ate 23 pieces of candy. If he initially had 30 pieces of candy",
-        "Question": "How many pieces of candy does he still have left?",
-        "Equation": "( 30.0 - 23.0 )",
-        "Answer": 7.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-177",
-        "Body": "James answered 10 questions correctly. Steven has 12 peaches. Jake has 4 fewer peaches than Steven who has 67 more peaches than Jill.",
-        "Question": "How many peaches does Jake have?",
-        "Equation": "( 12.0 - 4.0 )",
-        "Answer": 8.0,
+        "ID": "chal-34",
+        "Body": "There were 78 dollars in Olivia's wallet. William counted 6 shooting stars in the night sky. She spent 15 dollars at a supermarket.",
+        "Question": "How much money does she have left?",
+        "Equation": "( 78.0 - 15.0 )",
+        "Answer": 63.0,
         "Type": "Subtraction"
     },
     {
         "ID": "chal-690",
-        "Body": "Randy has 58 blocks. Olivia ate 2 pizzas. He uses 27 blocks to build a tower and 53 blocks to build a house.",
+        "Body": "Randy has 58 blocks. He uses 27 blocks to build a tower and 53 blocks to build a house. William counted 6 shooting stars in the night sky.",
         "Question": "How many blocks did he use to build the tower and the house altogether?",
         "Equation": "( 27.0 + 53.0 )",
         "Answer": 80.0,
         "Type": "Addition"
     },
     {
-        "ID": "chal-91",
-        "Body": "Josh had 3 marbles in his collection. He found 6 marbles while he lost 5 marbles. Alexander visited 3 different countries.",
-        "Question": "How many more marbles did he find than those he lost?",
-        "Equation": "( 6.0 - 5.0 )",
-        "Answer": 1.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-270",
-        "Body": "Nell collects cards. She had 246 baseball cards and 214 Ace cards. She gave some of her cards to Jeff and now has 404 baseball cards and 495 Ace cards left. Lily planted 8 trees in the garden.",
-        "Question": "How many more Ace cards than baseball cards does Nell have?",
-        "Equation": "( 495.0 - 404.0 )",
-        "Answer": 91.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-731",
-        "Body": "Paul had 21 books. After selling some in a garage sale he bought 42 new ones. If he has 15 books now Emily bought 3 apples.",
-        "Question": "How many more books did he sell than he bought?",
-        "Equation": "( 21.0 - 15.0 )",
-        "Answer": 6.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-399",
-        "Body": "Marco and his dad went strawberry picking. Harper watched 7 movies in a row. Together their strawberries weighed 35 pounds. Marco's strawberries weighed 13 pounds.",
-        "Question": "How much more did his dad's strawberries weigh than his?",
-        "Equation": "( ( 35.0 - 13.0 ) - 13.0 )",
-        "Answer": 9.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-829",
-        "Body": "Liam sold 5 cars. For the walls of the house he would use 11 nails in all to secure large planks of wood. If each plank needs 3 pieces of nails to be secured and an additional 8 nails were used.",
-        "Question": "How many planks does John need for the house wall?",
-        "Equation": "( ( 11.0 - 8.0 ) / 3.0 )",
-        "Answer": 1.0,
+        "ID": "chal-984",
+        "Body": "William counted 6 shooting stars in the night sky. In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy",
+        "Question": "How many boys did she give the marbles to?",
+        "Equation": "( 10.0 / 5.0 )",
+        "Answer": 2.0,
         "Type": "Common-Division"
     },
     {
-        "ID": "chal-847",
-        "Body": "Mia hired 6 new employees. He then went to see the oranges being harvested. He found out that they harvest 28 sacks of ripe oranges and 52 sacks of unripe oranges per day.",
-        "Question": "How many sacks of oranges will they have after 26 days of harvest?",
-        "Equation": "( ( 28.0 + 52.0 ) * 26.0 )",
-        "Answer": 2080.0,
-        "Type": "Multiplication"
+        "ID": "chal-441",
+        "Body": "William counted 6 shooting stars in the night sky. Katie had 91 ds games and her new friends had 88 games and old friends had 53 games.",
+        "Question": "How many games do her friends have in all?",
+        "Equation": "( 88.0 + 53.0 )",
+        "Answer": 141.0,
+        "Type": "Addition"
     },
     {
-        "ID": "chal-947",
-        "Body": "Josh had 15 marbles in his collection. Sophia scored 4 goals. He found 9 marbles while he lost 23 marbles.",
-        "Question": "How many more marbles did he lose than those he found?",
-        "Equation": "( 23.0 - 9.0 )",
-        "Answer": 14.0,
+        "ID": "chal-132",
+        "Body": "After Jessie started to go jogging everyday she lost 35 kilograms. William counted 6 shooting stars in the night sky. She weighed 69 kilograms before beginning jogging.",
+        "Question": "How much does she weigh now?",
+        "Equation": "( 69.0 - 35.0 )",
+        "Answer": 34.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-553",
-        "Body": "Emily bought 3 apples. 2 children were riding on the bus. At the bus stop some more children got on the bus. Then there were 10 children altogether on the bus.",
-        "Question": "How many more children are on the bus now than there were before the bus stop?",
-        "Equation": "( 10.0 - 2.0 )",
+        "ID": "chal-644",
+        "Body": "The cave is 1218 feet deep and they are already at 849 feet. William counted 6 shooting stars in the night sky. If they are travelling at speed of 17",
+        "Question": "How much farther until they reach the end of the cave?",
+        "Equation": "( 1218.0 - 849.0 )",
+        "Answer": 369.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-177",
+        "Body": "Steven has 12 peaches. Jake has 4 fewer peaches than Steven who has 67 more peaches than Jill. William counted 6 shooting stars in the night sky.",
+        "Question": "How many peaches does Jake have?",
+        "Equation": "( 12.0 - 4.0 )",
         "Answer": 8.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-558",
-        "Body": "Baker made 54 cakes. He sold some of them. William counted 6 shooting stars in the night sky. If he still has 13 cakes left",
-        "Question": "How many cakes did baker sell?",
-        "Equation": "( 54.0 - 13.0 )",
-        "Answer": 41.0,
+        "ID": "chal-238",
+        "Body": "William counted 6 shooting stars in the night sky. Rachel picked 2 ripe apples from her tree. Now the tree has 7 apples still on it. If 6 of those are ripe and the rest are unripe",
+        "Question": "How many ripe apples did the tree have to begin with?",
+        "Equation": "( 2.0 + 6.0 )",
+        "Answer": 8.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-649",
+        "Body": "In Haley's class 4 are boys who love to play marbles. William counted 6 shooting stars in the night sky. If Haley has 23 marbles and wants to keep 15 marbles for herself",
+        "Question": "How many will each of the boys receive?",
+        "Equation": "( ( 23.0 - 15.0 ) / 4.0 )",
+        "Answer": 2.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-877",
+        "Body": "Rebecca wants to split a collection of marbles into groups of 4. Rebecca has 10 eggs and 20 marbles. William counted 6 shooting stars in the night sky.",
+        "Question": "How many groups will be created?",
+        "Equation": "( 20.0 / 4.0 )",
+        "Answer": 5.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-758",
+        "Body": "He then went to see the oranges being harvested. William counted 6 shooting stars in the night sky. He found out that they harvest 41 sacks of unripe oranges and 86 sacks of ripe oranges per day.",
+        "Question": "How many more sacks of ripe oranges than unripe oranges are harvested per day?",
+        "Equation": "( 86.0 - 41.0 )",
+        "Answer": 45.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-350",
+        "Body": "William counted 6 shooting stars in the night sky. 3 red peaches, and some more green peaches are in the basket. If there are 10 more green peaches than red peaches in the basket",
+        "Question": "How many green peaches are in the basket?",
+        "Equation": "( 3.0 + 10.0 )",
+        "Answer": 13.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-534",
+        "Body": "Danny collects bottle caps. He threw away 60 of the old ones at the park while he found 58 bottle caps new ones. William counted 6 shooting stars in the night sky. Now he has 67 bottle caps in his collection.",
+        "Question": "How many bottle caps did danny have at first?",
+        "Equation": "( ( 67.0 + 60.0 ) - 58.0 )",
+        "Answer": 69.0,
         "Type": "Subtraction"
     },
     {
         "ID": "chal-479",
-        "Body": "Amelia ran 6 miles every day for a week. He then went to see the oranges being harvested. He found out that they harvest 31 sacks of ripe oranges and 24 sacks of unripe oranges per day.",
+        "Body": "William counted 6 shooting stars in the night sky. He then went to see the oranges being harvested. He found out that they harvest 31 sacks of ripe oranges and 24 sacks of unripe oranges per day.",
         "Question": "How many sacks of unripe oranges will they have after 45 days of harvest?",
         "Equation": "( 24.0 * 45.0 )",
         "Answer": 1080.0,
         "Type": "Multiplication"
     },
     {
-        "ID": "chal-836",
-        "Body": "A grocery store had 57 bottles of regular soda, 26 bottles of diet soda and 27 bottles of lite soda. Samuel built 4 sandcastles on the beach.",
-        "Question": "How many bottles did they have total?",
-        "Equation": "( ( 57.0 + 26.0 ) + 27.0 )",
-        "Answer": 110.0,
-        "Type": "Addition"
+        "ID": "chal-989",
+        "Body": "Melissa scored 109 points in each game. William counted 6 shooting stars in the night sky. She also got 82 bonus points in each game.",
+        "Question": "How many points did she score in 79 games?",
+        "Equation": "( ( 109.0 + 82.0 ) * 79.0 )",
+        "Answer": 15089.0,
+        "Type": "Multiplication"
     },
     {
-        "ID": "chal-342",
-        "Body": "Dan has $ 3. For a total of $ 4 he bought 2 candy bar each one costing the same amount of money. Charlotte painted 5 beautiful paintings.",
-        "Question": "How much did each candy bar cost?",
-        "Equation": "( 4.0 / 2.0 )",
-        "Answer": 2.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-791",
-        "Body": "Samuel built 4 sandcastles on the beach. Zachary did 46 push-ups and 58 crunches in gym class today. David did 38 more push-ups but 62 less crunches than zachary.",
-        "Question": "How many more crunches than push-ups did Zachary do?",
-        "Equation": "( 58.0 - 46.0 )",
-        "Answer": 12.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-362",
-        "Body": "Benjamin solved 9 math problems. 16 people can ride the Ferris wheel in paradise park at the same time. If the Ferris wheel has 4 seats",
-        "Question": "How many people can each seat hold?",
-        "Equation": "( 16.0 / 4.0 )",
-        "Answer": 4.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-452",
-        "Body": "A mailman has to give 25 pieces of junk mail to each block. Alexander visited 3 different countries. If he gives 5 mails to each house in a block",
+        "ID": "chal-735",
+        "Body": "A mailman has to give 32 pieces of junk mail to each of the 55 blocks. If he gives 8 mails to each house in a block William counted 6 shooting stars in the night sky.",
         "Question": "How many houses are there in a block?",
-        "Equation": "( 25.0 / 5.0 )",
-        "Answer": 5.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-477",
-        "Body": "Alexander visited 3 different countries. Lewis earns $ 2 every week during the harvest. If he earns a total of $ 178",
-        "Question": "How many weeks did the harvest last?",
-        "Equation": "( 178.0 / 2.0 )",
-        "Answer": 89.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-648",
-        "Body": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 100 visitors came to the Buckingham palace on the previous day. Benjamin solved 9 math problems. If there were 666 visitors on that day",
-        "Question": "How many more visitors visited the Buckingham palace on that day than on the previous day?",
-        "Equation": "( 666.0 - 100.0 )",
-        "Answer": 566.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-704",
-        "Body": "Ava wrote 8 songs. Paul had 50 books. After buying some in a garage sale he had 151 left.",
-        "Question": "How many books did he buy?",
-        "Equation": "( 151.0 - 50.0 )",
-        "Answer": 101.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-11",
-        "Body": "Emily bought 3 apples. 3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them.",
-        "Question": "How many more storks than birds are sitting on the fence?",
-        "Equation": "( 6.0 - ( 3.0 + 2.0 ) )",
-        "Answer": 1.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-663",
-        "Body": "Ed had 12 more marbles than Doug. Noah received 7 messages. Ed lost 20 of his marbles at the playground. If Ed had 17 marbles",
-        "Question": "How many marbles does Doug have now?",
-        "Equation": "( 17.0 - 12.0 )",
-        "Answer": 5.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-133",
-        "Body": "Noah received 7 messages. 22 children were riding on the bus. At the bus stop 40 children got on the bus while some got off the bus. Then there were 2 children altogether on the bus.",
-        "Question": "How many children got off the bus at the bus stop?",
-        "Equation": "( ( 22.0 + 40.0 ) - 2.0 )",
-        "Answer": 60.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-32",
-        "Body": "There were 15 roses and 62 orchids in the vase. Liam sold 5 cars. Jessica cut some more roses and orchids from her flower garden. There are now 17 roses and 96 orchids in the vase.",
-        "Question": "How many roses did she cut?",
-        "Equation": "( 17.0 - 15.0 )",
-        "Answer": 2.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-363",
-        "Body": "Mary is baking a cake. Samuel built 4 sandcastles on the beach. The recipe calls for 6 cups of flour 8 cups of sugar and 7 cups of salt. She already put in 5 cups of flour.",
-        "Question": "How many more cups of sugar than cups of salt does she need to add now?",
-        "Equation": "( 8.0 - 7.0 )",
-        "Answer": 1.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-305",
-        "Body": "Last week Fred had 86 dollars and Jason had 5 dollars. Fred washed cars over the weekend and now has 9 dollars and Jason did not work. Amelia ran 6 miles every day for a week.",
-        "Question": "How much money do they have together now?",
-        "Equation": "( 5.0 + 9.0 )",
-        "Answer": 14.0,
-        "Type": "Addition"
-    },
-    {
-        "ID": "chal-598",
-        "Body": "Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days Lily planted 8 trees in the garden.",
-        "Question": "How many hours does he spend on learning english in all?",
-        "Equation": "( 6.0 * 2.0 )",
-        "Answer": 12.0,
-        "Type": "Multiplication"
-    },
-    {
-        "ID": "chal-876",
-        "Body": "Nell collects baseball cards. Sophia scored 4 goals. She had 566 cards while Jeff had 234 cards. She gave some of her cards to Jeff and now has 535 cards left.",
-        "Question": "How many cards does Jeff have now?",
-        "Equation": "( ( 234.0 + 566.0 ) - 535.0 )",
-        "Answer": 265.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-88",
-        "Body": "Lily planted 8 trees in the garden. The Razorback t-shirt shop made $ 51 dollars from selling 3 t-shirt during the Arkansas and Texas tech game they.",
-        "Question": "What is the cost of each t-shirt?",
-        "Equation": "( 51.0 / 3.0 )",
-        "Answer": 17.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-128",
-        "Body": "A farmer had 171 tomatoes in his garden. Ethan read 10 books. If he picked 134 of them yesterday and 30 today.",
-        "Question": "How many will he have left after today?",
-        "Equation": "( ( 171.0 - 134.0 ) - 30.0 )",
-        "Answer": 7.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-163",
-        "Body": "Paco had 40 sweet cookies and 25 salty cookies. He ate 28 salty cookies and 15 sweet cookies. Mia hired 6 new employees.",
-        "Question": "How many more salty cookies than sweet cookies did he eat?",
-        "Equation": "( 28.0 - 15.0 )",
-        "Answer": 13.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-361",
-        "Body": "Zachary did 51 push-ups and David did 44 push-ups in gym class today. William counted 6 shooting stars in the night sky.",
-        "Question": "How many more push-ups did Zachary do than David?",
-        "Equation": "( 51.0 - 44.0 )",
-        "Answer": 7.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-628",
-        "Body": "During summer break 34044 kids from Lawrence county go to camp and the other 134867 kids stay home. Charlotte painted 5 beautiful paintings. An additional 424944 kids from outside the county attended the camp.",
-        "Question": "How many kids in total attended the camp?",
-        "Equation": "( 34044.0 + 424944.0 )",
-        "Answer": 458988.0,
-        "Type": "Addition"
-    },
-    {
-        "ID": "chal-371",
-        "Body": "Alexander visited 3 different countries. Julia played tag with 9 kids on monday, 7 kids on tuesday and 96 kids on wednesday.",
-        "Question": "How many more kids did she play with on monday than on tuesday?",
-        "Equation": "( 9.0 - 7.0 )",
-        "Answer": 2.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-466",
-        "Body": "James answered 10 questions correctly. 46 campers went rowing on a day. 43 campers went rowing in the morning and some more campers went rowing in the afternoon.",
-        "Question": "How many campers went rowing in the afternoon?",
-        "Equation": "( 46.0 - 43.0 )",
-        "Answer": 3.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-508",
-        "Body": "Marco and his dad went strawberry picking. Marco's dad's strawberries weighed 11 pounds. Jacob played 9 different musical instruments. If together their strawberries weighed 30 pounds.",
-        "Question": "How much did Marco's strawberries weigh?",
-        "Equation": "( 30.0 - 11.0 )",
-        "Answer": 19.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-665",
-        "Body": "The Razorback shop makes $ 210 dollars off each jersey and $ 240 off each t-shirt. During the Arkansas and Texas tech game they sold 177 t-shirts and 23 jerseys. Abigail cooked 5 delicious dishes for the guests.",
-        "Question": "How much more does a t-shirt cost than a jersey?",
-        "Equation": "( 240.0 - 210.0 )",
-        "Answer": 30.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-152",
-        "Body": "There are 544 pots in each of the 10 gardens. William counted 6 shooting stars in the night sky. Each pot has 32 flowers in it.",
-        "Question": "How many flowers are there in all?",
-        "Equation": "( ( 544.0 * 10 ) * 32.0 )",
-        "Answer": 174080.0,
-        "Type": "Multiplication"
-    },
-    {
-        "ID": "chal-458",
-        "Body": "Matthew had 8 crackers to give to friends. William counted 6 shooting stars in the night sky. If Matthew gave 2 crackers to each his friends",
-        "Question": "How many friends did he give crackers to?",
-        "Equation": "( 8.0 / 2.0 )",
+        "Equation": "( 32.0 / 8.0 )",
         "Answer": 4.0,
         "Type": "Common-Division"
     },
     {
-        "ID": "chal-386",
-        "Body": "Mary is baking a cake. The recipe calls for 5 cups of sugar and 14 cups of flour. She already put in 11 cups of flour. Abigail cooked 5 delicious dishes for the guests.",
-        "Question": "How many more cups of sugar than cups of flour does she need to add now?",
-        "Equation": "( 5.0 - ( 14.0 - 11.0 ) )",
-        "Answer": 2.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-485",
-        "Body": "William counted 6 shooting stars in the night sky. In a school there are 569 girls and 236 boys.",
-        "Question": "How many more girls than boys does the school have?",
-        "Equation": "( 569.0 - 236.0 )",
-        "Answer": 333.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-207",
-        "Body": "Jacob played 9 different musical instruments. Rachel had to complete 8 pages of math homework, 7 pages of reading homework and 3 more pages of biology homework.",
-        "Question": "How many pages of math and biology homework did she have to complete?",
-        "Equation": "( 8.0 + 3.0 )",
-        "Answer": 11.0,
+        "ID": "chal-635",
+        "Body": "Josh had 22 marbles in his collection. William counted 6 shooting stars in the night sky. Jack gave him 20 marbles.",
+        "Question": "How many marbles does Josh have now?",
+        "Equation": "( 22.0 + 20.0 )",
+        "Answer": 42.0,
         "Type": "Addition"
     },
     {
-        "ID": "chal-992",
-        "Body": "In a school there are 308 girls and 318 boys. Ava wrote 8 songs. There are also 36 teachers",
-        "Question": "How many pupils are there in that school?",
-        "Equation": "( 308.0 + 318.0 )",
-        "Answer": 626.0,
-        "Type": "Addition"
-    },
-    {
-        "ID": "chal-263",
-        "Body": "Randy has 90 blocks. He uses 89 blocks to build a house and 63 blocks to build a tower. Amelia ran 6 miles every day for a week.",
-        "Question": "How many more blocks did he use to build the house than he did to build the tower?",
-        "Equation": "( 89.0 - 63.0 )",
-        "Answer": 26.0,
+        "ID": "chal-721",
+        "Body": "William counted 6 shooting stars in the night sky. Jessie weighed 71 kilograms. After she started to go jogging everyday she lost 20 kilograms.",
+        "Question": "How much does she weigh now?",
+        "Equation": "( 71.0 - 20.0 )",
+        "Answer": 51.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-931",
-        "Body": "Charlotte painted 5 beautiful paintings. He then went to see the oranges being harvested. He found out that they harvest 44 sacks of ripe oranges and 25 sacks of unripe oranges per day.",
-        "Question": "How many more sacks of ripe oranges than unripe oranges are harvested per day?",
-        "Equation": "( 44.0 - 25.0 )",
-        "Answer": 19.0,
+        "ID": "chal-731",
+        "Body": "Paul had 21 books. William counted 6 shooting stars in the night sky. After selling some in a garage sale he bought 42 new ones. If he has 15 books now",
+        "Question": "How many more books did he sell than he bought?",
+        "Equation": "( 21.0 - 15.0 )",
+        "Answer": 6.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-380",
-        "Body": "Liam sold 5 cars. Rachel had to complete 5 pages of math homework and 2 pages of reading homework.",
-        "Question": "How many more pages of math homework than reading homework did she have?",
-        "Equation": "( 5.0 - 2.0 )",
-        "Answer": 3.0,
+        "ID": "chal-979",
+        "Body": "Rebecca wants to split a collection of eggs into groups of 20. William counted 6 shooting stars in the night sky. Rebecca has 5 marbles and 12 eggs.",
+        "Question": "How many more eggs does Rebecca have than marbles?",
+        "Equation": "( 12.0 - 5.0 )",
+        "Answer": 7.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-379",
-        "Body": "Jake has 3 fewer peaches and 10 more apples than Steven. Steven has 12 peaches and 15 apples. Jacob played 9 different musical instruments.",
-        "Question": "How many more apples than peaches does Steven have?",
-        "Equation": "( 15.0 - 12.0 )",
-        "Answer": 3.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-996",
-        "Body": "Charlotte painted 5 beautiful paintings. Paige was helping her mom plant flowers and together they planted 36 seeds. They put 12 seeds in each flower bed and only 58 seeds grew into flowers in each flower bed.",
-        "Question": "How many flower beds did they have?",
-        "Equation": "( 36.0 / 12.0 )",
-        "Answer": 3.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-768",
-        "Body": "Emily bought 3 apples. Paige raised 15 goldfish in the pond but stray cats loved eating them. 5 were eaten.",
-        "Question": "How many goldfish remained?",
-        "Equation": "( 15.0 - 5.0 )",
-        "Answer": 10.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-862",
-        "Body": "Robin cut off 13 inches of his hair. If his hair was 14 inches long initially Ethan read 10 books.",
-        "Question": "How long is his hair now?",
-        "Equation": "( 14.0 - 13.0 )",
+        "ID": "chal-759",
+        "Body": "Allan brought 5 balloons. William counted 6 shooting stars in the night sky. If Allan and Jake brought total of 6 balloons to the park",
+        "Question": "How many balloons did Jake bring to the park?",
+        "Equation": "( 6.0 - 5.0 )",
         "Answer": 1.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-738",
-        "Body": "Rachel had to complete 5 pages of math homework and yet more pages of reading homework. Amelia ran 6 miles every day for a week. If she had to complete a total of 7 pages of homework",
-        "Question": "How many pages of reading homework did she have to complete?",
-        "Equation": "( 7.0 - 5.0 )",
-        "Answer": 2.0,
+        "ID": "chal-869",
+        "Body": "William counted 6 shooting stars in the night sky. The grasshopper and the frog had a jumping contest. The grasshopper jumped 9 inches and the frog jumped 12 inches.",
+        "Question": "How much farther did the frog jump than the grasshopper?",
+        "Equation": "( 12.0 - 9.0 )",
+        "Answer": 3.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-219",
-        "Body": "We ordered 7 pizzas. Each pizza has the same number of slices. If there were a total of 14 slices William counted 6 shooting stars in the night sky.",
-        "Question": "How many slices are there in each pizza?",
-        "Equation": "( 14.0 / 7.0 )",
-        "Answer": 2.0,
-        "Type": "Common-Division"
+        "ID": "chal-338",
+        "Body": "Bobby ate some pieces of candy. William counted 6 shooting stars in the night sky. Then he ate 25 more. If he ate a total of 43 pieces of candy",
+        "Question": "How many pieces of candy had he eaten at the start?",
+        "Equation": "( 43.0 - 25.0 )",
+        "Answer": 18.0,
+        "Type": "Subtraction"
     },
     {
-        "ID": "chal-57",
-        "Body": "Jacob played 9 different musical instruments. 5 red peaches, 14 yellow peaches and 6 green peaches are in the basket.",
-        "Question": "How many green and yellow peaches are in the basket?",
-        "Equation": "( 6.0 + 14.0 )",
+        "ID": "chal-471",
+        "Body": "Ed had 2 more marbles than Doug. Doug lost some of his marbles at the playground. William counted 6 shooting stars in the night sky. Now Ed has 19 more marbles than doug.",
+        "Question": "How many marbles did Doug lose?",
+        "Equation": "( 19.0 - 2.0 )",
+        "Answer": 17.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-658",
+        "Body": "Jerry had 8 action figures and 9 books on a shelf in his room. Later he added 10 more books to the shelf. William counted 6 shooting stars in the night sky.",
+        "Question": "How many books were on his shelf in all?",
+        "Equation": "( 9.0 + 10.0 )",
+        "Answer": 19.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-98",
+        "Body": "William counted 6 shooting stars in the night sky. The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 19 inches. The frog jumped 10 inches farther than the grasshopper and the mouse jumped 20 inches farther than the frog.",
+        "Question": "How much farther did the mouse jump than the grasshopper?",
+        "Equation": "( 10.0 + 20.0 )",
+        "Answer": 30.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-671",
+        "Body": "Julia played tag with 7 kids on monday and 13 kids on tuesday. William counted 6 shooting stars in the night sky. She played cards wtih 20 kids on wednesday.",
+        "Question": "How many kids did she play tag with altogether?",
+        "Equation": "( 7.0 + 13.0 )",
         "Answer": 20.0,
         "Type": "Addition"
     },
     {
-        "ID": "chal-354",
-        "Body": "Olivia ate 2 pizzas. He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day.",
-        "Question": "How many oranges do they harvest per day if each sack contains 28 oranges?",
-        "Equation": "( 66.0 * 28.0 )",
-        "Answer": 1848.0,
-        "Type": "Multiplication"
-    },
-    {
-        "ID": "chal-631",
-        "Body": "Paco had 8 sweet cookies and 6 salty cookies. He ate 20 sweet cookies and 34 salty cookies. Noah received 7 messages.",
-        "Question": "How many more salty cookies than sweet cookies did he eat?",
-        "Equation": "( 34.0 - 20.0 )",
-        "Answer": 14.0,
+        "ID": "chal-701",
+        "Body": "Every day Ryan spends 6 hours on learning english and 2 hours on learning chinese. William counted 6 shooting stars in the night sky.",
+        "Question": "How many more hours does he spend on learning english than he does on learning chinese?",
+        "Equation": "( 6.0 - 2.0 )",
+        "Answer": 4.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-191",
-        "Body": "Abigail cooked 5 delicious dishes for the guests. Baker made 43 cakes and 114 pastries. If he sold 154 pastries and 78 cakes",
-        "Question": "How many more pastries than cakes did baker sell?",
-        "Equation": "( 154.0 - 78.0 )",
-        "Answer": 76.0,
+        "ID": "chal-111",
+        "Body": "You had 26 bags with equal number of cookies. If you had 15 candies and 52 cookies in total William counted 6 shooting stars in the night sky.",
+        "Question": "How many cookies does each bag have?",
+        "Equation": "( 52.0 / 26.0 )",
+        "Answer": 2.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-251",
+        "Body": "Winter is almost here and most animals are migrating to warmer countries. There are 3 bird families living near the mountain. William counted 6 shooting stars in the night sky. 26 new bird families came to live near the mountain from the arctic while 2 bird families flew away further south for winter.",
+        "Question": "How many bird families were left near the mountain?",
+        "Equation": "( ( 3.0 - 2.0 ) + 26.0 )",
+        "Answer": 27.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-492",
+        "Body": "Jake has 7 fewer peaches than Steven who has 14 more peaches than Jill. William counted 6 shooting stars in the night sky. Steven has 15 peaches.",
+        "Question": "How many peaches does Jake have?",
+        "Equation": "( 15.0 - 7.0 )",
+        "Answer": 8.0,
         "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-743",
+        "Body": "William counted 6 shooting stars in the night sky. Rachel picked 7 apples from her tree. Thereafter 2 new apples grew on the tree. Now the tree has 6 apples still on it.",
+        "Question": "How many apples did the tree have to begin with?",
+        "Equation": "( ( 6.0 - 2.0 ) + 7.0 )",
+        "Answer": 11.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-774",
+        "Body": "William counted 6 shooting stars in the night sky. Katie had 62 new games and 80 old games. Her friends had 73 new games and 41 old games.",
+        "Question": "How many old games do they have 3",
+        "Equation": "( 80.0 + 41.0 )",
+        "Answer": 121.0,
+        "Type": "Addition"
     },
     {
         "ID": "chal-830",
-        "Body": "17 red peaches and 16 green peaches are in the basket. Harper watched 7 movies in a row.",
+        "Body": "17 red peaches and 16 green peaches are in the basket. William counted 6 shooting stars in the night sky.",
         "Question": "How many more red peaches than green peaches are in the basket?",
         "Equation": "( 17.0 - 16.0 )",
         "Answer": 1.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-126",
-        "Body": "Kelly has 22 nintendo games. Emily bought 3 apples.",
-        "Question": "How many does she need to buy so that she will have 140 games left?",
-        "Equation": "( 140.0 - 22.0 )",
-        "Answer": 118.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-429",
-        "Body": "Daniel caught 3 fish in the river. Frank was reading through his favorite book. The book had 555 pages equally distributed over 5 chapters. It took Frank 220 days to finish the book.",
-        "Question": "How many pages are in each chapter?",
-        "Equation": "( 555.0 / 5.0 )",
-        "Answer": 111.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-531",
-        "Body": "The school is planning a field trip. The school has 102 classrooms. There are 11 students in the school and 99 seats on each school bus. Alexander visited 3 different countries. If 8 students do n't want to go for the trip",
-        "Question": "How many students are going on the trip?",
-        "Equation": "( 11.0 - 8.0 )",
+        "ID": "chal-794",
+        "Body": "For Gwen's birthday she received 3 dollars from her mom. Her dad gave her 6 more dollars. William counted 6 shooting stars in the night sky. If she spent 4 dollars.",
+        "Question": "How much more money did she receive from her dad than she did from her mom?",
+        "Equation": "( 6.0 - 3.0 )",
         "Answer": 3.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-941",
-        "Body": "The Ferris wheel in paradise park has some seats. Each seat can hold 9 people. If 18 people can ride the wheel at the same time Jacob played 9 different musical instruments.",
-        "Question": "How many seats does the Ferris wheel have?",
-        "Equation": "( 18.0 / 9.0 )",
+        "ID": "chal-866",
+        "Body": "William counted 6 shooting stars in the night sky. Paul sold some books in a garage sale leaving him with 27 books. If he had 136 books initially",
+        "Question": "How many books did he sell?",
+        "Equation": "( 136.0 - 27.0 )",
+        "Answer": 109.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-30",
+        "Body": "Dan has $ 3. William counted 6 shooting stars in the night sky. He bought 2 candy bar for $ 4, each one costing the same amount of money.",
+        "Question": "How much did each candy bar cost?",
+        "Equation": "( 4.0 / 2.0 )",
         "Answer": 2.0,
         "Type": "Common-Division"
     },
     {
-        "ID": "chal-668",
-        "Body": "Mary is baking a cake. The recipe calls for 11 cups of sugar and some more cups of flour. She already put in 3 cups of flour. Charlotte painted 5 beautiful paintings. If she still needs to add 6 more cups of flour",
-        "Question": "How many cups of flour did the recipe require?",
-        "Equation": "( 3.0 + 6.0 )",
-        "Answer": 9.0,
+        "ID": "chal-730",
+        "Body": "A book has 2 chapters across 23 pages. The first chapter is 10 pages long. William counted 6 shooting stars in the night sky.",
+        "Question": "How many pages are in the first chapter?",
+        "Equation": "( 23.0 - 10.0 )",
+        "Answer": 13.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-942",
+        "Body": "Dave had some apps on his phone. After deleting 18 of them he had 5 left. William counted 6 shooting stars in the night sky.",
+        "Question": "How many apps did he have on his phone at the start?",
+        "Equation": "( 18.0 + 5.0 )",
+        "Answer": 23.0,
         "Type": "Addition"
     },
     {
-        "ID": "chal-779",
-        "Body": "Noah received 7 messages. David did 27 more push-ups but 7 less crunches than Zachary in gym class today. If Zachary did 5 push-ups and 17 crunches",
-        "Question": "How many more crunches than push-ups did Zachary do?",
-        "Equation": "( 17.0 - 5.0 )",
-        "Answer": 12.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-764",
-        "Body": "Samuel built 4 sandcastles on the beach. Paul got a box of 267 crayons for his birthday. During the school year he lost 231 crayons while he gave away 308 crayons to his friends.",
-        "Question": "How many more crayons did he give to his friends than those he lost?",
-        "Equation": "( 308.0 - 231.0 )",
-        "Answer": 77.0,
-        "Type": "Subtraction"
-    },
-    {
-        "ID": "chal-45",
-        "Body": "The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. Sophia scored 4 goals. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper.",
-        "Question": "How far did the mouse jump?",
-        "Equation": "( ( 9.0 + 33.0 ) - 3.0 )",
-        "Answer": 39.0,
+        "ID": "chal-692",
+        "Body": "The Razorback shop makes $ 86 dollars off each t-shirt and $ 232 off each jersey. During the Arkansas and Texas tech game they sold 254 t-shirts and 43 jerseys. William counted 6 shooting stars in the night sky.",
+        "Question": "How much more does a jersey cost than a t-shirt?",
+        "Equation": "( 232.0 - 86.0 )",
+        "Answer": 146.0,
         "Type": "Subtraction"
     },
     {
         "ID": "chal-495",
-        "Body": "Zachary did 44 push-ups and 17 crunches in gym class today. Harper watched 7 movies in a row. David did 29 more push-ups but 13 less crunches than zachary.",
+        "Body": "William counted 6 shooting stars in the night sky. Zachary did 44 push-ups and 17 crunches in gym class today. David did 29 more push-ups but 13 less crunches than zachary.",
         "Question": "How many crunches did David do?",
         "Equation": "( 17.0 - 13.0 )",
         "Answer": 4.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-308",
-        "Body": "Debby bought 301 water bottles when they were on sale. If she drank 144 bottles a day for some days. Mia hired 6 new employees. If she has 157 bottles left",
-        "Question": "How many days did she drink for?",
-        "Equation": "( ( 301.0 - 157.0 ) / 144.0 )",
-        "Answer": 1.0,
-        "Type": "Common-Division"
-    },
-    {
-        "ID": "chal-745",
-        "Body": "Dave had 15 apps and 24 files on his phone. Lily planted 8 trees in the garden. After deleting some apps and files he had 21 apps and 4 files left.",
-        "Question": "How many more apps than files does he have left on the phone?",
-        "Equation": "( 21.0 - 4.0 )",
-        "Answer": 17.0,
+        "ID": "chal-41",
+        "Body": "William counted 6 shooting stars in the night sky. Mary is baking a cake. The recipe calls for 12 cups of flour and 5 cups of sugar. She already put in some cups of flour. If she still needs 2 more cups of flour",
+        "Question": "How many cups of flour did she put in?",
+        "Equation": "( 12.0 - 2.0 )",
+        "Answer": 10.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-131",
-        "Body": "There were 7 roses and 12 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. Ethan read 10 books. There are now 11 roses and 20 orchids in the vase.",
-        "Question": "How many more orchids than roses are there in the vase now?",
-        "Equation": "( 20.0 - 11.0 )",
-        "Answer": 9.0,
+        "ID": "chal-857",
+        "Body": "William counted 6 shooting stars in the night sky. Debby bought 264 water bottles when they were on sale. If she drank 15 bottles a day for 11 days.",
+        "Question": "How many bottles does she have left?",
+        "Equation": "( 264.0 - ( 15.0 * 11.0 ) )",
+        "Answer": 99.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-719",
+        "Body": "William counted 6 shooting stars in the night sky. White t - shirts can be purchased in packages. If mom buys 28 packages which contain 56 white t - shirts in total",
+        "Question": "How many white t - shirts does each package have?",
+        "Equation": "( 56.0 / 28.0 )",
+        "Answer": 2.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-370",
+        "Body": "William counted 6 shooting stars in the night sky. Edward spent $ 17. Then he received $ 10 from his friend. Now he has $ 7.",
+        "Question": "How much did Edward have before he spent his money?",
+        "Equation": "( ( 17.0 - 10.0 ) + 7.0 )",
+        "Answer": 14.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-781",
+        "Body": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. William counted 6 shooting stars in the night sky. If she spent 49 dollars at the showroom",
+        "Question": "How much did she spend at the supermarket?",
+        "Equation": "( ( 106.0 - 26.0 ) - 49.0 )",
+        "Answer": 31.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-626",
+        "Body": "Robin's hair was 14 inches long. It grew by 8 inches. Then he cut off 20 inches. William counted 6 shooting stars in the night sky.",
+        "Question": "How long is his hair now?",
+        "Equation": "( ( 14.0 - 20.0 ) + 8.0 )",
+        "Answer": 2.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-929",
+        "Body": "They decided to hold the party in their backyard. They have 10 sets of tables and each set has 6 chairs. William counted 6 shooting stars in the night sky. If there are 11 people sitting on chairs",
+        "Question": "How many chairs are left unoccupied?",
+        "Equation": "( ( 10.0 * 6.0 ) - 11.0 )",
+        "Answer": 49.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-728",
+        "Body": "William counted 6 shooting stars in the night sky. There were 13 roses in the vase. Jessica cut some more roses from her flower garden which had a total of 12 roses. There are now 21 roses in the vase.",
+        "Question": "How many roses are left in the garden?",
+        "Equation": "( 12.0 - ( 21.0 - 13.0 ) )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-82",
+        "Body": "Brenda's mother made 14 cookies for 2 guests. If each of them had the same number of cookies William counted 6 shooting stars in the night sky.",
+        "Question": "How many did each of them have?",
+        "Equation": "( 14.0 / 2.0 )",
+        "Answer": 7.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-525",
+        "Body": "A waiter had 3 customers. William counted 6 shooting stars in the night sky. After some more arrived he had 8 customers.",
+        "Question": "How many new customers arrived?",
+        "Equation": "( 8.0 - 3.0 )",
+        "Answer": 5.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-48",
+        "Body": "Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. William counted 6 shooting stars in the night sky. If there are 8 action figures on his shelf now",
+        "Question": "How many action figures did he add to the shelf?",
+        "Equation": "( ( 8.0 + 10.0 ) - 7.0 )",
+        "Answer": 11.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-314",
+        "Body": "Katie had 81 ds games and her friends had 59 games. William counted 6 shooting stars in the night sky.",
+        "Question": "How many more games does Katie have than her friends?",
+        "Equation": "( 81.0 - 59.0 )",
+        "Answer": 22.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-101",
+        "Body": "Allan brought 3 balloons and Jake brought 5 balloons to the park. Allan then bought 2 more balloons at the park. William counted 6 shooting stars in the night sky.",
+        "Question": "How many balloons did Allan and Jake have in the park?",
+        "Equation": "( ( 3.0 + 5.0 ) + 2.0 )",
+        "Answer": 10.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-837",
+        "Body": "Because of the decision Sofia asked 288 students to suggest specific types of food. William counted 6 shooting stars in the night sky. 264 students suggested adding bacon while others suggested adding mashed potatoes to the menu.",
+        "Question": "How many students suggested mashed potatoes?",
+        "Equation": "( 288.0 - 264.0 )",
+        "Answer": 24.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-768",
+        "Body": "William counted 6 shooting stars in the night sky. Paige raised 15 goldfish in the pond but stray cats loved eating them. 5 were eaten.",
+        "Question": "How many goldfish remained?",
+        "Equation": "( 15.0 - 5.0 )",
+        "Answer": 10.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-511",
+        "Body": "Shirley sold 10 boxes of trefoils. William counted 6 shooting stars in the night sky.",
+        "Question": "How many boxes are in each case if she needs to deliver 5 cases of boxes?",
+        "Equation": "( 10.0 / 5.0 )",
+        "Answer": 2.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-792",
+        "Body": "The Ferris wheel in paradise park has 4 seats. If 20 people can ride the wheel at the same time William counted 6 shooting stars in the night sky.",
+        "Question": "How many people can each seat hold?",
+        "Equation": "( 20.0 / 4.0 )",
+        "Answer": 5.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-807",
+        "Body": "18 red peaches, 14 yellow peaches and 17 green peaches are in the basket. William counted 6 shooting stars in the night sky.",
+        "Question": "How many red and yellow peaches are in the basket?",
+        "Equation": "( 18.0 + 14.0 )",
+        "Answer": 32.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-90",
+        "Body": "After eating a hearty meal they went to see the Buckingham palace. William counted 6 shooting stars in the night sky. There, Rachel learned that 317 visitors came to the Buckingham palace that day. If there were 295 visitors the previous day",
+        "Question": "How many more visitors visited the Buckingham palace on that day than on the previous day?",
+        "Equation": "( 317.0 - 295.0 )",
+        "Answer": 22.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-535",
+        "Body": "Nell collects baseball cards. She had 573 cards. William counted 6 shooting stars in the night sky. She gave 195 cards to John and yet some more to Jeff. Now she has 210 cards left.",
+        "Question": "How many cards did Nell give to Jeff?",
+        "Equation": "( ( 573.0 - 195.0 ) - 210.0 )",
+        "Answer": 168.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-296",
+        "Body": "William counted 6 shooting stars in the night sky. 6 green peaches, 60 yellow peaches and 2 red peaches are in the basket.",
+        "Question": "How many more green peaches than red peaches are in the basket?",
+        "Equation": "( 6.0 - 2.0 )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-160",
+        "Body": "William counted 6 shooting stars in the night sky. The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus.",
+        "Question": "How many buses are needed to take the trip?",
+        "Equation": "( 58.0 / 2.0 )",
+        "Answer": 29.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-831",
+        "Body": "Because of the decision Sofia asked the students to suggest specific types of food. If 324 students suggested adding mashed potatoes 374 suggested adding bacon to the menu and 128 suggested adding tomatoes William counted 6 shooting stars in the night sky.",
+        "Question": "How many students participated in the suggestion of new food items?",
+        "Equation": "( ( 324.0 + 374.0 ) + 128.0 )",
+        "Answer": 826.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-245",
+        "Body": "Ed had 19 more marbles than Doug. Ed lost some of his marbles at the playground. Now Ed has 8 more marbles than doug. William counted 6 shooting stars in the night sky.",
+        "Question": "How many marbles did Ed lose?",
+        "Equation": "( 19.0 - 8.0 )",
+        "Answer": 11.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-409",
+        "Body": "William counted 6 shooting stars in the night sky. 5 red peaches and 11 green peaches are in the basket.",
+        "Question": "How many more green peaches than red peaches are in the basket?",
+        "Equation": "( 11.0 - 5.0 )",
+        "Answer": 6.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-761",
+        "Body": "William counted 6 shooting stars in the night sky. Each basket of peaches has 19 red peaches and 4 green peaches. If there are 15 such baskets",
+        "Question": "How many peaches are in the baskets altogether?",
+        "Equation": "( ( 19.0 + 4.0 ) * 15.0 )",
+        "Answer": 345.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-567",
+        "Body": "Jerry had 2 action figures and 10 books on a shelf in his room. Later he added 4 more action figures to the shelf. William counted 6 shooting stars in the night sky.",
+        "Question": "How many more books than action figures were on his shelf?",
+        "Equation": "( 10.0 - ( 2.0 + 4.0 ) )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-855",
+        "Body": "Jack received 3 emails in the morning, 4 emails in the afternoon and 8 emails in the evening. William counted 6 shooting stars in the night sky.",
+        "Question": "How many emails did Jack receive in the morning and evening?",
+        "Equation": "( 3.0 + 8.0 )",
+        "Answer": 11.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-496",
+        "Body": "Paul had 42 pens and 143 books. William counted 6 shooting stars in the night sky. After selling some books and pens in a garage sale he had 113 books and 19 pens left.",
+        "Question": "How many pens did he sell in the garage sale?",
+        "Equation": "( 42.0 - 19.0 )",
+        "Answer": 23.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-622",
+        "Body": "At the arcade Dave had won 14 tickets and lost 2 tickets. If he used 10 to buy some toys William counted 6 shooting stars in the night sky.",
+        "Question": "How many tickets did Dave have left?",
+        "Equation": "( ( 14.0 - 2.0 ) - 10.0 )",
+        "Answer": 2.0,
         "Type": "Subtraction"
     },
     {
         "ID": "chal-520",
-        "Body": "Olivia ate 2 pizzas. Julia played tag with 14 kids on monday, 2 kids on tuesday and 8 kids on wednesday.",
+        "Body": "Julia played tag with 14 kids on monday, 2 kids on tuesday and 8 kids on wednesday. William counted 6 shooting stars in the night sky.",
         "Question": "How many more kids did she play with on monday than on wednesday?",
         "Equation": "( 14.0 - 8.0 )",
         "Answer": 6.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-747",
-        "Body": "Mary is baking a cake. Emily bought 3 apples. The recipe calls for 11 cups of sugar 6 cups of flour and 9 cups of salt. She already put in 12 cups of flour.",
-        "Question": "How many more cups of sugar than cups of salt does she need to add now?",
-        "Equation": "( 11.0 - 9.0 )",
+        "ID": "chal-501",
+        "Body": "Mary is baking a cake. The recipe calls for 3 cups of sugar and 10 cups of flour. She already put in some cups of flour. If she still needs 5 more cups of flour than sugar William counted 6 shooting stars in the night sky.",
+        "Question": "How many cups of flour did she put in?",
+        "Equation": "( ( 10.0 - 3.0 ) - 5.0 )",
         "Answer": 2.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-581",
-        "Body": "Baker sold 44 cakes. Ava wrote 8 songs. If he had made 48 cakes initially",
-        "Question": "How many cakes would baker still have?",
-        "Equation": "( 48.0 - 44.0 )",
+        "ID": "chal-275",
+        "Body": "Brenda's mother made cookies for 10 guests but 9 guests did not come. If she prepared 18 cookies and each guest had the same number of cookies William counted 6 shooting stars in the night sky.",
+        "Question": "How many did each of them have?",
+        "Equation": "( 18.0 / ( 10.0 - 9.0 ) )",
+        "Answer": 18.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-216",
+        "Body": "Mary is baking a cake. The recipe calls for 5 cups of flour and 14 cups of sugar. She already put in 10 cups of flour and 2 cups of sugar. William counted 6 shooting stars in the night sky.",
+        "Question": "How many more cups of sugar does she need to add?",
+        "Equation": "( 14.0 - 2.0 )",
+        "Answer": 12.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-630",
+        "Body": "After a typhoon, 2 trees in Haley's backyard died. William counted 6 shooting stars in the night sky. If she had grown 12 trees initially",
+        "Question": "How many trees does she have left?",
+        "Equation": "( 12.0 - 2.0 )",
+        "Answer": 10.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-77",
+        "Body": "William counted 6 shooting stars in the night sky. Rachel had to complete 2 pages of reading homework and 4 pages of math homework.",
+        "Question": "How many more pages of math homework than reading homework did she have?",
+        "Equation": "( 4.0 - 2.0 )",
+        "Answer": 2.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-516",
+        "Body": "Faye was placing her pencils into rows with 16 pencils in each row. William counted 6 shooting stars in the night sky. She had 28 packs of pencils each one having 24 pencils.",
+        "Question": "How many rows could she make?",
+        "Equation": "( 28.0 * ( 24.0 / 16.0 ) )",
+        "Answer": 42.0,
+        "Type": "Multiplication"
+    },
+    {
+        "ID": "chal-256",
+        "Body": "William counted 6 shooting stars in the night sky. A waiter had 14 customers. 5 customers left.",
+        "Question": "How many customers does he still have?",
+        "Equation": "( 14.0 - 5.0 )",
+        "Answer": 9.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-316",
+        "Body": "Being his favorite, he saved checking on the grapevines for his last stop. William counted 6 shooting stars in the night sky. He was told by 266 of the pickers that they fill 90 drums of grapes in 5 days.",
+        "Question": "How many drums of grapes would be filled in each day?",
+        "Equation": "( 90.0 / 5.0 )",
+        "Answer": 18.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-648",
+        "Body": "After eating a hearty meal they went to see the Buckingham palace. William counted 6 shooting stars in the night sky. There, Rachel learned that 100 visitors came to the Buckingham palace on the previous day. If there were 666 visitors on that day",
+        "Question": "How many more visitors visited the Buckingham palace on that day than on the previous day?",
+        "Equation": "( 666.0 - 100.0 )",
+        "Answer": 566.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-757",
+        "Body": "William counted 6 shooting stars in the night sky. Julia played tag with 16 kids on monday. If she played tag with 12 more kids on monday than on tuesday",
+        "Question": "How many kids did she play with on tuesday?",
+        "Equation": "( 16.0 - 12.0 )",
         "Answer": 4.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-564",
-        "Body": "Ava wrote 8 songs. Jesse's room is 12 feet long and 11 feet wide.",
-        "Question": "How much longer is her room than it is wide?",
-        "Equation": "( 12.0 - 11.0 )",
+        "ID": "chal-378",
+        "Body": "William counted 6 shooting stars in the night sky. Jack received 6 emails and 8 letters in the morning. He then received 2 emails and 7 letters in the afternoon.",
+        "Question": "How many more letters did Jack receive in the morning than in the afternoon?",
+        "Equation": "( 8.0 - 7.0 )",
         "Answer": 1.0,
         "Type": "Subtraction"
     },
     {
-        "ID": "chal-28",
-        "Body": "Matthew gave equal numbers of crackers and cakes to his 28 friends. Liam sold 5 cars. If he had 13 crackers and 15 cakes initially",
-        "Question": "How many crackers and cakes did each person eat?",
-        "Equation": "( ( 13.0 + 15.0 ) / 28.0 )",
-        "Answer": 1.0,
+        "ID": "chal-243",
+        "Body": "Randy has some blocks. William counted 6 shooting stars in the night sky. He uses 52 blocks to build a tower. If there are 38 blocks left",
+        "Question": "How many blocks did he have at the start?",
+        "Equation": "( 52.0 + 38.0 )",
+        "Answer": 90.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-871",
+        "Body": "William counted 6 shooting stars in the night sky. Steven has 18 peaches. Jake has 12 fewer peaches than Steven who has 8 more peaches than Jill.",
+        "Question": "How many peaches does Jill have?",
+        "Equation": "( 18.0 - 8.0 )",
+        "Answer": 10.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-215",
+        "Body": "White t - shirts can be purchased in packages. If mom buys 66 white t - shirts where each package has 3 white t - shirts. William counted 6 shooting stars in the night sky.",
+        "Question": "How many packages will she have?",
+        "Equation": "( 66.0 / 3.0 )",
+        "Answer": 22.0,
         "Type": "Common-Division"
     },
     {
-        "ID": "chal-955",
-        "Body": "Dave had 17 apps on his phone. After adding some he had 18 left. Ava wrote 8 songs.",
-        "Question": "How many apps did he add?",
-        "Equation": "( 18.0 - 17.0 )",
+        "ID": "chal-994",
+        "Body": "Luke scored 84 points after playing 2 rounds of a trivia game. If he gained the same number of points each round William counted 6 shooting stars in the night sky.",
+        "Question": "How many points did he score per round?",
+        "Equation": "( 84.0 / 2.0 )",
+        "Answer": 42.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-584",
+        "Body": "William counted 6 shooting stars in the night sky. Dan has $ 5. He bought a chocolate for $ 3 and a candy bar for $ 7.",
+        "Question": "How much money did he spend to buy candy bar than he did to buy chocolate?",
+        "Equation": "( 7.0 - 3.0 )",
+        "Answer": 4.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-682",
+        "Body": "William counted 6 shooting stars in the night sky. Danny collects bottle caps and wrappers. He found 15 bottle caps and 18 wrappers at the park. Now he has 67 wrappers and 35 bottle caps in his collection.",
+        "Question": "How many more wrappers than bottle caps does danny have now?",
+        "Equation": "( 67.0 - 35.0 )",
+        "Answer": 32.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-380",
+        "Body": "William counted 6 shooting stars in the night sky. Rachel had to complete 5 pages of math homework and 2 pages of reading homework.",
+        "Question": "How many more pages of math homework than reading homework did she have?",
+        "Equation": "( 5.0 - 2.0 )",
+        "Answer": 3.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-336",
+        "Body": "Jerry had 7 action figures and 2 books on a shelf in his room. William counted 6 shooting stars in the night sky. Later he added 4 more books to the shelf.",
+        "Question": "How many more action figures than books were on his shelf?",
+        "Equation": "( 7.0 - ( 2.0 + 4.0 ) )",
         "Answer": 1.0,
         "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-395",
+        "Body": "William counted 6 shooting stars in the night sky. White t - shirts can be purchased in packages of 13. If mom buys 39 white t - shirts",
+        "Question": "How many packages will she have?",
+        "Equation": "( 39.0 / 13.0 )",
+        "Answer": 3.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-344",
+        "Body": "A book has 2 chapters. William counted 6 shooting stars in the night sky. The first chapter is 37 pages long. The second chapter is 80 pages long.",
+        "Question": "How many more pages does the second chapter have than the first chapter?",
+        "Equation": "( 80.0 - 37.0 )",
+        "Answer": 43.0,
+        "Type": "Subtraction"
+    },
+    {
+        "ID": "chal-844",
+        "Body": "William counted 6 shooting stars in the night sky. He then went to see the oranges being harvested. He found out that the harvest will go on for 4 days.",
+        "Question": "How many sacks do they harvest per day if they harvested a total of 56 sacks of oranges?",
+        "Equation": "( 56.0 / 4.0 )",
+        "Answer": 14.0,
+        "Type": "Common-Division"
+    },
+    {
+        "ID": "chal-522",
+        "Body": "At the stop 8 more people got on the train. Initially there were 11 people on the train. William counted 6 shooting stars in the night sky.",
+        "Question": "How many people are there on the train now?",
+        "Equation": "( 11.0 + 8.0 )",
+        "Answer": 19.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-647",
+        "Body": "William counted 6 shooting stars in the night sky. After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 92 visitors came to the Buckingham palace that day. If there were 419 visitors the previous day and 103 visitors the day before that",
+        "Question": "How many visited the Buckingham palace before that day?",
+        "Equation": "( 419.0 + 103.0 )",
+        "Answer": 522.0,
+        "Type": "Addition"
+    },
+    {
+        "ID": "chal-383",
+        "Body": "William counted 6 shooting stars in the night sky. Frank was reading through some books. Each book had 249 pages and it took Frank 3 days to finish each book.",
+        "Question": "How many pages did he read per day?",
+        "Equation": "( 249.0 / 3.0 )",
+        "Answer": 83.0,
+        "Type": "Common-Division"
     }
 ]

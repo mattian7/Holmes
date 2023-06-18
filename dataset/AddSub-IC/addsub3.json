@@ -1,63 +1,23 @@
 [
     {
-        "iIndex": 230,
+        "iIndex": 280,
         "lEquations": [
-            "X = 0.2 + 0.1 + 0.2"
+            "X = 32 + 31"
         ],
         "lSolutions": [
-            "0.5"
+            "63"
         ],
-        "sQuestion": "Ellen made smoothies in the blender . She used 0.2 cup of strawberries , 0.1 cup of yogurt , and 0.2 cup of orange juice . Alexander visited 3 different countries. Harper watched 7 movies in a row. Ethan read 10 books. How many cups of ingredients did Ellen use for the smoothies ?"
+        "sQuestion": "Olivia ate 2 pizzas. Noah received 7 messages. Jacob played 9 different musical instruments. Jason grew 32 watermelons and 22 cantelopes . Liam sold 5 cars. Dan grew 31 watermelons . Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. How many watermelons did they grow in total ?"
     },
     {
-        "iIndex": 383,
+        "iIndex": 274,
         "lEquations": [
-            "X = 8 - 4"
+            "X = 8.9 - 2.3"
         ],
         "lSolutions": [
-            "4"
+            "6.6"
         ],
-        "sQuestion": "Jessica is baking a cake . Sophia scored 4 goals. The recipe calls for 8 cups of flour and 2 cups of sugar . Jacob played 9 different musical instruments. Mia hired 6 new employees. She already put in 4 cups of flour . How many cups of flour does she need to add ?"
-    },
-    {
-        "iIndex": 152,
-        "lEquations": [
-            "X = 712261.0 + 259378.0"
-        ],
-        "lSolutions": [
-            "971639.0"
-        ],
-        "sQuestion": "William counted 6 shooting stars in the night sky. Each year , salmon travel upstream , going from the ocean to the rivers where they were born . This year , 712261 male and 259378 female salmon returned to their rivers . Alexander visited 3 different countries. Daniel caught 3 fish in the river. How many salmon made the trip ?"
-    },
-    {
-        "iIndex": 181,
-        "lEquations": [
-            "X = 0.3 - 0.2"
-        ],
-        "lSolutions": [
-            "0.1"
-        ],
-        "sQuestion": "A marine biologist measured 1 fish that was 0.3 foot long and a second fish that was 0.2 foot long . Ava wrote 8 songs. Benjamin solved 9 math problems. Ethan read 10 books. How much longer was the first fish ?"
-    },
-    {
-        "iIndex": 67,
-        "lEquations": [
-            "X = 5 + 4"
-        ],
-        "lSolutions": [
-            "9"
-        ],
-        "sQuestion": "There are 5 oak trees currently in the park . Abigail cooked 5 delicious dishes for the guests. Charlotte painted 5 beautiful paintings. Ava wrote 8 songs. Park workers will plant 4 oak trees today . How many oak trees will the park have when the workers are finished ?"
-    },
-    {
-        "iIndex": 376,
-        "lEquations": [
-            "43 + X = 54"
-        ],
-        "lSolutions": [
-            "11"
-        ],
-        "sQuestion": "There are 43 maple trees and 22 orange trees currently in the park . Olivia ate 2 pizzas. Park workers will plant maple trees today . Alexander visited 3 different countries. When the workers are finished there will be 54 maple trees in the park . Noah received 7 messages. How many maple trees did the workers plant today ?"
+        "sQuestion": "A carpenter bought a piece of wood that was 8.9 centimeters long . Olivia ate 2 pizzas. Liam sold 5 cars. Then he sawed 2.3 centimeters off the end . Samuel built 4 sandcastles on the beach. Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. How long is the piece of wood now ?"
     },
     {
         "iIndex": 5,
@@ -67,387 +27,37 @@
         "lSolutions": [
             "33"
         ],
-        "sQuestion": "There are 22 walnut trees currently in the park . Lily planted 8 trees in the garden. Jacob played 9 different musical instruments. Park workers will plant walnut trees today . When the workers are finished there will be 55 walnut trees in the park . Daniel caught 3 fish in the river. How many walnut trees did the workers plant today ?"
+        "sQuestion": "There are 22 walnut trees currently in the park . Liam sold 5 cars. Jacob played 9 different musical instruments. Park workers will plant walnut trees today . Jacob played 9 different musical instruments. Noah received 7 messages. When the workers are finished there will be 55 walnut trees in the park . Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. How many walnut trees did the workers plant today ?"
     },
     {
-        "iIndex": 327,
+        "iIndex": 381,
         "lEquations": [
-            "X = 136.01 + 139.38 + 112.46"
+            "75 - X = 62"
         ],
         "lSolutions": [
-            "387.85"
+            "13"
         ],
-        "sQuestion": "Keith spent $ 136.01 on speakers , $ 139.38 on a CD player , and $ 112.46 on new tires . Jacob played 9 different musical instruments. Charlotte painted 5 beautiful paintings. He wanted 3 CD 's for $ 6.16 , but did n't buy them . Sophia scored 4 goals. In total , how much did he spend ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Joan found 75 seashells and 14 starfishes on the beach . Liam sold 5 cars. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. She gave Tim some of her seashells . Samuel built 4 sandcastles on the beach. Noah received 7 messages. She has 62 seashell . How many seashells did she give to Tim ?"
     },
     {
-        "iIndex": 239,
-        "lEquations": [
-            "X = 10.0 + 5.1"
-        ],
-        "lSolutions": [
-            "15.1"
-        ],
-        "sQuestion": "Roadster 's Paving Company used 10 tons of cement to pave Lexi 's street and 5.1 tons of cement to pave Tess 's street . Harper watched 7 movies in a row. Liam sold 5 cars. Charlotte painted 5 beautiful paintings. How much cement did Roadster 's Paving Company use in all ?"
-    },
-    {
-        "iIndex": 80,
-        "lEquations": [
-            "X = 44 + 52"
-        ],
-        "lSolutions": [
-            "96"
-        ],
-        "sQuestion": "Ethan read 10 books. Tim has 44 books . Abigail cooked 5 delicious dishes for the guests. Sam has 52 books . Harper watched 7 movies in a row. How many books do they have together ?"
-    },
-    {
-        "iIndex": 179,
-        "lEquations": [
-            "X = 0.375 + 0.25"
-        ],
-        "lSolutions": [
-            "0.625"
-        ],
-        "sQuestion": "Mia hired 6 new employees. At Lindsey 's Vacation Wear , 0.375 the garments are bikinis and 0.25 are trunks . Charlotte painted 5 beautiful paintings. Mia hired 6 new employees. What fraction of the garments are either bikinis or trunks ?"
-    },
-    {
-        "iIndex": 99,
-        "lEquations": [
-            "X = 6 + 5"
-        ],
-        "lSolutions": [
-            "11"
-        ],
-        "sQuestion": "Noah received 7 messages. Sara picked 6 pears and Tim picked 5 pears from the pear tree . Emily bought 3 apples. Amelia ran 6 miles every day for a week. How many pears were picked in total ?"
-    },
-    {
-        "iIndex": 77,
-        "lEquations": [
-            "X = 22 + 20"
-        ],
-        "lSolutions": [
-            "42"
-        ],
-        "sQuestion": "Tim has 22 books . Charlotte painted 5 beautiful paintings. Abigail cooked 5 delicious dishes for the guests. Harper watched 7 movies in a row. Mike has 20 books . How many books do they have together ?"
-    },
-    {
-        "iIndex": 284,
-        "lEquations": [
-            "X = 86 - 25"
-        ],
-        "lSolutions": [
-            "61"
-        ],
-        "sQuestion": "Ava wrote 8 songs. Ethan read 10 books. Lily planted 8 trees in the garden. Sam has 86 yellow and 20 green marbles . Joan took 25 of Sam 's yellow marbles . How many yellow marbles does Sam now have ?"
-    },
-    {
-        "iIndex": 232,
-        "lEquations": [
-            "X = 0.3333333333333333 + 0.3333333333333333 + 0.08333333333333333"
-        ],
-        "lSolutions": [
-            "0.75"
-        ],
-        "sQuestion": "Harper watched 7 movies in a row. William counted 6 shooting stars in the night sky. Heather went to the county fair last weekend . When she got there , she had to walk 0.3333333333333333 mile from the car to the entrance . William counted 6 shooting stars in the night sky. Then she walked 0.3333333333333333 mile to the carnival rides and 0.08333333333333333 mile from the carnival rides back to the car . How many miles did Heather walk in all ?"
-    },
-    {
-        "iIndex": 40,
-        "lEquations": [
-            "X = 33 + 44"
-        ],
-        "lSolutions": [
-            "77"
-        ],
-        "sQuestion": "Amelia ran 6 miles every day for a week. Harper watched 7 movies in a row. There are 33 walnut trees currently in the park . Charlotte painted 5 beautiful paintings. Park workers will plant 44 walnut trees today . How many walnut trees will the park have when the workers are finished ?"
-    },
-    {
-        "iIndex": 171,
-        "lEquations": [
-            "X = 5816.0 - 3103.0"
-        ],
-        "lSolutions": [
-            "2713.0"
-        ],
-        "sQuestion": "Abigail cooked 5 delicious dishes for the guests. Ava wrote 8 songs. Harper watched 7 movies in a row. While playing a video game , Paul scored 3103 points . He and his cousin together have a total of 5816 points . How many points does Paul 's cousin have ?"
-    },
-    {
-        "iIndex": 228,
-        "lEquations": [
-            "X = 0.5 + 0.1 + 0.1"
-        ],
-        "lSolutions": [
-            "0.7"
-        ],
-        "sQuestion": "Charlotte painted 5 beautiful paintings. A spaceship traveled 0.5 light-year from Earth to Planet X and 0.1 light-year from Planet X to Planet Y. Mia hired 6 new employees. Then it traveled 0.1 light-year from Planet Y back to Earth . Benjamin solved 9 math problems. How many light-years did the spaceship travel in all ?"
-    },
-    {
-        "iIndex": 73,
+        "iIndex": 3,
         "lEquations": [
             "X = 8 - 2"
         ],
         "lSolutions": [
             "6"
         ],
-        "sQuestion": "William counted 6 shooting stars in the night sky. Jacob played 9 different musical instruments. Joan 's cat had 8 kittens . Emily bought 3 apples. She gave 2 to her friends . How many kittens does she have now ?"
+        "sQuestion": "Olivia ate 2 pizzas. Mary is baking a cake . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. The recipe wants 8 cups of flour . Liam sold 5 cars. Noah received 7 messages. She already put in 2 cups . Jacob played 9 different musical instruments. How many cups does she need to add ?"
     },
     {
-        "iIndex": 390,
+        "iIndex": 104,
         "lEquations": [
-            "X = 9 + 2"
+            "X = 9 + 3"
         ],
         "lSolutions": [
-            "11"
+            "12"
         ],
-        "sQuestion": "A restaurant served 9 hot dogs during lunch and 2 during dinner today . Ava wrote 8 songs. Liam sold 5 cars. Emily bought 3 apples. It served 5 of them yesterday . How many hot dogs were served today ?"
-    },
-    {
-        "iIndex": 242,
-        "lEquations": [
-            "X = 3.0 + 6.8"
-        ],
-        "lSolutions": [
-            "9.8"
-        ],
-        "sQuestion": "Lily planted 8 trees in the garden. A bucket contains 3 gallons of water . Samuel built 4 sandcastles on the beach. Mia hired 6 new employees. If Derek adds 6.8 gallons more , how many gallons will there be in all ?"
-    },
-    {
-        "iIndex": 262,
-        "lEquations": [
-            "X = 0.36 - 0.05"
-        ],
-        "lSolutions": [
-            "0.31"
-        ],
-        "sQuestion": "Sophia scored 4 goals. Charlotte painted 5 beautiful paintings. Amelia ran 6 miles every day for a week. A bee colony produced 0.36 pounds of honey , but bears ate 0.05 pounds of it . How much honey remains ?"
-    },
-    {
-        "iIndex": 341,
-        "lEquations": [
-            "X = 2 + 5"
-        ],
-        "lSolutions": [
-            "7"
-        ],
-        "sQuestion": "Mary found 2 seashells and Keith found 5 seashells on the beach . When they cleaned them , they discovered that 9 were cracked . Sophia scored 4 goals. James answered 10 questions correctly. Lily planted 8 trees in the garden. How many seashells did they find together ?"
-    },
-    {
-        "iIndex": 337,
-        "lEquations": [
-            "X = 6 + 3"
-        ],
-        "lSolutions": [
-            "9"
-        ],
-        "sQuestion": "There are 6 pencils and 7 rulers in the drawer . Benjamin solved 9 math problems. Daniel caught 3 fish in the river. Benny placed 3 pencils in the drawer . Benjamin solved 9 math problems. How many pencils are now there in total ?"
-    },
-    {
-        "iIndex": 178,
-        "lEquations": [
-            "X = 0.75 - 0.5"
-        ],
-        "lSolutions": [
-            "0.25"
-        ],
-        "sQuestion": "Daniel caught 3 fish in the river. Jacob played 9 different musical instruments. A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants . Liam sold 5 cars. How much more did the tailor cut off the skirt than the pants ?"
-    },
-    {
-        "iIndex": 164,
-        "lEquations": [
-            "X = 6689.0 - 660.0"
-        ],
-        "lSolutions": [
-            "6029.0"
-        ],
-        "sQuestion": "Ava wrote 8 songs. Harper watched 7 movies in a row. A company painted some houses in Hancock County white and blue using a total of 6689 gallons of paint . William counted 6 shooting stars in the night sky. If they used 660 gallons of white paint , how many gallons of blue paint did the company use ?"
-    },
-    {
-        "iIndex": 59,
-        "lEquations": [
-            "56 - X = 22"
-        ],
-        "lSolutions": [
-            "34"
-        ],
-        "sQuestion": "Benjamin solved 9 math problems. Dan found 56 seashells on the beach , he gave Jessica some of his seashells . Benjamin solved 9 math problems. Liam sold 5 cars. He has 22 seashell . How many seashells did he give to Jessica ?"
-    },
-    {
-        "iIndex": 49,
-        "lEquations": [
-            "X = 10 + 24 + 33"
-        ],
-        "lSolutions": [
-            "67"
-        ],
-        "sQuestion": "Liam sold 5 cars. Lily planted 8 trees in the garden. Charlotte painted 5 beautiful paintings. Sandy has 10 books , Benny has 24 books , and Tim has 33 books . How many books do they have together ?"
-    },
-    {
-        "iIndex": 144,
-        "lEquations": [
-            "X = 69.0 + 26935.0"
-        ],
-        "lSolutions": [
-            "27004.0"
-        ],
-        "sQuestion": "Harper watched 7 movies in a row. Charlotte painted 5 beautiful paintings. Ava wrote 8 songs. Christina just transferred $ 69 out of her bank account . As a result , the account now has $ 26935 in it . How much money was in the account before the transfer ?"
-    },
-    {
-        "iIndex": 54,
-        "lEquations": [
-            "X = 27 + 41 + 20"
-        ],
-        "lSolutions": [
-            "88"
-        ],
-        "sQuestion": "Sally had 27 Pokemon cards . Noah received 7 messages. Noah received 7 messages. Dan gave her 41 new Pokemon cards . Sally bought 20 Pokemon cards . Amelia ran 6 miles every day for a week. How many Pokemon cards does Sally have now ?"
-    },
-    {
-        "iIndex": 13,
-        "lEquations": [
-            "X = 9 + 6 "
-        ],
-        "lSolutions": [
-            "15"
-        ],
-        "sQuestion": "Mia hired 6 new employees. Ava wrote 8 songs. A restaurant served 9 pizzas during lunch and 6 during dinner today . Charlotte painted 5 beautiful paintings. How many pizzas were served today ?"
-    },
-    {
-        "iIndex": 185,
-        "lEquations": [
-            "X = 0.6666666666666666 - 0.5"
-        ],
-        "lSolutions": [
-            "0.16666666666666666"
-        ],
-        "sQuestion": "Mandy made an apple pie . Noah received 7 messages. Alexander visited 3 different countries. Lily planted 8 trees in the garden. She used 0.6666666666666666 tablespoon of cinnamon and 0.5 tablespoon of nutmeg . How much more cinnamon than nutmeg did Mandy use ?"
-    },
-    {
-        "iIndex": 18,
-        "lEquations": [
-            "X = 9 + 7 + 5"
-        ],
-        "lSolutions": [
-            "21"
-        ],
-        "sQuestion": "Emily bought 3 apples. James answered 10 questions correctly. Emily bought 3 apples. Sally found 9 seashells , Tom found 7 seashells , and Jessica found 5 seashells on the beach . How many seashells did they find together ?"
-    },
-    {
-        "iIndex": 31,
-        "lEquations": [
-            "X = 20 + 21"
-        ],
-        "lSolutions": [
-            "41"
-        ],
-        "sQuestion": "Keith has 20 books . Jason has 21 books . Sophia scored 4 goals. Benjamin solved 9 math problems. William counted 6 shooting stars in the night sky. How many books do they have together ?"
-    },
-    {
-        "iIndex": 380,
-        "lEquations": [
-            "12 + X = 75"
-        ],
-        "lSolutions": [
-            "63"
-        ],
-        "sQuestion": "Amelia ran 6 miles every day for a week. Last week Tim had 12 dollars and Keith had 36 dollars . Emily bought 3 apples. Benjamin solved 9 math problems. Tim washed cars over the weekend and now has 75 dollars . How much money did Tim make washing cars ?"
-    },
-    {
-        "iIndex": 280,
-        "lEquations": [
-            "X = 32 + 31"
-        ],
-        "lSolutions": [
-            "63"
-        ],
-        "sQuestion": "Ava wrote 8 songs. James answered 10 questions correctly. Amelia ran 6 miles every day for a week. Jason grew 32 watermelons and 22 cantelopes . Dan grew 31 watermelons . How many watermelons did they grow in total ?"
-    },
-    {
-        "iIndex": 203,
-        "lEquations": [
-            "X = 0.4 - 0.3"
-        ],
-        "lSolutions": [
-            "0.1"
-        ],
-        "sQuestion": "Ethan read 10 books. Abigail cooked 5 delicious dishes for the guests. Samuel built 4 sandcastles on the beach. While taking inventory at her pastry shop , Kelly realizes that she had 0.4 box of baking powder yesterday , but the supply is now down to 0.3 box . How much more baking powder did Kelly have yesterday ?"
-    },
-    {
-        "iIndex": 259,
-        "lEquations": [
-            "X = 9.91 + 4.11"
-        ],
-        "lSolutions": [
-            "14.02"
-        ],
-        "sQuestion": "Kevin bought 2 watermelons . Abigail cooked 5 delicious dishes for the guests. Harper watched 7 movies in a row. Benjamin solved 9 math problems. The first watermelon was 9.91 pounds , and the second watermelon was 4.11 pounds . How many pounds of watermelon did Kevin buy ?"
-    },
-    {
-        "iIndex": 332,
-        "lEquations": [
-            "23 + X = 86"
-        ],
-        "lSolutions": [
-            "63"
-        ],
-        "sQuestion": "Last week Fred had 23 dollars and Jason had 46 dollars . Liam sold 5 cars. Fred washed cars over the weekend and now has 86 dollars . Ava wrote 8 songs. Ava wrote 8 songs. How much money did Fred make washing cars ?"
-    },
-    {
-        "iIndex": 369,
-        "lEquations": [
-            "X = 11 + 13 + 15"
-        ],
-        "lSolutions": [
-            "39"
-        ],
-        "sQuestion": "Alyssa went to 11 soccer games this year , but missed 12 . Emily bought 3 apples. She went to 13 games last year and plans to go to 15 games next year . Jacob played 9 different musical instruments. Noah received 7 messages. How many soccer games will Alyssa go to in all ?"
-    },
-    {
-        "iIndex": 345,
-        "lEquations": [
-            "X = 4 + 9"
-        ],
-        "lSolutions": [
-            "13"
-        ],
-        "sQuestion": "Tom went to 4 hockey games this year , but missed 7 . He went to 9 games last year . Daniel caught 3 fish in the river. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. How many hockey games did Tom go to in all ?"
-    },
-    {
-        "iIndex": 323,
-        "lEquations": [
-            "X = 15 + 14.82 + 12.51"
-        ],
-        "lSolutions": [
-            "42.33"
-        ],
-        "sQuestion": "Liam sold 5 cars. William counted 6 shooting stars in the night sky. William counted 6 shooting stars in the night sky. Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt . She went to 3 shops . In total , how much money did Joan spend on clothing ?"
-    },
-    {
-        "iIndex": 328,
-        "lEquations": [
-            "X = 14.88 + 4.88 + 5.86"
-        ],
-        "lSolutions": [
-            "25.62"
-        ],
-        "sQuestion": "Joan bought toy cars for $ 14.88 , a skateboard for $ 4.88 , and got toy trucks for $ 5.86 . Ava wrote 8 songs. She spent $ 14.55 on pants . Ava wrote 8 songs. Ethan read 10 books. In total , how much did Joan spend on toys ?"
-    },
-    {
-        "iIndex": 256,
-        "lEquations": [
-            "X = 8.2 + 1.6"
-        ],
-        "lSolutions": [
-            "9.8"
-        ],
-        "sQuestion": "Terrell hiked 8.2 miles on Saturday . Alexander visited 3 different countries. Then , on Sunday , he hiked another 1.6 miles . Harper watched 7 movies in a row. Ava wrote 8 songs. How far did Terrell hike all together ?"
-    },
-    {
-        "iIndex": 310,
-        "lEquations": [
-            "X = 35 - 17"
-        ],
-        "lSolutions": [
-            "18"
-        ],
-        "sQuestion": "Ethan read 10 books. Nancy found 35 seashells and 25 starfish on the beach . Harper watched 7 movies in a row. Ethan read 10 books. She gave 17 of the seashells to Jason . How many seashells does Nancy now have ?"
+        "sQuestion": "Liam sold 5 cars. Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Mary has 9 yellow marbles Joan has 3 yellow marbles . How many yellow marbles do they have in all ?"
     },
     {
         "iIndex": 66,
@@ -457,207 +67,137 @@
         "lSolutions": [
             "12"
         ],
-        "sQuestion": "Charlotte painted 5 beautiful paintings. Sophia scored 4 goals. There are 9 crayons in the drawer . Benny placed 3 crayons in the drawer . Emily bought 3 apples. How many crayons are now there in total ?"
+        "sQuestion": "Noah received 7 messages. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. There are 9 crayons in the drawer . Benny placed 3 crayons in the drawer . Jacob played 9 different musical instruments. Liam sold 5 cars. Jacob played 9 different musical instruments. How many crayons are now there in total ?"
     },
     {
-        "iIndex": 258,
+        "iIndex": 238,
         "lEquations": [
-            "X = 0.1 + 0.4"
+            "X = 7.125 - 0.625"
         ],
         "lSolutions": [
-            "0.5"
+            "6.5"
         ],
-        "sQuestion": "Daniel caught 3 fish in the river. Liam sold 5 cars. Charlotte painted 5 beautiful paintings. Kelly bought 0.1 pounds of peanuts and 0.4 pounds of raisins . How many pounds of snacks did she buy in all ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Liam sold 5 cars. Noah received 7 messages. Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Kelly 's chemistry textbook weighs 7.125 pounds and her geometry textbook weighs 0.625 pound . How much more does the chemistry textbook weigh than the geometry textbook ?"
     },
     {
-        "iIndex": 98,
+        "iIndex": 167,
         "lEquations": [
-            "X = 2 + 4"
+            "X = 4636.0 - 1416.0"
         ],
         "lSolutions": [
-            "6"
+            "3220.0"
         ],
-        "sQuestion": "Mia hired 6 new employees. There are 2 orchid bushes currently in the park . Park workers will plant 4 orchid bushes today . Charlotte painted 5 beautiful paintings. Liam sold 5 cars. How many orchid bushes will the park have when the workers are finished ?"
+        "sQuestion": "Liam sold 5 cars. Last year , egg producers in Douglas County produced 1416 eggs . Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. This year , those same farms produced 4636 eggs . Noah received 7 messages. Jacob played 9 different musical instruments. How many more eggs did the farms produce this year ?"
     },
     {
-        "iIndex": 315,
+        "iIndex": 184,
         "lEquations": [
-            "X = 12.32 + 11.54"
+            "X = 0.8 - 0.2"
         ],
         "lSolutions": [
-            "23.86"
+            "0.6"
         ],
-        "sQuestion": "Sally paid $ 12.32 total for peaches , after a 3 dollar coupon , and $ 11.54 for cherries . William counted 6 shooting stars in the night sky. Jacob played 9 different musical instruments. Benjamin solved 9 math problems. In total , how much money did Sally spend ?"
+        "sQuestion": "Blake filled a bucket with 0.8 gallon of water . Olivia ate 2 pizzas. Noah received 7 messages. Jacob played 9 different musical instruments. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Later , he poured out 0.2 gallon of the water . How much water is in the bucket ?"
     },
     {
-        "iIndex": 304,
+        "iIndex": 169,
         "lEquations": [
-            "X = 8 - 4"
+            "X = 5155.0 - 45.0"
+        ],
+        "lSolutions": [
+            "5110.0"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. A treasure hunter discovered a buried treasure chest filled with a total of 5155 gems . Jacob played 9 different musical instruments. 45 of the gems were diamonds , and the rest were rubies . Liam sold 5 cars. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Noah received 7 messages. How many of the gems were rubies ?"
+    },
+    {
+        "iIndex": 248,
+        "lEquations": [
+            "X = 3.0 - 1.1666666666666667"
+        ],
+        "lSolutions": [
+            "1.8333333333333335"
+        ],
+        "sQuestion": "Nicole found an orange caterpillar and a green caterpillar in her backyard . Liam sold 5 cars. Samuel built 4 sandcastles on the beach. The green caterpillar was 3 inches long and the orange caterpillar was 1.1666666666666667 inches long . Olivia ate 2 pizzas. Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. How much longer was the green caterpillar than the orange caterpillar ?"
+    },
+    {
+        "iIndex": 32,
+        "lEquations": [
+            "X = 49 + 25"
+        ],
+        "lSolutions": [
+            "74"
+        ],
+        "sQuestion": "Liam sold 5 cars. Jason had 49 quarters in his bank . Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. His dad gave him 25 quarters . Olivia ate 2 pizzas. Noah received 7 messages. Jacob played 9 different musical instruments. How many quarters does he have now ?"
+    },
+    {
+        "iIndex": 176,
+        "lEquations": [
+            "X = 0.16666666666666666 + 0.5"
+        ],
+        "lSolutions": [
+            "0.6666666666666666"
+        ],
+        "sQuestion": "Kendall is learning to drive , so this weekend she practiced driving 0.16666666666666666 mile with her mother and another 0.5 mile with her father . Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Liam sold 5 cars. How far did Kendall drive in all ?"
+    },
+    {
+        "iIndex": 299,
+        "lEquations": [
+            "X = 6 - 2"
         ],
         "lSolutions": [
             "4"
         ],
-        "sQuestion": "William counted 6 shooting stars in the night sky. Sara had 4 quarters and 8 dimes in her bank . Her sister borrowed 4 dimes . Abigail cooked 5 delicious dishes for the guests. Ava wrote 8 songs. How many dimes does Sara have now ?"
+        "sQuestion": "Liam sold 5 cars. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Noah received 7 messages. There are 6 short bushes and 4 tall trees currently in the park . Park workers had to cut down 2 short bushes that were damaged . Olivia ate 2 pizzas. Jacob played 9 different musical instruments. How many short bushes will the park have when the workers are finished ?"
     },
     {
-        "iIndex": 308,
+        "iIndex": 348,
         "lEquations": [
-            "X = 35 - 28"
+            "X = 7 + 5 + 4"
         ],
         "lSolutions": [
-            "7"
+            "16"
         ],
-        "sQuestion": "James answered 10 questions correctly. Sara picked 35 pears and 27 apples from the orchard . She gave 28 pears to Dan . Charlotte painted 5 beautiful paintings. Samuel built 4 sandcastles on the beach. How many pears does Sara have ?"
+        "sQuestion": "There are 7 dogwood trees currently in the park . Park workers will plant 5 dogwood trees today and 4 dogwood trees tomorrow . It took 8 workers to finish the work . Liam sold 5 cars. Noah received 7 messages. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. How many dogwood trees will the park have when the workers are finished ?"
     },
     {
-        "iIndex": 133,
+        "iIndex": 58,
         "lEquations": [
-            "X = 14.02 + 9.46 + 12.04"
+            "53 + X = 64"
         ],
         "lSolutions": [
-            "35.52"
+            "11"
         ],
-        "sQuestion": "Alexander visited 3 different countries. Jacob played 9 different musical instruments. Abigail cooked 5 delicious dishes for the guests. Tom purchased a football game for $ 14.02 , a strategy game for $ 9.46 , and a Batman game for $ 12.04 . How much did Tom spend on video games ?"
+        "sQuestion": "Noah received 7 messages. Olivia ate 2 pizzas. Liam sold 5 cars. There are 53 maple trees currently in the park . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Park workers will plant maple trees today . When the workers are finished there will be 64 maple trees in the park . How many maple trees did the workers plant today ?"
     },
     {
-        "iIndex": 36,
+        "iIndex": 125,
         "lEquations": [
-            "X = 36 + 11"
+            "X = 5.71 + 6.59"
         ],
         "lSolutions": [
-            "47"
+            "12.3"
         ],
-        "sQuestion": "Noah received 7 messages. Fred went to 36 basketball games this year , but missed 35 . Jacob played 9 different musical instruments. He went to 11 games last year . Mia hired 6 new employees. How many basketball games did Fred go to in total ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Liam sold 5 cars. Alyssa bought some toys . Noah received 7 messages. She bought a football for $ 5.71 , and spent $ 6.59 on marbles . Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. In total , how much did Alyssa spend on toys ?"
     },
     {
-        "iIndex": 87,
+        "iIndex": 139,
         "lEquations": [
-            "X = 110 + 102"
+            "X = 3884.0 + 2871.0"
         ],
         "lSolutions": [
-            "212"
+            "6755.0"
         ],
-        "sQuestion": "Sam has 110 books . Noah received 7 messages. Benjamin solved 9 math problems. Joan has 102 books . Alexander visited 3 different countries. How many books do they have together ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Liam sold 5 cars. Noah received 7 messages. Samuel built 4 sandcastles on the beach. A car company produced 3884 cars in North America and 2871 cars in Europe . How many cars is that in all ?"
     },
     {
-        "iIndex": 95,
+        "iIndex": 288,
         "lEquations": [
-            "X = 3 - 2"
+            "X = 679 - 172"
         ],
         "lSolutions": [
-            "1"
+            "507"
         ],
-        "sQuestion": "Daniel caught 3 fish in the river. Harper watched 7 movies in a row. Benjamin solved 9 math problems. Jason has 3 Pokemon cards . Benny bought 2 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ?"
-    },
-    {
-        "iIndex": 177,
-        "lEquations": [
-            "X = 0.6666666666666666 - 0.3333333333333333"
-        ],
-        "lSolutions": [
-            "0.3333333333333333"
-        ],
-        "sQuestion": "Lily planted 8 trees in the garden. At a pie-eating contest , Erik got through 0.6666666666666666 pie before time was called ; Frank finished just 0.3333333333333333 pie . Emily bought 3 apples. Mia hired 6 new employees. How much more pie did Erik eat than Frank ?"
-    },
-    {
-        "iIndex": 190,
-        "lEquations": [
-            "X = 0.4 - 0.2"
-        ],
-        "lSolutions": [
-            "0.2"
-        ],
-        "sQuestion": "Sophia scored 4 goals. Ethan read 10 books. Liam sold 5 cars. Stanley ran 0.4 mile and walked 0.2 mile . How much farther did Stanley run than walk ?"
-    },
-    {
-        "iIndex": 16,
-        "lEquations": [
-            "X = 6 + 3"
-        ],
-        "lSolutions": [
-            "9"
-        ],
-        "sQuestion": "Lily planted 8 trees in the garden. Benjamin solved 9 math problems. Sandy grew 6 carrots . Sam grew 3 carrots . James answered 10 questions correctly. How many carrots did they grow in total ?"
-    },
-    {
-        "iIndex": 392,
-        "lEquations": [
-            "X = 38 - 18"
-        ],
-        "lSolutions": [
-            "20"
-        ],
-        "sQuestion": "Mary had 21 dimes and 38 pennies in her bank . Her dad borrowed 18 pennies from Mary . Benjamin solved 9 math problems. James answered 10 questions correctly. Alexander visited 3 different countries. How many pennies does she have now ?"
-    },
-    {
-        "iIndex": 146,
-        "lEquations": [
-            "X = 64535.0 - 522.0"
-        ],
-        "lSolutions": [
-            "64013.0"
-        ],
-        "sQuestion": "A dust storm sweeps across the prairie . William counted 6 shooting stars in the night sky. Charlotte painted 5 beautiful paintings. It covers 64535 acres of the prairie in dust , but leaves 522 acres untouched . Ava wrote 8 songs. How many acres does the prairie cover ?"
-    },
-    {
-        "iIndex": 226,
-        "lEquations": [
-            "X = 0.16666666666666666 + 0.16666666666666666 + 0.5"
-        ],
-        "lSolutions": [
-            "0.8333333333333334"
-        ],
-        "sQuestion": "Mia hired 6 new employees. A construction company ordered 0.16666666666666666 ton of concrete , 0.16666666666666666 ton of bricks , and 0.5 ton of stone . Olivia ate 2 pizzas. Sophia scored 4 goals. How many tons of material did the company order in all ?"
-    },
-    {
-        "iIndex": 343,
-        "lEquations": [
-            "X = 9 + 3"
-        ],
-        "lSolutions": [
-            "12"
-        ],
-        "sQuestion": "Lily planted 8 trees in the garden. Mia hired 6 new employees. Jacob played 9 different musical instruments. Tim had 7 quarters and 9 nickels in his bank . His dad gave him 3 nickels and 5 pennies . How many nickels does Tim have now ?"
-    },
-    {
-        "iIndex": 12,
-        "lEquations": [
-            "X = 7 + 5"
-        ],
-        "lSolutions": [
-            "12"
-        ],
-        "sQuestion": "Mia hired 6 new employees. Alyssa 's dog had puppies . Abigail cooked 5 delicious dishes for the guests. She gave 7 to her friends . James answered 10 questions correctly. She now has 5 puppies . How many puppies did she have to start with ?"
-    },
-    {
-        "iIndex": 307,
-        "lEquations": [
-            "X = 30 - 18"
-        ],
-        "lSolutions": [
-            "12"
-        ],
-        "sQuestion": "Melanie had 30 baseball cards , and 9 were torn . Sara bought 18 of Melanie 's baseball cards . Sophia scored 4 goals. Jacob played 9 different musical instruments. Benjamin solved 9 math problems. How many baseball cards does Melanie have now ?"
-    },
-    {
-        "iIndex": 266,
-        "lEquations": [
-            "X = 5.91 + 8.11"
-        ],
-        "lSolutions": [
-            "14.02"
-        ],
-        "sQuestion": "A construction company bought 5.91 tons of gravel and 8.11 tons of sand . Alexander visited 3 different countries. Benjamin solved 9 math problems. Sophia scored 4 goals. How many tons of material did the company buy in all ?"
-    },
-    {
-        "iIndex": 270,
-        "lEquations": [
-            "X = 0.14 + 0.38"
-        ],
-        "lSolutions": [
-            "0.52"
-        ],
-        "sQuestion": "A chef bought 0.14 kilograms of almonds and 0.38 kilograms of pecans . Lily planted 8 trees in the garden. Lily planted 8 trees in the garden. Samuel built 4 sandcastles on the beach. How many kilograms of nuts did the chef buy in all ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Noah received 7 messages. Olivia ate 2 pizzas. Tim found 679 seashells and 110 starfish on the beach . Samuel built 4 sandcastles on the beach. Liam sold 5 cars. He gave 172 of the seashells to Sara . Jacob played 9 different musical instruments. How many seashells does Tim now have ?"
     },
     {
         "iIndex": 130,
@@ -667,17 +207,207 @@
         "lSolutions": [
             "34.72"
         ],
-        "sQuestion": "Mary loves eating fruits . Charlotte painted 5 beautiful paintings. Lily planted 8 trees in the garden. Benjamin solved 9 math problems. Mary paid $ 11.08 for berries , $ 14.33 for apples , and $ 9.31 for peaches . In total , how much money did she spend ?"
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Liam sold 5 cars. Mary loves eating fruits . Mary paid $ 11.08 for berries , $ 14.33 for apples , and $ 9.31 for peaches . Jacob played 9 different musical instruments. Noah received 7 messages. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. In total , how much money did she spend ?"
     },
     {
-        "iIndex": 330,
+        "iIndex": 68,
         "lEquations": [
-            "46 + X = 60"
+            "X = 7 - 4"
         ],
         "lSolutions": [
-            "14"
+            "3"
         ],
-        "sQuestion": "There were 46 bales of hay in the barn and 32 bales in the shed . Emily bought 3 apples. Tom stacked bales in the barn today . Emily bought 3 apples. There are now 60 bales of hay in the barn . Harper watched 7 movies in a row. How many bales did he store in the barn ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Tom found 7 seashells but 4 were broken . Liam sold 5 cars. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Noah received 7 messages. How many unbroken seashells did Tom find ?"
+    },
+    {
+        "iIndex": 279,
+        "lEquations": [
+            "X = 18 + 42"
+        ],
+        "lSolutions": [
+            "60"
+        ],
+        "sQuestion": "Noah received 7 messages. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Jason has 18 books and he has read 9 of them . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Mary has 42 books . Liam sold 5 cars. How many books do they have together ?"
+    },
+    {
+        "iIndex": 7,
+        "lEquations": [
+            "X = 16 - 6"
+        ],
+        "lSolutions": [
+            "10"
+        ],
+        "sQuestion": "Liam sold 5 cars. Olivia ate 2 pizzas. There were 6 roses in the vase . Jacob played 9 different musical instruments. Mary cut some roses from her flower garden . Noah received 7 messages. Samuel built 4 sandcastles on the beach. There are now 16 roses in the vase . Jacob played 9 different musical instruments. How many roses did she cut ?"
+    },
+    {
+        "iIndex": 228,
+        "lEquations": [
+            "X = 0.5 + 0.1 + 0.1"
+        ],
+        "lSolutions": [
+            "0.7"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Liam sold 5 cars. Jacob played 9 different musical instruments. A spaceship traveled 0.5 light-year from Earth to Planet X and 0.1 light-year from Planet X to Planet Y. Then it traveled 0.1 light-year from Planet Y back to Earth . Noah received 7 messages. Samuel built 4 sandcastles on the beach. How many light-years did the spaceship travel in all ?"
+    },
+    {
+        "iIndex": 328,
+        "lEquations": [
+            "X = 14.88 + 4.88 + 5.86"
+        ],
+        "lSolutions": [
+            "25.62"
+        ],
+        "sQuestion": "Liam sold 5 cars. Noah received 7 messages. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Joan bought toy cars for $ 14.88 , a skateboard for $ 4.88 , and got toy trucks for $ 5.86 . She spent $ 14.55 on pants . In total , how much did Joan spend on toys ?"
+    },
+    {
+        "iIndex": 229,
+        "lEquations": [
+            "X = 0.3333333333333333 + 0.3333333333333333 + 0.2222222222222222"
+        ],
+        "lSolutions": [
+            "0.8888888888888888"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. Noah received 7 messages. Logan recorded the snowfall every day during a snowstorm . He recorded 0.3333333333333333 centimeter on Wednesday , 0.3333333333333333 centimeter on Thursday , and 0.2222222222222222 centimeter on Friday . Liam sold 5 cars. Jacob played 9 different musical instruments. How many total centimeters of snow did Logan record ?"
+    },
+    {
+        "iIndex": 297,
+        "lEquations": [
+            "X = 9 - 3"
+        ],
+        "lSolutions": [
+            "6"
+        ],
+        "sQuestion": "Liam sold 5 cars. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. A restaurant made 9 hamburgers and 4 hot dogs to serve during lunch . Jacob played 9 different musical instruments. Noah received 7 messages. Only 3 hamburgers were actually served . Samuel built 4 sandcastles on the beach. How many hamburgers were over ?"
+    },
+    {
+        "iIndex": 208,
+        "lEquations": [
+            "X = 0.7 - 0.6"
+        ],
+        "lSolutions": [
+            "0.1"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Liam sold 5 cars. Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Eve ran 0.7 mile and walked 0.6 mile . How much farther did Eve run than walk ?"
+    },
+    {
+        "iIndex": 249,
+        "lEquations": [
+            "X = 3.25 + 0.25"
+        ],
+        "lSolutions": [
+            "3.5"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Noah received 7 messages. Liam sold 5 cars. Alec and his roommates ate 3.25 pints of ice cream on Friday night and 0.25 pint of ice cream on Saturday night . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. How many pints did they eat in all ?"
+    },
+    {
+        "iIndex": 321,
+        "lEquations": [
+            "X = 118.54 + 106.33"
+        ],
+        "lSolutions": [
+            "224.87"
+        ],
+        "sQuestion": "For his car , Mike spent $ 118.54 on speakers and $ 106.33 on new tires . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Mike wanted 3 CD 's for $ 4.58 but decided not to . Olivia ate 2 pizzas. Noah received 7 messages. Liam sold 5 cars. Jacob played 9 different musical instruments. In total , how much did Mike spend on car parts ?"
+    },
+    {
+        "iIndex": 371,
+        "lEquations": [
+            "X = 47 + 37 + 25"
+        ],
+        "lSolutions": [
+            "109"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. There are 47 orchid bushes currently in the park . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Liam sold 5 cars. Park workers will plant 37 orchid bushes today and 25 orchid bushes tomorrow . It took 35 workers to finish the work . Noah received 7 messages. How many orchid bushes will the park have when the workers are finished ?"
+    },
+    {
+        "iIndex": 372,
+        "lEquations": [
+            "X = 10 + 46 + 16"
+        ],
+        "lSolutions": [
+            "72"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Noah received 7 messages. Fred has 10 red balloons , Sam has 46 red balloons , and Dan has 16 red balloons . Samuel built 4 sandcastles on the beach. The balloons cost 10 dollars . Liam sold 5 cars. How many red balloons do they have in all ?"
+    },
+    {
+        "iIndex": 389,
+        "lEquations": [
+            "X = 8 - 4"
+        ],
+        "lSolutions": [
+            "4"
+        ],
+        "sQuestion": "Sam had 7 pennies and 8 dimes in his bank . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. His sister borrowed 4 dimes . Noah received 7 messages. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. How many dimes does Sam have now ?"
+    },
+    {
+        "iIndex": 214,
+        "lEquations": [
+            "X = 0.2 + 0.4 + 0.1"
+        ],
+        "lSolutions": [
+            "0.7"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Noah received 7 messages. Irwin 's family went on a camping trip in the mountains . On the first day , they hiked from their car to the campsite . Jacob played 9 different musical instruments. Liam sold 5 cars. First , they hiked 0.2 mile from the car to a stream , and 0.4 mile from the stream to a meadow . Olivia ate 2 pizzas. Then they hiked 0.1 mile from the meadow to the campsite . How many miles did Irwin 's family hike in all ?"
+    },
+    {
+        "iIndex": 245,
+        "lEquations": [
+            "X = 1.25 + 5.25"
+        ],
+        "lSolutions": [
+            "6.5"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Liam sold 5 cars. Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. As part of a lesson on earthquakes , a science class is researching the movement of a nearby fault line . The fault line moved 1.25 inches during the past year and 5.25 inches the year before . Noah received 7 messages. Jacob played 9 different musical instruments. How far did the fault line move in all ?"
+    },
+    {
+        "iIndex": 270,
+        "lEquations": [
+            "X = 0.14 + 0.38"
+        ],
+        "lSolutions": [
+            "0.52"
+        ],
+        "sQuestion": "A chef bought 0.14 kilograms of almonds and 0.38 kilograms of pecans . Noah received 7 messages. Liam sold 5 cars. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. How many kilograms of nuts did the chef buy in all ?"
+    },
+    {
+        "iIndex": 289,
+        "lEquations": [
+            "X = 139 + 131"
+        ],
+        "lSolutions": [
+            "270"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Noah received 7 messages. There are 139 erasers and 118 scissors in the drawer . Jason placed 131 erasers in the drawer . Olivia ate 2 pizzas. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. How many erasers are now there in total ?"
+    },
+    {
+        "iIndex": 393,
+        "lEquations": [
+            "X = 17 + 10"
+        ],
+        "lSolutions": [
+            "27"
+        ],
+        "sQuestion": "Noah received 7 messages. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Alyssa picked 17 plums and Jason picked 10 plums . Liam sold 5 cars. Melanie picked 35 pears . How many plums were picked in all ?"
+    },
+    {
+        "iIndex": 220,
+        "lEquations": [
+            "X = 0.3333333333333333 + 0.3333333333333333 + 0.16666666666666666"
+        ],
+        "lSolutions": [
+            "0.8333333333333334"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Liam sold 5 cars. Olivia ate 2 pizzas. Noah received 7 messages. Samuel built 4 sandcastles on the beach. Allie counted the leftover ice cream after a sundae party . Jacob played 9 different musical instruments. She had 0.3333333333333333 carton of rocky road ice cream , 0.3333333333333333 carton of cookie dough ice cream , and 0.16666666666666666 carton of strawberry cheesecake ice cream . How many cartons of ice cream did Allie have in all ?"
+    },
+    {
+        "iIndex": 137,
+        "lEquations": [
+            "X = 2479.0 + 6085.0"
+        ],
+        "lSolutions": [
+            "8564.0"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Diane is a beekeeper . Noah received 7 messages. Last year , she harvested 2479 pounds of honey . Liam sold 5 cars. This year , she bought some new hives and increased her honey harvest by 6085 pounds . Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. How many pounds of honey did Diane harvest this year ?"
     },
     {
         "iIndex": 143,
@@ -687,147 +417,7 @@
         "lSolutions": [
             "48781.0"
         ],
-        "sQuestion": "A farmer estimates that he will harvest 48097 bushels of wheat . Harper watched 7 movies in a row. The weather is perfect during the growing season , so he harvests 684 bushels of wheat than expected . Alexander visited 3 different countries. Amelia ran 6 miles every day for a week. How many bushels of wheat does the farmer harvest ?"
-    },
-    {
-        "iIndex": 344,
-        "lEquations": [
-            "X = 7 + 5"
-        ],
-        "lSolutions": [
-            "12"
-        ],
-        "sQuestion": "A restaurant served 7 slices of pie during lunch and 5 during dinner today . It served 8 of them yesterday . Alexander visited 3 different countries. Liam sold 5 cars. Liam sold 5 cars. How many slices of pie were served today ?"
-    },
-    {
-        "iIndex": 153,
-        "lEquations": [
-            "X = 14797.0 + 4969.0"
-        ],
-        "lSolutions": [
-            "19766.0"
-        ],
-        "sQuestion": "Abigail cooked 5 delicious dishes for the guests. Sophia scored 4 goals. A bathing suit manufacturer has a supply of 14797 bathing suits for men . Mia hired 6 new employees. In addition , it has 4969 bathing suits for women . How many bathing suits are available overall ?"
-    },
-    {
-        "iIndex": 42,
-        "lEquations": [
-            "X = 41 + 30"
-        ],
-        "lSolutions": [
-            "71"
-        ],
-        "sQuestion": "Abigail cooked 5 delicious dishes for the guests. There are 41 pencils in the drawer . Harper watched 7 movies in a row. Mike placed 30 pencils in the drawer . Amelia ran 6 miles every day for a week. How many pencils are now there in total ?"
-    },
-    {
-        "iIndex": 51,
-        "lEquations": [
-            "X = 29 + 16 + 20"
-        ],
-        "lSolutions": [
-            "65"
-        ],
-        "sQuestion": "Keith grew 29 cantelopes , Fred grew 16 cantelopes , and Jason grew 20 cantelopes . Alexander visited 3 different countries. Mia hired 6 new employees. Daniel caught 3 fish in the river. How many cantelopes did they grow in total ?"
-    },
-    {
-        "iIndex": 273,
-        "lEquations": [
-            "X = 4.4 + 2.86"
-        ],
-        "lSolutions": [
-            "7.26"
-        ],
-        "sQuestion": "Sophia scored 4 goals. Tori was 4.4 feet tall . Harper watched 7 movies in a row. Noah received 7 messages. Then she grew 2.86 feet taller . How tall is Tori now ?"
-    },
-    {
-        "iIndex": 163,
-        "lEquations": [
-            "X = 9437.0 - 6922.0"
-        ],
-        "lSolutions": [
-            "2515.0"
-        ],
-        "sQuestion": "Emily bought 3 apples. Amelia ran 6 miles every day for a week. Students at Arcadia schools are participating in a coat drive . 9437 coats have been collected so far . Alexander visited 3 different countries. 6922 coats were collected from the high schools , and the rest from the elementary schools . How many coats were collected at the elementary schools ?"
-    },
-    {
-        "iIndex": 336,
-        "lEquations": [
-            "72 - X = 28"
-        ],
-        "lSolutions": [
-            "44"
-        ],
-        "sQuestion": "Emily bought 3 apples. Abigail cooked 5 delicious dishes for the guests. Joan found 72 seashells and 12 starfishes on the beach . She gave Alyssa some of her seashells . Abigail cooked 5 delicious dishes for the guests. She has 28 seashell . How many seashells did she give to Alyssa ?"
-    },
-    {
-        "iIndex": 282,
-        "lEquations": [
-            "X = 41 + 12"
-        ],
-        "lSolutions": [
-            "53"
-        ],
-        "sQuestion": "Benjamin solved 9 math problems. There are 41 crayons and 26 pencils in the drawer . Alexander visited 3 different countries. Sophia scored 4 goals. Sam placed 12 crayons in the drawer . How many crayons are now there in total ?"
-    },
-    {
-        "iIndex": 21,
-        "lEquations": [
-            "X = 7 + 8 + 4"
-        ],
-        "lSolutions": [
-            "19"
-        ],
-        "sQuestion": "Emily bought 3 apples. Sophia scored 4 goals. Melanie had 7 dimes in her bank . Her dad gave her 8 dimes and her mother gave her 4 dimes . Benjamin solved 9 math problems. How many dimes does Melanie have now ?"
-    },
-    {
-        "iIndex": 88,
-        "lEquations": [
-            "X = 122 + 105"
-        ],
-        "lSolutions": [
-            "227"
-        ],
-        "sQuestion": "Mary picked 122 oranges and Jason picked 105 oranges from the orange tree . Ethan read 10 books. Olivia ate 2 pizzas. Harper watched 7 movies in a row. How many oranges were picked in total ?"
-    },
-    {
-        "iIndex": 394,
-        "lEquations": [
-            "X = 48 + 29"
-        ],
-        "lSolutions": [
-            "77"
-        ],
-        "sQuestion": "There are 48 pencils and 40 scissors in the drawer . Harper watched 7 movies in a row. Olivia ate 2 pizzas. Joan placed 29 pencils in the drawer . Noah received 7 messages. How many pencils are now there in all ?"
-    },
-    {
-        "iIndex": 250,
-        "lEquations": [
-            "X = 8.75 - 6.0"
-        ],
-        "lSolutions": [
-            "2.75"
-        ],
-        "sQuestion": "Emily bought 3 apples. A farmer started the day with 8.75 buckets of seeds . Olivia ate 2 pizzas. Amelia ran 6 miles every day for a week. After spending the morning sowing seeds , she now has 6 buckets . How many buckets of seeds did the farmer sow ?"
-    },
-    {
-        "iIndex": 191,
-        "lEquations": [
-            "X = 0.625 - 0.25"
-        ],
-        "lSolutions": [
-            "0.375"
-        ],
-        "sQuestion": "William counted 6 shooting stars in the night sky. Dina made cookies . Alexander visited 3 different countries. Olivia ate 2 pizzas. She used 0.625 cup of flour and 0.25 cup of sugar . How much more flour than sugar did Dina use ?"
-    },
-    {
-        "iIndex": 75,
-        "lEquations": [
-            "X = 27 + 45"
-        ],
-        "lSolutions": [
-            "72"
-        ],
-        "sQuestion": "Mia hired 6 new employees. Emily bought 3 apples. Lily planted 8 trees in the garden. There are 27 pencils in the drawer . Nancy placed 45 pencils in the drawer . How many pencils are now there in total ?"
+        "sQuestion": "Liam sold 5 cars. A farmer estimates that he will harvest 48097 bushels of wheat . Noah received 7 messages. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. The weather is perfect during the growing season , so he harvests 684 bushels of wheat than expected . How many bushels of wheat does the farmer harvest ?"
     },
     {
         "iIndex": 352,
@@ -837,97 +427,157 @@
         "lSolutions": [
             "24"
         ],
-        "sQuestion": "Liam sold 5 cars. James answered 10 questions correctly. Samuel built 4 sandcastles on the beach. Nancy went to 9 football games this month . She went to 8 games last month , and plans to go to 7 games next month . She paid 3 dollars for the tickets . How many games will she attend in all ?"
+        "sQuestion": "Nancy went to 9 football games this month . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. She went to 8 games last month , and plans to go to 7 games next month . Noah received 7 messages. Olivia ate 2 pizzas. She paid 3 dollars for the tickets . Liam sold 5 cars. Jacob played 9 different musical instruments. How many games will she attend in all ?"
     },
     {
-        "iIndex": 334,
+        "iIndex": 22,
         "lEquations": [
-            "9 + X = 15"
+            "X = 5 + 6 + 3"
         ],
         "lSolutions": [
-            "6"
+            "14"
         ],
-        "sQuestion": "There were 9 red orchids and 3 white orchids in the vase . Sally cut some red orchids from her flower garden . Ethan read 10 books. Noah received 7 messages. Benjamin solved 9 math problems. There are now 15 red orchids in the vase . How many red orchids did she cut ?"
+        "sQuestion": "Liam sold 5 cars. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. A restaurant served 5 cakes during lunch and 6 during dinner today . Olivia ate 2 pizzas. Noah received 7 messages. Samuel built 4 sandcastles on the beach. The restaurant served 3 cakes yesterday . How many cakes were served in total ?"
     },
     {
-        "iIndex": 377,
+        "iIndex": 168,
         "lEquations": [
-            "14 + X = 85"
+            "X = 6206.0 - 2475.0"
         ],
         "lSolutions": [
-            "71"
+            "3731.0"
         ],
-        "sQuestion": "Dan had 14 peaches and 10 pears at his roadside fruit dish . Abigail cooked 5 delicious dishes for the guests. Charlotte painted 5 beautiful paintings. He went to the orchard and picked peaches to stock up . There are now 85 peaches . Olivia ate 2 pizzas. how many did he pick ?"
+        "sQuestion": "Liam sold 5 cars. An oil pipe in the sea broke . Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Before engineers started to fix the pipe , 2475 gallons of oil leaked into the water . A total of 6206 gallons of oil leaked before the pipe was fixed . Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. How many gallons of oil leaked while the engineers were fixing the pipe ?"
     },
     {
-        "iIndex": 347,
+        "iIndex": 319,
         "lEquations": [
-            "X = 7 + 3 + 6"
+            "X = 9.46 + 9.56"
         ],
         "lSolutions": [
-            "16"
+            "19.02"
         ],
-        "sQuestion": "Ethan read 10 books. Harper watched 7 movies in a row. Mike picked 7 apples , Nancy picked 3 apples , and Keith picked 6 apples and 4 pears , at the farm . Ava wrote 8 songs. How many apples were picked in total ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Noah received 7 messages. Tom bought a skateboard for $ 9.46 , and spent $ 9.56 on marbles . Tom also spent $ 14.50 on shorts . Liam sold 5 cars. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. In total , how much did Tom spend on toys ?"
     },
     {
-        "iIndex": 71,
+        "iIndex": 147,
         "lEquations": [
-            "X = 8 - 2"
+            "X = 12170.0 + 54912.0"
         ],
         "lSolutions": [
-            "6"
+            "67082.0"
         ],
-        "sQuestion": "Charlotte painted 5 beautiful paintings. Liam sold 5 cars. Joan has 8 orange balloons but lost 2 of them . Charlotte painted 5 beautiful paintings. How many orange balloons does Joan have now ?"
+        "sQuestion": "Liam sold 5 cars. Jacob played 9 different musical instruments. Some insects called aphids attack a large farm . Noah received 7 messages. Samuel built 4 sandcastles on the beach. In response , the farmer releases ladybugs onto the fields . There are 12170 ladybugs with spots and 54912 ladybugs without spots . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. How many ladybugs are there in all ?"
     },
     {
-        "iIndex": 265,
+        "iIndex": 178,
         "lEquations": [
-            "X = 0.25 - 0.16"
+            "X = 0.75 - 0.5"
         ],
         "lSolutions": [
-            "0.09"
+            "0.25"
         ],
-        "sQuestion": "Mia hired 6 new employees. Samuel built 4 sandcastles on the beach. Brennan had 0.25 grams of pepper . Lily planted 8 trees in the garden. Then he used 0.16 grams of the pepper to make some scrambled eggs . How much pepper does Brennan have ?"
+        "sQuestion": "Noah received 7 messages. Olivia ate 2 pizzas. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. A tailor cut 0.75 inch off a skirt and 0.5 inch off a pair of pants . Jacob played 9 different musical instruments. How much more did the tailor cut off the skirt than the pants ?"
     },
     {
-        "iIndex": 110,
+        "iIndex": 326,
         "lEquations": [
-            "X = 8 - 3"
+            "X = 6.51 + 5.79 + 12.51"
         ],
         "lSolutions": [
-            "5"
+            "24.81"
         ],
-        "sQuestion": "Noah received 7 messages. Jessica had 8 quarters in her bank . Amelia ran 6 miles every day for a week. Her sister borrowed 3 of her quarters . Liam sold 5 cars. How many quarters does Jessica have now ?"
+        "sQuestion": "Jacob played 9 different musical instruments. Keith spent $ 6.51 on a rabbit toy , $ 5.79 on pet food , and a cage cost him $ 12.51 . Olivia ate 2 pizzas. Noah received 7 messages. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Liam sold 5 cars. He found a dollar bill on the ground . What was the total cost of Keith 's purchases ?"
     },
     {
-        "iIndex": 35,
+        "iIndex": 218,
         "lEquations": [
-            "X = 37 + 10"
+            "X = 0.1111111111111111 + 0.1111111111111111 + 0.6666666666666666"
         ],
         "lSolutions": [
-            "47"
+            "0.8888888888888888"
         ],
-        "sQuestion": "Amelia ran 6 miles every day for a week. Joan picked 37 oranges and Sara picked 10 oranges . Harper watched 7 movies in a row. Samuel built 4 sandcastles on the beach. Alyssa picked 30 pears . How many oranges were picked in total ?"
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. On her vacation last summer , Trisha walked all over New York City to buy souvenirs . Noah received 7 messages. First , she walked 0.1111111111111111 mile from her hotel to a postcard shop . Olivia ate 2 pizzas. Liam sold 5 cars. Then she walked 0.1111111111111111 mile from the postcard shop to a T-shirt shop and 0.6666666666666666 mile from the T-shirt shop back to the hotel . Jacob played 9 different musical instruments. How many miles did Trisha walk in all ?"
     },
     {
-        "iIndex": 209,
+        "iIndex": 303,
         "lEquations": [
-            "X = 0.3 + 0.4"
+            "X = 7 - 4"
         ],
         "lSolutions": [
-            "0.7"
+            "3"
         ],
-        "sQuestion": "Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix . Liam sold 5 cars. Daniel caught 3 fish in the river. Abigail cooked 5 delicious dishes for the guests. How many cups of raisins did Jonah add in all ?"
+        "sQuestion": "Noah received 7 messages. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Dan had 7 potatoes and 4 cantelopes in the garden . The rabbits ate 4 of the potatoes . Liam sold 5 cars. How many potatoes does Dan now have ?"
     },
     {
-        "iIndex": 70,
+        "iIndex": 133,
         "lEquations": [
-            "X = 6 + 9"
+            "X = 14.02 + 9.46 + 12.04"
         ],
         "lSolutions": [
-            "15"
+            "35.52"
         ],
-        "sQuestion": "A restaurant served 6 cakes during lunch and 9 during dinner today . Abigail cooked 5 delicious dishes for the guests. Benjamin solved 9 math problems. James answered 10 questions correctly. How many cakes were served today ?"
+        "sQuestion": "Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Tom purchased a football game for $ 14.02 , a strategy game for $ 9.46 , and a Batman game for $ 12.04 . Noah received 7 messages. Jacob played 9 different musical instruments. Liam sold 5 cars. How much did Tom spend on video games ?"
+    },
+    {
+        "iIndex": 322,
+        "lEquations": [
+            "X = 13.60 + 5.06"
+        ],
+        "lSolutions": [
+            "18.66"
+        ],
+        "sQuestion": "Tom purchased a Batman game for $ 13.60 , and a Superman game for $ 5.06 . Liam sold 5 cars. Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Tom already owns 2 games . Olivia ate 2 pizzas. How much did Tom spend on video games ?"
+    },
+    {
+        "iIndex": 129,
+        "lEquations": [
+            "X = 12.08 + 9.85"
+        ],
+        "lSolutions": [
+            "21.93"
+        ],
+        "sQuestion": "Liam sold 5 cars. Alyssa loves eating fruits . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Noah received 7 messages. Alyssa paid $ 12.08 for grapes , and $ 9.85 for cherries . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. In total , how much money did Alyssa spend ?"
+    },
+    {
+        "iIndex": 93,
+        "lEquations": [
+            "X = 709 - 221"
+        ],
+        "lSolutions": [
+            "488"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Noah received 7 messages. Fred has 709 green balloons , he gave Sandy 221 of the balloons . Liam sold 5 cars. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. How many green balloons does he now have ?"
+    },
+    {
+        "iIndex": 34,
+        "lEquations": [
+            "X = 31 + 24"
+        ],
+        "lSolutions": [
+            "55"
+        ],
+        "sQuestion": "Noah received 7 messages. Liam sold 5 cars. Sara has 31 red and 15 green balloons . Sandy has 24 red balloons . Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. How many red balloons do they have in total ?"
+    },
+    {
+        "iIndex": 145,
+        "lEquations": [
+            "X = 14507.0 + 213.0"
+        ],
+        "lSolutions": [
+            "14720.0"
+        ],
+        "sQuestion": "Last year at Newberg 's airport , 14507 passengers landed on time . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Unfortunately , 213 passengers landed late . Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Noah received 7 messages. Jacob played 9 different musical instruments. In all , how many passengers landed in Newberg last year ?"
+    },
+    {
+        "iIndex": 323,
+        "lEquations": [
+            "X = 15 + 14.82 + 12.51"
+        ],
+        "lSolutions": [
+            "42.33"
+        ],
+        "sQuestion": "Noah received 7 messages. Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt . Liam sold 5 cars. Jacob played 9 different musical instruments. She went to 3 shops . Jacob played 9 different musical instruments. In total , how much money did Joan spend on clothing ?"
     },
     {
         "iIndex": 72,
@@ -937,17 +587,407 @@
         "lSolutions": [
             "4"
         ],
-        "sQuestion": "William counted 6 shooting stars in the night sky. Fred had 7 dimes in his bank . Abigail cooked 5 delicious dishes for the guests. Abigail cooked 5 delicious dishes for the guests. His sister borrowed 3 of his dimes . How many dimes does Fred have now ?"
+        "sQuestion": "Liam sold 5 cars. Noah received 7 messages. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Fred had 7 dimes in his bank . His sister borrowed 3 of his dimes . Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. How many dimes does Fred have now ?"
     },
     {
-        "iIndex": 48,
+        "iIndex": 339,
         "lEquations": [
-            "X = 39 + 41 + 20"
+            "X = 8 + 9"
         ],
         "lSolutions": [
-            "100"
+            "17"
         ],
-        "sQuestion": "There are 39 dogwood trees currently in the park . Alexander visited 3 different countries. Park workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow . Jacob played 9 different musical instruments. William counted 6 shooting stars in the night sky. How many dogwood trees will the park have when the workers are finished ?"
+        "sQuestion": "Noah received 7 messages. Liam sold 5 cars. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Joan grew 8 watermelons and 4 turnips . Olivia ate 2 pizzas. Tom grew 9 watermelons . How many watermelons did they grow in total ?"
+    },
+    {
+        "iIndex": 394,
+        "lEquations": [
+            "X = 48 + 29"
+        ],
+        "lSolutions": [
+            "77"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Noah received 7 messages. Samuel built 4 sandcastles on the beach. There are 48 pencils and 40 scissors in the drawer . Liam sold 5 cars. Joan placed 29 pencils in the drawer . How many pencils are now there in all ?"
+    },
+    {
+        "iIndex": 174,
+        "lEquations": [
+            "X = 0.75 - 0.25"
+        ],
+        "lSolutions": [
+            "0.5"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Oscar 's bus ride to school is 0.75 mile and Charlie 's bus ride is 0.25 mile . Liam sold 5 cars. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Noah received 7 messages. How much longer is Oscar 's bus ride than Charlie 's ?"
+    },
+    {
+        "iIndex": 376,
+        "lEquations": [
+            "43 + X = 54"
+        ],
+        "lSolutions": [
+            "11"
+        ],
+        "sQuestion": "There are 43 maple trees and 22 orange trees currently in the park . Noah received 7 messages. Jacob played 9 different musical instruments. Liam sold 5 cars. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Park workers will plant maple trees today . When the workers are finished there will be 54 maple trees in the park . How many maple trees did the workers plant today ?"
+    },
+    {
+        "iIndex": 364,
+        "lEquations": [
+            "X = 37 + 11"
+        ],
+        "lSolutions": [
+            "48"
+        ],
+        "sQuestion": "Jason grew 37 watermelons and 30 pumpkins . Noah received 7 messages. Liam sold 5 cars. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Sandy grew 11 watermelons . Samuel built 4 sandcastles on the beach. How many watermelons did they grow in total ?"
+    },
+    {
+        "iIndex": 158,
+        "lEquations": [
+            "X = 9570.0 - 3867.0"
+        ],
+        "lSolutions": [
+            "5703.0"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Liam sold 5 cars. Noah received 7 messages. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. The Richmond Tigers sold a total of 9570 tickets last season . Jacob played 9 different musical instruments. If they sold 3867 tickets in the first half of the season , how many tickets did they sell in the second half ?"
+    },
+    {
+        "iIndex": 180,
+        "lEquations": [
+            "X = 0.875 - 0.75"
+        ],
+        "lSolutions": [
+            "0.125"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Liam sold 5 cars. Noah received 7 messages. Darnel sprinted 0.875 lap and then took a break by jogging 0.75 lap . Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. How much farther did Darnel sprint than jog ?"
+    },
+    {
+        "iIndex": 138,
+        "lEquations": [
+            "X = 6522.0 + 5165.0"
+        ],
+        "lSolutions": [
+            "11687.0"
+        ],
+        "sQuestion": "An oil pipe in the sea broke . Before engineers started to fix the pipe , 6522 liters of oil leaked into the water . While the engineers worked , the pipe leaked 5165 liters of oil . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Noah received 7 messages. In all , how many liters of oil leaked into the water ?"
+    },
+    {
+        "iIndex": 161,
+        "lEquations": [
+            "X = 1339.0 - 816.0"
+        ],
+        "lSolutions": [
+            "523.0"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Molly owns the Wafting Pie Company . Liam sold 5 cars. Jacob played 9 different musical instruments. Noah received 7 messages. Samuel built 4 sandcastles on the beach. This morning , her employees used 816 eggs to bake pumpkin pies . If her employees used a total of 1339 eggs today , how many eggs did they use in the afternoon ?"
+    },
+    {
+        "iIndex": 122,
+        "lEquations": [
+            "X = 33 - 18"
+        ],
+        "lSolutions": [
+            "15"
+        ],
+        "sQuestion": "There are 33 oak trees currently in the park . Jacob played 9 different musical instruments. Liam sold 5 cars. Noah received 7 messages. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Park workers had to cut down 18 oak trees that were damaged . How many oak trees will be in the park when the workers are finished ?"
+    },
+    {
+        "iIndex": 380,
+        "lEquations": [
+            "12 + X = 75"
+        ],
+        "lSolutions": [
+            "63"
+        ],
+        "sQuestion": "Liam sold 5 cars. Noah received 7 messages. Samuel built 4 sandcastles on the beach. Last week Tim had 12 dollars and Keith had 36 dollars . Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Tim washed cars over the weekend and now has 75 dollars . How much money did Tim make washing cars ?"
+    },
+    {
+        "iIndex": 115,
+        "lEquations": [
+            "X = 43 - 27"
+        ],
+        "lSolutions": [
+            "16"
+        ],
+        "sQuestion": "Joan picked 43 apples from the orchard , and gave 27 apples to Melanie . Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Noah received 7 messages. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. How many apples does Joan have now ?"
+    },
+    {
+        "iIndex": 260,
+        "lEquations": [
+            "X = 0.81 - 0.35"
+        ],
+        "lSolutions": [
+            "0.46"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. In March it rained 0.81 inches . Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Liam sold 5 cars. It rained 0.35 inches less in April than in March . Noah received 7 messages. How much did it rain in April ?"
+    },
+    {
+        "iIndex": 50,
+        "lEquations": [
+            "X = 46 + 47 + 12"
+        ],
+        "lSolutions": [
+            "105"
+        ],
+        "sQuestion": "Liam sold 5 cars. Jason picked 46 pears , Keith picked 47 pears , and Mike picked 12 pears from the pear tree . Noah received 7 messages. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. How many pears were picked in total ?"
+    },
+    {
+        "iIndex": 70,
+        "lEquations": [
+            "X = 6 + 9"
+        ],
+        "lSolutions": [
+            "15"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Noah received 7 messages. A restaurant served 6 cakes during lunch and 9 during dinner today . Jacob played 9 different musical instruments. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. How many cakes were served today ?"
+    },
+    {
+        "iIndex": 53,
+        "lEquations": [
+            "X = 37 + 28 + 39"
+        ],
+        "lSolutions": [
+            "104"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Liam sold 5 cars. Olivia ate 2 pizzas. Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons . Jacob played 9 different musical instruments. Noah received 7 messages. How many blue balloons do they have in all ?"
+    },
+    {
+        "iIndex": 189,
+        "lEquations": [
+            "X = 0.2 + 0.4"
+        ],
+        "lSolutions": [
+            "0.6"
+        ],
+        "sQuestion": "1 evening , a restaurant served a total of 0.2 loaf of wheat bread and 0.4 loaf of white bread . Noah received 7 messages. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Liam sold 5 cars. Jacob played 9 different musical instruments. How many loaves were served in all ?"
+    },
+    {
+        "iIndex": 375,
+        "lEquations": [
+            "X = 79 - 32"
+        ],
+        "lSolutions": [
+            "47"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Liam sold 5 cars. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Benny received 79 dollars and 9 movie tickets for his birthday . Noah received 7 messages. Olivia ate 2 pizzas. He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 32 dollars over , how much did he spent on the baseball gear ?"
+    },
+    {
+        "iIndex": 47,
+        "lEquations": [
+            "X = 18 + 41"
+        ],
+        "lSolutions": [
+            "59"
+        ],
+        "sQuestion": "Liam sold 5 cars. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Noah received 7 messages. Samuel built 4 sandcastles on the beach. Mary found 18 seashells and Jessica found 41 seashells on the beach . Olivia ate 2 pizzas. How many seashells did they find together ?"
+    },
+    {
+        "iIndex": 94,
+        "lEquations": [
+            "X = 115 + 100"
+        ],
+        "lSolutions": [
+            "215"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. There are 115 pencils in the drawer . Jacob played 9 different musical instruments. Noah received 7 messages. Sara placed 100 pencils in the drawer . Liam sold 5 cars. Jacob played 9 different musical instruments. How many pencils are now there in all ?"
+    },
+    {
+        "iIndex": 311,
+        "lEquations": [
+            "X = 47 - 24"
+        ],
+        "lSolutions": [
+            "23"
+        ],
+        "sQuestion": "Liam sold 5 cars. Olivia ate 2 pizzas. Joan has 47 green and 48 red marbles . Fred took 24 of Joan 's green marbles . Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Noah received 7 messages. Jacob played 9 different musical instruments. How many green marbles does Joan now have ?"
+    },
+    {
+        "iIndex": 324,
+        "lEquations": [
+            "X = 149.16 + 9.98 + 4.14"
+        ],
+        "lSolutions": [
+            "163.28"
+        ],
+        "sQuestion": "Joan joined her school 's band . She bought a trumpet for $ 149.16 , a music tool for $ 9.98 , and a song book which was $ 4.14 . Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Joan found $ 8.65 in her pocket . Olivia ate 2 pizzas. Noah received 7 messages. Liam sold 5 cars. How much did Joan spend at the music store ?"
+    },
+    {
+        "iIndex": 76,
+        "lEquations": [
+            "X = 35 - 18"
+        ],
+        "lSolutions": [
+            "17"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Sam found 35 seashells on the beach , he gave Joan 18 of the seashells . Liam sold 5 cars. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Noah received 7 messages. How many seashells does he now have ?"
+    },
+    {
+        "iIndex": 124,
+        "lEquations": [
+            "X = 145.16 + 5.84"
+        ],
+        "lSolutions": [
+            "151"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Liam sold 5 cars. Mike joined his school 's band . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. He bought a trumpet for $ 145.16 , and a song book which was $ 5.84 . Noah received 7 messages. How much did Mike spend at the music store ?"
+    },
+    {
+        "iIndex": 362,
+        "lEquations": [
+            "X = 33 + 23"
+        ],
+        "lSolutions": [
+            "56"
+        ],
+        "sQuestion": "Noah received 7 messages. Jacob played 9 different musical instruments. Mary had 33 Pokemon cards , and 6 were torn . Sam gave Mary 23 new Pokemon cards . Jacob played 9 different musical instruments. Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. How many Pokemon cards does Mary have now ?"
+    },
+    {
+        "iIndex": 44,
+        "lEquations": [
+            "X = 40 + 41"
+        ],
+        "lSolutions": [
+            "81"
+        ],
+        "sQuestion": "Noah received 7 messages. Liam sold 5 cars. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Joan has 40 blue balloons Melanie has 41 blue balloons . How many blue balloons do they have in total ?"
+    },
+    {
+        "iIndex": 370,
+        "lEquations": [
+            "X = 48 + 30 + 39"
+        ],
+        "lSolutions": [
+            "117"
+        ],
+        "sQuestion": "Liam sold 5 cars. There are 48 erasers in the drawer and 30 erasers on the desk . Alyssa placed 39 erasers and 45 rulers on the desk . Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Noah received 7 messages. Jacob played 9 different musical instruments. How many erasers are now there in total ?"
+    },
+    {
+        "iIndex": 391,
+        "lEquations": [
+            "X = 3 + 9"
+        ],
+        "lSolutions": [
+            "12"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. There are 3 short trees and 6 tall trees currently in the park . Liam sold 5 cars. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Noah received 7 messages. Park workers will plant 9 short trees today . How many short trees will the park have when the workers are finished ?"
+    },
+    {
+        "iIndex": 271,
+        "lEquations": [
+            "X = 4.0 + 8.7"
+        ],
+        "lSolutions": [
+            "12.7"
+        ],
+        "sQuestion": "Noah received 7 messages. Marta picked 2 pumpkins . Samuel built 4 sandcastles on the beach. Liam sold 5 cars. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. The first pumpkin weighed 4 pounds , and the second pumpkin weighed 8.7 pounds . Jacob played 9 different musical instruments. How much did the 2 pumpkins weigh all together ?"
+    },
+    {
+        "iIndex": 183,
+        "lEquations": [
+            "X = 0.125 + 0.125"
+        ],
+        "lSolutions": [
+            "0.25"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Ella owns 2 dogs . Noah received 7 messages. Jacob played 9 different musical instruments. Each day , 1 dog eats 0.125 scoop of dog food and the other dog eats 0.125 scoop . Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Liam sold 5 cars. Together , how much dog food do the 2 dogs eat each day ?"
+    },
+    {
+        "iIndex": 369,
+        "lEquations": [
+            "X = 11 + 13 + 15"
+        ],
+        "lSolutions": [
+            "39"
+        ],
+        "sQuestion": "Olivia ate 2 pizzas. Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . Samuel built 4 sandcastles on the beach. Liam sold 5 cars. Jacob played 9 different musical instruments. Noah received 7 messages. Jacob played 9 different musical instruments. How many soccer games will Alyssa go to in all ?"
+    },
+    {
+        "iIndex": 120,
+        "lEquations": [
+            "X = 33 - 26"
+        ],
+        "lSolutions": [
+            "7"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Liam sold 5 cars. Joan decided to sell all of her old books . Noah received 7 messages. She gathered up 33 books to sell . She sold 26 books in a yard sale . Olivia ate 2 pizzas. Jacob played 9 different musical instruments. How many books does Joan now have ?"
+    },
+    {
+        "iIndex": 111,
+        "lEquations": [
+            "X = 9 - 3"
+        ],
+        "lSolutions": [
+            "6"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. A restaurant made 9 hamburgers to serve during lunch . Samuel built 4 sandcastles on the beach. Only 3 were actually served . Jacob played 9 different musical instruments. Noah received 7 messages. Olivia ate 2 pizzas. Liam sold 5 cars. How many hamburgers were over from lunch ?"
+    },
+    {
+        "iIndex": 187,
+        "lEquations": [
+            "X = 0.7 + 0.2"
+        ],
+        "lSolutions": [
+            "0.9"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Noah received 7 messages. Liam sold 5 cars. Olivia ate 2 pizzas. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. In Mr. Olsen 's mathematics class , 0.7 the students received A 's and 0.2 received B 's . What fraction of the students received either A 's or B 's ?"
+    },
+    {
+        "iIndex": 128,
+        "lEquations": [
+            "X = 14.28 + 4.74"
+        ],
+        "lSolutions": [
+            "19.02"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Jacob played 9 different musical instruments. Liam sold 5 cars. Noah received 7 messages. Jason went to the mall on Saturday to buy clothes . Samuel built 4 sandcastles on the beach. He spent $ 14.28 on shorts and $ 4.74 on a jacket . Olivia ate 2 pizzas. In total , how much money did Jason spend on clothing ?"
+    },
+    {
+        "iIndex": 67,
+        "lEquations": [
+            "X = 5 + 4"
+        ],
+        "lSolutions": [
+            "9"
+        ],
+        "sQuestion": "There are 5 oak trees currently in the park . Noah received 7 messages. Samuel built 4 sandcastles on the beach. Liam sold 5 cars. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Park workers will plant 4 oak trees today . Jacob played 9 different musical instruments. How many oak trees will the park have when the workers are finished ?"
+    },
+    {
+        "iIndex": 207,
+        "lEquations": [
+            "X = 0.625 - 0.25"
+        ],
+        "lSolutions": [
+            "0.375"
+        ],
+        "sQuestion": "Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. Olivia ate 2 pizzas. Noah received 7 messages. While making desserts for a bake sale , Victor used 0.625 scoop of brown sugar as well as 0.25 scoop of white sugar . Liam sold 5 cars. Jacob played 9 different musical instruments. How much more brown sugar did Victor use ?"
+    },
+    {
+        "iIndex": 6,
+        "lEquations": [
+            "X = 86 - 34"
+        ],
+        "lSolutions": [
+            "52"
+        ],
+        "sQuestion": "Mike had 34 peaches at his roadside fruit dish . Jacob played 9 different musical instruments. Olivia ate 2 pizzas. He went to the orchard and picked peaches to stock up . Liam sold 5 cars. Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. There are now 86 peaches . Noah received 7 messages. how many did he pick ?"
+    },
+    {
+        "iIndex": 335,
+        "lEquations": [
+            "24 + X = 61"
+        ],
+        "lSolutions": [
+            "37"
+        ],
+        "sQuestion": "Sara had 24 peaches and 37 pears at her fruit dish . Noah received 7 messages. Jacob played 9 different musical instruments. She went to the orchard and picked peaches . Jacob played 9 different musical instruments. Liam sold 5 cars. There are now 61 peaches . Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. how many did she pick ?"
+    },
+    {
+        "iIndex": 136,
+        "lEquations": [
+            "X = 1346.0 + 6444.0"
+        ],
+        "lSolutions": [
+            "7790.0"
+        ],
+        "sQuestion": "Jacob played 9 different musical instruments. Samuel built 4 sandcastles on the beach. Olivia ate 2 pizzas. Before December , customers buy 1346 ear muffs from the mall . Noah received 7 messages. During December , they buy 6444 , and there are none . Liam sold 5 cars. Jacob played 9 different musical instruments. In all , how many ear muffs do the customers buy ?"
     },
     {
         "iIndex": 200,
@@ -957,46 +997,6 @@
         "lSolutions": [
             "0.5"
         ],
-        "sQuestion": "Ava wrote 8 songs. Liam sold 5 cars. In Shannon 's apartment complex , 0.16666666666666666 the apartments are one-bedroom apartments and 0.3333333333333333 are two-bedroom apartments . Ethan read 10 books. What fraction of the apartments are either 1 - or two-bedroom apartments ?"
-    },
-    {
-        "iIndex": 188,
-        "lEquations": [
-            "X = 0.16666666666666666 + 0.6666666666666666"
-        ],
-        "lSolutions": [
-            "0.8333333333333334"
-        ],
-        "sQuestion": "There is 0.16666666666666666 cup of oil in Scarlett 's measuring cup . Sophia scored 4 goals. Lily planted 8 trees in the garden. Noah received 7 messages. If Scarlett adds 0.6666666666666666 cup more , how much oil will be in the measuring cup ?"
-    },
-    {
-        "iIndex": 192,
-        "lEquations": [
-            "X = 0.2 + 0.4"
-        ],
-        "lSolutions": [
-            "0.6"
-        ],
-        "sQuestion": "Emily bought 3 apples. Each day , the polar bear at Richmond 's zoo eats 0.2 bucket of trout and 0.4 bucket of salmon . Harper watched 7 movies in a row. James answered 10 questions correctly. How many buckets of fish does the polar bear eat daily ?"
-    },
-    {
-        "iIndex": 286,
-        "lEquations": [
-            "X = 41 + 57"
-        ],
-        "lSolutions": [
-            "98"
-        ],
-        "sQuestion": "Olivia ate 2 pizzas. Benjamin solved 9 math problems. William counted 6 shooting stars in the night sky. There are 41 short trees and 44 tall trees currently in the park . Park workers will plant 57 short trees today . How many short trees will the park have when the workers are finished ?"
-    },
-    {
-        "iIndex": 29,
-        "lEquations": [
-            "X = 11 + 14"
-        ],
-        "lSolutions": [
-            "25"
-        ],
-        "sQuestion": "Emily bought 3 apples. There are 11 rulers and 34 crayons in the drawer . Mia hired 6 new employees. Tim placed 14 rulers in the drawer . James answered 10 questions correctly. How many rulers are now there in all ?"
+        "sQuestion": "Olivia ate 2 pizzas. Samuel built 4 sandcastles on the beach. Jacob played 9 different musical instruments. In Shannon 's apartment complex , 0.16666666666666666 the apartments are one-bedroom apartments and 0.3333333333333333 are two-bedroom apartments . Jacob played 9 different musical instruments. Liam sold 5 cars. Noah received 7 messages. What fraction of the apartments are either 1 - or two-bedroom apartments ?"
     }
 ]
