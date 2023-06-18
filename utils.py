@@ -829,13 +829,13 @@ def GSMICSampling(rseed=42):
     with open("./dataset/GSM-IC/test.json", "w", encoding="utf8") as f:
         json.dump(sampled_data_1 + sampled_data_2, f, indent=4)
 
-  def make_mic_dataset(input_data, output_data, ic_list, n_ic = 2, n_sample = 100):
+  def make_mic_dataset(input_data, output_data_dir, ic_list, n_ic = 2, n_sample = 100):
     '''
     input_data: name of input dataset, it should be one of ['addsub', 'svamp']
     output_data: path of output dataset
     ic_list: a list of irrelevant contexts if argument is a list; 
     path of json data containing irrelevant contexts if argument is a string
-    n_ic: number of irrelevant context
+    n_ic: number of irrelevant context, an integar or list
     n_sample: number of items to sample
     '''
     if input_data == "addsub":
@@ -856,22 +856,26 @@ def GSMICSampling(rseed=42):
         pass
     else:
         raise ValueError("ic_list should be list or string.")
+    
+    if not isinstance(n_ic, list):
+        n_ic = [n_ic]
 
     with open(path, "r+", encoding="utf8") as f:
         json_data = json.load(f)
 
     used_data = random.sample(json_data, k = n_sample)
-    noisy_data = []
-
-    for item in used_data:
-        sents = sent_tk(item[question_key])
-        used_ic = random.choices(ic_list, k = n_ic)
-        for i in range(n_ic):
-            insert_idx = random.randint(0, len(sents) - offset)
-            sents.insert(insert_idx, used_ic[i])
-        item[question_key] = " ".join(sents)
-        noisy_data += [item]
     
-    with open(output_data, "w+", encoding="utf8") as f:
-        print("Writing noisy data into {}".format(output_data))
-        json.dump(noisy_data, f, indent=4)
+    for n in n_ic:
+        used_ic = random.sample(ic_list, k = n)
+        noisy_data = []
+        for item in used_data:
+            sents = sent_tk(item[question_key])
+            for i in range(n):
+                insert_idx = random.randint(0, len(sents) - offset)
+                sents.insert(insert_idx, used_ic[i])
+            item[question_key] = " ".join(sents)
+            noisy_data += [item]
+        output_data = output_data_dir + "/{}{}.json".format(input_data, str(n))
+        with open(output_data, "w+", encoding="utf8") as f:
+            print("Writing noisy data into {}".format(output_data))
+            json.dump(noisy_data, f, indent=4)
